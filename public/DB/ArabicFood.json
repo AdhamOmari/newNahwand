@@ -1,0 +1,510 @@
+{
+    "menu": {
+        "soup": {
+            "image": "../public/ImageFood/Lentil.jpg",
+            "item": [
+                {
+                    "id": 1,
+                    "name": "شوربة العدس",
+                    "description": "مع الثوم المحمص والكمون والليمون",
+                    "price": 19,
+                    "calories": 160,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 2,
+                    "name": "شوربة الفطر",
+                    "description": "الفطر المطبوخ بالكريمة وتوابل الشيف مع الخبز المحمص",
+                    "price": 22,
+                    "calories": 345,
+                    "image": "../public/ImageFood/Mushroom.jpg"
+                },
+                {
+                    "id": 3,
+                    "name": "ملوخية عادية",
+                    "description": "ملوخية محضرة بالطريقة المصرية",
+                    "price": 19,
+                    "calories": 345,
+                    "image": "../public/ImageFood/Molokhia.jpg"
+                }
+            ]
+        },
+        "salad": {
+            "image": "حزم نهواند",
+            "item": [
+                {
+                    "id": 4,
+                    "name": "فتوش",
+                    "description": "مجموعة من الخضروات الفصلية مع خبز عربي محمص ودبس الرمان والسماق",
+                    "price": 21,
+                    "calories": 340,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 5,
+                    "name": "تبولة",
+                    "description": "بقدونس وطماطم وبصل وبرغل وليمون مع زيت الزيتون",
+                    "price": 21,
+                    "calories": 215,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 6,
+                    "name": "روكا",
+                    "description": "روكا، طماطم كرزية، فطر، بذور الرمان، جبنة مضفرة ودبس الرمان",
+                    "price": 21,
+                    "calories": 210,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 7,
+                    "name": "تبولة الكينوا",
+                    "description": "بقدونس وطماطم وبصل وبرغل وليمون مع زيت الزيتون وبذور الكينوا",
+                    "price": 27,
+                    "calories": 221,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 8,
+                    "name": "روكا بالشمندر",
+                    "description": "روكا، شمندر وبصل مع السماق وزيت الزيتون ودبس الرمان",
+                    "price": 26,
+                    "calories": 240,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 9,
+                    "name": "سلطة السيزر",
+                    "description": "صلصة سيزر الخاصة مع الخس وصدر الدجاج والكروتون وجبنة البارميزان",
+                    "price": 38,
+                    "calories": 240,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 10,
+                    "name": "سلطة فصلية",
+                    "description": "مجموعة من الخضروات الفصلية المتبلة بعصير الليمون وزيت الزيتون",
+                    "price": 19,
+                    "calories": 205,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 11,
+                    "name": "مجموعة سلطات",
+                    "description": "فتوش - تبولة - روكا - سلطة فصلية",
+                    "price": 36,
+                    "calories": 0,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                }
+            ]
+        },
+        "مقبلات باردة ومزة": {
+            "image": "حزم نهواند",
+            "item": [
+                {
+                    "id": 12,
+                    "name": "الحمص",
+                    "description": "محضر بعناية فائقة",
+                    "price": 19,
+                    "calories": 348,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 13,
+                    "name": "حمص بيروتي",
+                    "description": "مزيج من الثوم والبقدونس المفروم وزيت الزيتون",
+                    "price": 20,
+                    "calories": 410,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 14,
+                    "name": "متبل الباذنجان",
+                    "description": "الباذنجان المشوي مع الطحينة وعصير الليمون وزيت الزيتون",
+                    "price": 18,
+                    "calories": 265,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 15,
+                    "name": "متبل الشمندر",
+                    "description": "الشمندر مع العسل والطحينة والتوابل",
+                    "price": 19,
+                    "calories": 328,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 16,
+                    "name": "محمرة بالجوز",
+                    "description": "مزيج من الجوز المهروس والفلفل الحار ودبس الرمان",
+                    "price": 19,
+                    "calories": 385,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 17,
+                    "name": "ورق العنب بدبس الرمان",
+                    "description": "محشو بالخضروات والأرز ودبس الرمان وزيت الزيتون",
+                    "price": 22,
+                    "calories": 464,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 18,
+                    "name": "بابا غنوج",
+                    "description": "الباذنجان المشوي - الفلفل الحلو - الطماطم - الرمان",
+                    "price": 20,
+                    "calories": 185,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 19,
+                    "name": "مجموعة من المقبلات الباردة",
+                    "description": "تحتوي على الحمص، المتبل المتبل، المتبل الشمندر، بابا غنوج، ورق العنب",
+                    "price": 43,
+                    "calories": 0,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                }
+            ]
+        },
+        "Hot appetizers": {
+            "image": "حزم نهواند",
+            "item": [
+                {
+                    "id": 20,
+                    "name": "كبة مقلية",
+                    "description": "محشية باللحم والمكسرات ومقلية في الزيت",
+                    "price": 23,
+                    "calories": 320,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 21,
+                    "name": "بوريك الجبن",
+                    "description": "مزيج من ثلاث أنواع من الجبن محشوة بعجينة مصنوعة في المنزل مع بذور الحبة السوداء والبقدونس",
+                    "price": 23,
+                    "calories": 320,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 22,
+                    "name": "سمبوسة لحم",
+                    "description": "محشوة باللحم المحلي والتوابل بالطريقة الأصلية",
+                    "price": 24,
+                    "calories": 350,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 23,
+                    "name": "أوراق لحم",
+                    "description": "مع الأعشاب والتوابل العربية مخبوزة في الفرن",
+                    "price": 24,
+                    "calories": 0,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 24,
+                    "name": "فطائر السبانخ",
+                    "description": "مع الجوز والصنوبر وبذور الرمان وزيت الزيتون والسماق",
+                    "price": 16,
+                    "calories": 0,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 25,
+                    "name": "مجموعة من المقبلات الساخنة",
+                    "description": "تحتوي على كبة مقلية - بوريك الجبن - فطائر السبانخ - أوراق لحم",
+                    "price": 43,
+                    "calories": 0,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 26,
+                    "name": "حمص مع اللحم",
+                    "description": "قطع اللحم المطبوخة في السمن مع الصنوبر على الحمص",
+                    "price": 33,
+                    "calories": 625,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 27,
+                    "name": "أصابع البطاطس المقلية",
+                    "description": "مقلية بشكل مقرمش",
+                    "price": 20,
+                    "calories": 520,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 28,
+                    "name": "بطاطس مقلية",
+                    "description": "مقلية بشكل مقرمش مع صلصة الكاتشب",
+                    "price": 13,
+                    "calories": 480,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 29,
+                    "name": "أرز أبيض",
+                    "description": "",
+                    "price": 10,
+                    "calories": 0,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 30,
+                    "name": "أرز برياني",
+                    "description": "",
+                    "price": 14,
+                    "calories": 0,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 31,
+                    "name": "أرز شعيرية",
+                    "description": "",
+                    "price": 14,
+                    "calories": 0,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                }
+            ]
+        },
+        "Italian pasta": {
+            "image": "حزم نهواند",
+            "item": [
+                {
+                    "id": 32,
+                    "name": "فتوتشيني الفريدو مع الدجاج",
+                    "description": "مع الكريمة والفطر البري وجبنة بارميزان والدجاج",
+                    "price": 45,
+                    "calories": 930,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 33,
+                    "name": "بيني أرابياتا مع الدجاج",
+                    "description": "مع صلصة طماطم حارة والريحان والأعشاب وجبنة بارميزان والدجاج",
+                    "price": 42,
+                    "calories": 800,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 34,
+                    "name": "سباغيتي بولونيز",
+                    "description": "مع لحمة بلدي مفرومة مطهوة بصلصة الطماطم",
+                    "price": 43,
+                    "calories": 760,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 35,
+                    "name": "فتوتشيني الفريدو بسيطة",
+                    "description": "مع الكريمة والفطر البري وجبنة بارميزان",
+                    "price": 29,
+                    "calories": 630,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 36,
+                    "name": "أرابياتا بسيطة",
+                    "description": "مع صلصة طماطم حارة والريحان وجبنة بارميزان والأعشاب",
+                    "price": 38,
+                    "calories": 510,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 37,
+                    "name": "سباغيتي بسيطة",
+                    "description": "مع صلصة طماطم والأعشاب",
+                    "price": 38,
+                    "calories": 480,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                }
+            ]
+        },
+        "Casseroles and hot dishes": {
+            "image": "حزم نهواند",
+            "item": [
+                {
+                    "id": 38,
+                    "name": "طاجن البامية بلحم الموزة",
+                    "description": "بالطريقة المصرية مع أرز بسمتي بالشعيرية",
+                    "price": 49,
+                    "calories": 0,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 39,
+                    "name": "طاجن ورق العنب بالكبدة",
+                    "description": "ورق العنب المحشو برز بلدي وبالكبدة لحم العجل بلدي",
+                    "price": 45,
+                    "calories": 0,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 40,
+                    "name": "ملوخية بالدجاج",
+                    "description": "مع صلصة الثوم والكزبرة، يُقدم مع أرز الشعيرية",
+                    "price": 43,
+                    "calories": 0,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 41,
+                    "name": "كبة باللبن",
+                    "description": "كبة محلية الصنع بلحم بلدي، صلصة اللبن، تشاش الكزبرة والثوم",
+                    "price": 45,
+                    "calories": 1861,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 42,
+                    "name": "برياني الدجاج",
+                    "description": "مطهو بالطريقة الهندية الأصلية، مخبوز في الفرن",
+                    "price": 45,
+                    "calories": 1327,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 43,
+                    "name": "كفتة بالجبنة",
+                    "description": "لحم بلدي مفروم محشو بخليط من الجبن المشوي المذاب في الفرن، يُقدم مع البطاطس والخضار المشوية",
+                    "price": 49,
+                    "calories": 0,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 44,
+                    "name": "ورق العنب بأضلاع اللحم",
+                    "description": "ورق العنب المحشو برز بلدي وبأضلاع اللحم الخروفي",
+                    "price": 80,
+                    "calories": 0,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                }
+            ]
+        },
+        "Barbecue": {
+            "image": "حزم نهواند",
+            "item": [
+                {
+                    "id": 45,
+                    "name": "أضلاع الغنم",
+                    "description": "أضلاع الخروف المتبلة بتوابلنا الخاصة ومشوية على الفحم",
+                    "price": 75,
+                    "calories": 1375,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 46,
+                    "name": "أوصال اللحم",
+                    "description": "أوصال لحم البقر التي تم تتبيلها وشويها على الفحم، يُقدم مع الخضار المشوية",
+                    "price": 52,
+                    "calories": 1692,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 47,
+                    "name": "كباب اللحم",
+                    "description": "لحم بلدي متبل بتوابل خاصة، مشوي على الفحم، يُقدم مع الخضار المشوية",
+                    "price": 44,
+                    "calories": 1760,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 48,
+                    "name": "شيش طاووق",
+                    "description": "صدور الدجاج المتبلة بتوابلنا الخاصة، مشوية على الفحم، يُقدم مع الخضار المشوية",
+                    "price": 43,
+                    "calories": 1881,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 49,
+                    "name": "كباب الدجاج",
+                    "description": "دجاج متبل بتوابل خاصة، مشوى على الفحم، يُقدم مع الخضار المشوية",
+                    "price": 40,
+                    "calories": 2045,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 50,
+                    "name": "ميكس جريل",
+                    "description": "شيش طاووق - أوصال لحم - كباب اللحم - كباب الدجاج",
+                    "price": 56,
+                    "calories": 2653,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                }
+            ]
+        },
+        "Drinks": {
+            "image": "حزم نهواند",
+            "item": [
+                {
+                    "id": 51,
+                    "name": "عصائر طازجة",
+                    "description": "",
+                    "price": 16,
+                    "calories": 198,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 52,
+                    "name": "مشروبات غازية",
+                    "description": "",
+                    "price": 5,
+                    "calories": 151,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 53,
+                    "name": "ماء صغير",
+                    "description": "",
+                    "price": 2,
+                    "calories": 0,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 54,
+                    "name": "ماء كبير",
+                    "description": "",
+                    "price": 4,
+                    "calories": 0,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                }
+            ]
+        },
+        "Sweets": {
+            "image": "حزم نهواند",
+            "item": [
+                {
+                    "id": 55,
+                    "name": "كريم بروليه",
+                    "description": "مع سكر الكراميل والفراولة",
+                    "price": 17,
+                    "calories": 0,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 56,
+                    "name": "بودنغ",
+                    "description": "مع صلصة الفانيليا والموز والفستق",
+                    "price": 15,
+                    "calories": 0,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                }
+            ]
+        },
+        "Nahawand packages": {
+            "image": "حزم نهواند",
+            "item": [
+                {
+                    "id": 57,
+                    "name": "حزمة الخير تكفي 4 إلى 5 أشخاص",
+                    "description": "نصف دجاجة من برياني خاص بابا غنوج - بنجر متبل - حمص بيروتي - كبة مقلية - ثلاث قطع من كريمة الثوم - مقبلات ساخنة حمص متبل - مشاوي مشكلة (لحم ودجاج) - محمرة - تبولة - سلطة جرجير - 179 شامل الضريبة",
+                    "price": 179,
+                    "calories": 0,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                }
+            ]
+        }
+    }
+}

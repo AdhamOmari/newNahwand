@@ -1,0 +1,89 @@
+/* MenuCard.module.css */
+
+.container {
+    padding: 50px;
+}
+
+.sliderContainer {
+    position: relative;
+}
+
+.sliderItem {
+    padding: 16px;
+    margin-right: 10px;
+}
+
+.categoryContainer {
+    margin-bottom: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    gap: 10px;
+    padding: 10px;
+}
+
+.categoryImage {
+    width: 100%;
+    height: auto;
+    margin: 19px;
+    border-radius: 30px;
+}
+
+.categoryLink {
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 8px;
+    border-radius: 50%;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.arrowButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 8px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.prevButton {
+    left: 0;
+}
+
+.nextButton {
+    right: 0;
+}
+
+.dotContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.dot.active {
+    background: #000;
+}

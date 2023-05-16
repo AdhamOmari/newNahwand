@@ -1,0 +1,510 @@
+{
+    "menu": {
+        "soup": {
+            "image": "../public/ImageFood/Mushroom.jpg",
+            "item": [
+                {
+                    "id": 1,
+                    "name": "Lentil Soup",
+                    "description": "With toasted garlic, cumin and lemon",
+                    "price": 19,
+                    "calories": 160,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 2,
+                    "name": "Mushroom Soup",
+                    "description": "Mushroom cooked with cream and chef's spices with toasted bread",
+                    "price": 22,
+                    "calories": 345,
+                    "image": "../public/ImageFood/Mushroom.jpg"
+                },
+                {
+                    "id": 3,
+                    "name": "Plain Molokhia",
+                    "description": "Molokhia prepared in the Egyptian way",
+                    "price": 19,
+                    "calories": 345,
+                    "image": "../public/ImageFood/Molokhia.jpg"
+                }
+            ]
+        },
+        "salad": {
+            "image": "/public/ImageFood/saled.jpg",
+            "item": [
+                {
+                    "id": 4,
+                    "name": "Fattoush",
+                    "description": "A selection of seasonal vegetables with toasted Arabic bread, pomegranate molasses and sumac",
+                    "price": 21,
+                    "calories": 340,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 5,
+                    "name": "Tabbouleh",
+                    "description": "Parsley, tomato, onion, bulgur and lemon with olive oil",
+                    "price": 21,
+                    "calories": 215,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 6,
+                    "name": "Roca",
+                    "description": "Rocca, cherry tomatoes, mushrooms, pomegranate seeds, braided cheese and pomegranate molasses",
+                    "price": 21,
+                    "calories": 210,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 7,
+                    "name": "Quinoa tabbouleh",
+                    "description": "Parsley, tomato, onion, bulgur and lemon with olive oil and quinoa seeds",
+                    "price": 27,
+                    "calories": 221,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 8,
+                    "name": "Rocca beetroot",
+                    "description": "Rocca, beetroot and onion with sumac, olive oil and pomegranate molasses",
+                    "price": 26,
+                    "calories": 240,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 9,
+                    "name": "Caesar salad",
+                    "description": "Special caesar sauce with lettuce, chicken breast, croutons and parmesan cheese",
+                    "price": 38,
+                    "calories": 240,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 10,
+                    "name": "Season salad",
+                    "description": "Assortment of seasonal vegetables seasoned with lemon juice and olive oil",
+                    "price": 19,
+                    "calories": 205,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 11,
+                    "name": "Salad  Collection ",
+                    "description": "Fattoush - tabbouleh - rocca - seasonal salad",
+                    "price": 36,
+                    "calories": 0,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                }
+            ]
+        },
+        "Cold mezzes and appetizers": {
+            "image": "/public/ImageFood/Coldmezzesandappetizers.jpg",
+            "item": [
+                {
+                    "id": 12,
+                    "name": "hummus ",
+                    "description": "Meticulously crafted",
+                    "price": 19,
+                    "calories": 348,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 13,
+                    "name": "Hummus Beiruti ",
+                    "description": "Mix with garlic, chopped parsley and olive oil",
+                    "price": 20,
+                    "calories": 410,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 14,
+                    "name": "Mutabbal eggplant ",
+                    "description": "Grilled eggplant with tahini, lemon and olive oil",
+                    "price": 18,
+                    "calories": 265,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 15,
+                    "name": "Mutabbal Beetroot  ",
+                    "description": "Beetroot with honey, tahini and spices",
+                    "price": 19,
+                    "calories": 328,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 16,
+                    "name": "Muhammara with Walnut  ",
+                    "description": "Crushed walnut mix, hot pepper and pomegranate molasses",
+                    "price": 19,
+                    "calories": 385,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 17,
+                    "name": "Vine leaves with pomegranate molasses",
+                    "description": "Stuffed with vegetables, rice, pomegranate molasses and olive oil",
+                    "price": 22,
+                    "calories": 464,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 18,
+                    "name": "Baba ghanoush",
+                    "description": "Grilled eggplant - sweet pepper - tomato - pomegranate",
+                    "price": 20,
+                    "calories": 185,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 19,
+                    "name": "collection of cold appetizers",
+                    "description": "Hummus, spiced, muhammara, beetroot spiced, baba ghanoush, grape leaves",
+                    "price": 43,
+                    "calories": 0,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                }
+            ]
+        },
+        "Hot appetizers": {
+            "image": "Nahawand packages",
+            "item": [
+                {
+                    "id": 20,
+                    "name": "Fried kibbeh ",
+                    "description": "Stuffed with meat and nuts fried in oil",
+                    "price": 23,
+                    "calories": 320,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 21,
+                    "name": "Cheese burek ",
+                    "description": "A mixture of three cheeses stuffed with our homemade dough with black seeds and parsley",
+                    "price": 23,
+                    "calories": 320,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 22,
+                    "name": "Meat sambuek ",
+                    "description": "Stuffed with local meat with spices in the original way",
+                    "price": 24,
+                    "calories": 350,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 23,
+                    "name": "Sheets of meat ",
+                    "description": "With herbs and arabic spices baked in the oven",
+                    "price": 24,
+                    "calories": 0,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 24,
+                    "name": "Spinach pies ",
+                    "description": "With walnuts, pine nuts, pomegranate seeds, olive oil and sumac",
+                    "price": 16,
+                    "calories": 0,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 25,
+                    "name": "set of hot appetizers ",
+                    "description": "Fried kibbeh - cheese burek - spinach pies - meat sheets",
+                    "price": 43,
+                    "calories": 0,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 26,
+                    "name": "Hummus with meat ",
+                    "description": "Meat pieces cooked in ghee with pine nuts on hummus",
+                    "price": 33,
+                    "calories": 625,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 27,
+                    "name": "Potato wedges",
+                    "description": "Cooked crispy fried",
+                    "price": 20,
+                    "calories": 520,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 28,
+                    "name": "Fries potatoes",
+                    "description": "Crispy fried with ketchup sauce",
+                    "price": 13,
+                    "calories": 480,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 29,
+                    "name": "White rice",
+                    "description": "",
+                    "price": 10,
+                    "calories": 0,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 30,
+                    "name": "Biryani rice",
+                    "description": "",
+                    "price": 14,
+                    "calories": 0,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 31,
+                    "name": "Vermicelli rice",
+                    "description": "",
+                    "price": 14,
+                    "calories": 0,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                }
+            ]
+        },
+        "Italian pasta": {
+            "image": "/public/ImageFood/passta.jpg",
+            "item": [
+                {
+                    "id": 32,
+                    "name": "Fettuccine Alfredo with chicken",
+                    "description": "With cream, wild mushrooms, parmesan cheese and chicken",
+                    "price": 45,
+                    "calories": 930,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 33,
+                    "name": "Penne Arabiata with chicken",
+                    "description": "With spicy tomato sauce, basil, herbs, parmesan cheese and chicken",
+                    "price": 42,
+                    "calories": 800,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 34,
+                    "name": "Spaghetti Bolognese",
+                    "description": "With minced baladi meat cooked with tomato sauce",
+                    "price": 43,
+                    "calories": 760,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 35,
+                    "name": "Plain fettuccine alfredo",
+                    "description": "With cream, wild mushrooms and parmesan cheese",
+                    "price": 29,
+                    "calories": 630,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 36,
+                    "name": "Plain Arbiatta",
+                    "description": "With spicy tomato sauce, basil, parmesan cheese and herbs",
+                    "price": 38,
+                    "calories": 510,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 37,
+                    "name": "Plain spaghetti",
+                    "description": "With tomato sauce and herbs",
+                    "price": 38,
+                    "calories": 480,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                }
+            ]
+        },
+        "Casseroles and hot dishes": {
+            "image": "/public/ImageFood/hot.jpg",
+            "item": [
+                {
+                    "id": 38,
+                    "name": "Okra tagine with banana meat",
+                    "description": "On the Egyptian way with basmati rice with vermicelli",
+                    "price": 49,
+                    "calories": 0,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 39,
+                    "name": "Grape leaves tagine with trotters",
+                    "description": "Grape leaves stuffed with baladi meat rice - with baladi calf's trotters",
+                    "price": 45,
+                    "calories": 0,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 40,
+                    "name": "Molokhia with chicken",
+                    "description": "With garlic and coriander sauce served with vermicelli rice",
+                    "price": 43,
+                    "calories": 0,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 41,
+                    "name": "Kibbeh Bi Laban",
+                    "description": "Homemade kibbeh with baladi meat, yogurt sauce, coriander and garlic tash",
+                    "price": 45,
+                    "calories": 1861,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 42,
+                    "name": "Chicken biryani",
+                    "description": "Cooked in the original Indian way, baked in the oven",
+                    "price": 45,
+                    "calories": 1327,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 43,
+                    "name": "Kofta with cheese",
+                    "description": "Minced baladi meat stuffed with a mixture of grilled cheese melted in the oven, served with potatoes and grilled vegetables",
+                    "price": 49,
+                    "calories": 0,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 44,
+                    "name": "Vine leaves with meat ribs",
+                    "description": "Grape leaves stuffed with baladi meat rice - with lamb ribs",
+                    "price": 80,
+                    "calories": 0,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                }
+            ]
+        },
+        "Barbecue": {
+            "image": "/public/ImageFood/BBQ.jpg",
+            "item": [
+                {
+                    "id": 45,
+                    "name": "Sheep's ribs",
+                    "description": "Lamb ribs marinated with our special spices grilled on charcoal",
+                    "price": 75,
+                    "calories": 1375,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 46,
+                    "name": "Awsal of meat",
+                    "description": "Charcoal grilled marinated tenderloin beef served with grilled vegetables",
+                    "price": 52,
+                    "calories": 1692,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 47,
+                    "name": "Meat Kebab",
+                    "description": "Baladi meat marinated with special spices, grilled on charcoal, served with grilled vegetables",
+                    "price": 44,
+                    "calories": 1760,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 48,
+                    "name": "chicken Grill",
+                    "description": "Chicken breasts marinated with our special spices, grilled on charcoal, served with grilled vegetables",
+                    "price": 43,
+                    "calories": 1881,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 49,
+                    "name": "Chicken kebab",
+                    "description": "Chicken marinated with special spices grilled on charcoal, served with grilled vegetables",
+                    "price": 40,
+                    "calories": 2045,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 50,
+                    "name": "Mix grill",
+                    "description": "Shish Tawook - Meat Awsal - Meat Kebab - Chicken Kebab",
+                    "price": 56,
+                    "calories": 2653,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                }
+            ]
+        },
+        "Drinks": {
+            "image": "../ImageFood/drinks.jpg",
+            "item": [
+                {
+                    "id": 51,
+                    "name": "Fresh juices",
+                    "description": "",
+                    "price": 16,
+                    "calories": 198,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 52,
+                    "name": "Soft drinks",
+                    "description": "",
+                    "price": 5,
+                    "calories": 151,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 53,
+                    "name": "Small water",
+                    "description": "",
+                    "price": 2,
+                    "calories": 0,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 54,
+                    "name": "Big water",
+                    "description": "",
+                    "price": 4,
+                    "calories": 0,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                }
+            ]
+        },
+        "Sweets": {
+            "image": "Nahawand packages",
+            "item": [
+                {
+                    "id": 55,
+                    "name": "Creme Brulee",
+                    "description": "With caramel sugar and strawberry",
+                    "price": 17,
+                    "calories": 0,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                },
+                {
+                    "id": 56,
+                    "name": "Pudding",
+                    "description": "With vanilla cream sauce, banana and pistachio",
+                    "price": 15,
+                    "calories": 0,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                }
+            ]
+        },
+        "Nahawand packages": {
+            "image": "/public/ImageFood/packages.jpg",
+            "item": [
+                {
+                    "id": 57,
+                    "name": "Package Alkheer Serves 4 to 5 persons ",
+                    "description": "1/2 chicken of special biryani Baba Ghanoush - 1 Spiced beetroot - 1 Beiruti hummus - 1 Fried kibbeh - 3 Garlic cream - 3 Hot appetizers Hummus  spiced - 1 Mixed grill skewers of meat and chicken  Muhammara - 1 Tabbouleh - 2 Watercress salad - 1 179 including tax",
+                    "price": 179,
+                    "calories": 0,
+                    "image": "../public/ImageFood/Lentil.jpg"
+                }
+            ]
+        }
+    }
+}

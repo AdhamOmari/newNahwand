@@ -1,0 +1,54 @@
+/* style.module.css */
+.footer {
+    border: transparent;
+    border: none !important;
+    background: linear-gradient(172deg, #d16c08 0%, #086a72a1 100%);
+}
+
+.socialBtn {
+    border-radius: 50%;
+}
+
+.footerText {
+    color: white;
+    border: white;
+}
+
+.logo {
+    width: 246px;
+    height: 414px;
+    object-fit: none;
+    border-radius: 20%;
+}
+
+@media (max-width: 768px) {
+
+    /* Responsive styles for screens smaller than 768px */
+    .logo {
+        width: 250px;
+    }
+}
+
+.footerText {
+    font-family: 'Cinzel', serif;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Island Moments', cursive;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    border-radius: 10px;
+
+    /* identical to box height */
+
+
+
+}
+
+.mb-4 {
+    margin: 0 !important;
+}

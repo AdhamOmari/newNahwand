@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.menuContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menuCard {
+    width: 300px;
+    height: auto;
+    margin: 10px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+    margin: 80px auto;
+    border-radius: 10px;
+
+
+}
+
+.menuCard:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.cardContent {
+    padding: 10px;
+}
+
+.cardContent h2 {
+    margin-top: 0;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.description {
+    display: none;
+    font-size: 14px;
+}
+
+.menuCard:hover .description {
+    display: block;
+    margin-top: 10px;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.calories {
+    font-size: 16px;
+    color: #666666;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.menuContainer.rtl {
+    direction: ltr;
+}
+
+.menuContainer.ltr {
+    direction: rtl;
+}
