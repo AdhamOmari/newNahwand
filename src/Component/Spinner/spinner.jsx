@@ -1,4 +1,4 @@
-import { BeatLoader } from 'react-spinners'
+import { CircleLoader } from 'react-spinners'
 
 const Spinner = () => {
   return (
@@ -10,7 +10,7 @@ const Spinner = () => {
         height: '100vh'
       }}
     >
-      <BeatLoader color='#0702f3' loading={true} size={60} />
+      <CircleLoader color='#AB6E15' loading={true} size={60} />
     </div>
   )
 }
