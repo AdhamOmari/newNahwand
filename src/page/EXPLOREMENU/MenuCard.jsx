@@ -86,8 +86,6 @@ const MenuCard = ({ category }) => {
                 marginRight: `${itemMargin}px`
               }}
             >
-              {console.log(cat.name, 'cart')}
-
               <div className={styles.categoryContainer}>
                 <img
                   src={image}
