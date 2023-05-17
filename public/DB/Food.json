@@ -494,7 +494,7 @@
             ]
         },
         "packages": {
-            "image": "../public/packages.jpg",
+            "image": "../../src/assets/packages.jpg",
             "item": [
                 {
                     "id": 57,
