@@ -1,12 +1,3 @@
-@font-face {
-    font-family: 'Irish Grover';
-    src: url('../fonts/irish_grover.woff2') format('woff2'),
-        url('../fonts/irish_grover.woff') format('woff');
-    /* Add additional formats if necessary */
-}
-
-@import url(https://fonts.googleapis.com/earlyaccess/amiri.css);
-
 .container {
     position: relative;
     max-width: 100%;
@@ -14,45 +5,33 @@
     height: 50vh;
     left: 10%;
     top: 30px;
+    z-index: 200000000;
 }
 
 .title {
-
-    font-family: 'Island Moments';
     font-style: normal;
     font-weight: 400;
-    font-size: 43px;
+    font-size: 50px;
     line-height: 46px;
     padding-left: 20px;
-    background: linear-gradient(99.92deg, #f5f4f1 0%, #edeeec 100%);
-    -webkit-background-clip: text;
 
-}
-
-.mask {
-    background-color: rgba(92, 89, 89, 0.3) !important
 }
 
 
 .descriptionArabic {
 
-    font-family: 'Island Moments';
     font-style: normal;
     font-weight: 400;
     font-size: 2.5vw;
     display: flex;
     align-items: center;
     letter-spacing: 0.03em;
-    color: #F5f5f5;
     font-style: normal;
     font-weight: 400;
     font-size: 43px;
     line-height: 46px;
     padding-left: 20px;
-    background: linear-gradient(99.92deg, #fefdfb 0%, #987502 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+
 }
 
 .content {
@@ -62,13 +41,7 @@
     flex-direction: column;
     top: 200px;
     gap: 20px;
-    background-color: rgba(0, 0, 0, 0.2);
     border-radius: 30%;
 
 
-}
-
-
-.arabicText {
-    font-family: 'Amiri';
 }

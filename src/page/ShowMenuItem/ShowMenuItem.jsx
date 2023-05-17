@@ -1,29 +1,43 @@
 import { useLocation } from 'react-router-dom'
+import { useSelector } from 'react-redux'
 import styles from './style.module.css'
+import FoodOrderType from '../FoodOrderType/FoodOrderType'
 
 const ShowMenuItem = () => {
   const location = useLocation()
   const items = location.state
-  console.log(items)
+  const isArabic = useSelector(state => state.isArabic)
+
+  const menuContainerClass = isArabic
+    ? styles.containerRTL
+    : styles.containerLTR
 
   if (!items || items.length === 0) {
     return <div>No items found.</div>
   }
 
   return (
-    <div className={styles.menuContainer}>
-      {items.item?.map(item => (
-        <div key={item.id} className={styles.menuCard}>
-          <div className={styles.cardContent}>
-            <h2>{item.name}</h2>
-            <p className={styles.description}>{item.description}</p>
-            <img src={item.image} alt={item.name} className={styles.image} />
-            <p className={styles.price}>Price: ${item.price}</p>
-            <p className={styles.calories}>Calories: {item.calories}</p>
+    <>
+      <FoodOrderType />
+      <div className={`${styles.menuContainer} ${menuContainerClass}`}>
+        {items?.map(item => (
+          <div key={item.id} className={styles.menuCard}>
+            <div className={styles.cardContent}>
+              <h2 className={styles.menuTitle}>{item.name}</h2>
+              <p className={styles.description}>{item.description}</p>
+              <img src={item.image} alt={item.name} className={styles.image} />
+              <p className={styles.price}>
+                {isArabic === 'arbic' ? 'السعر: ريال' : 'Price: $'} {item.price}
+              </p>
+              <p className={styles.calories}>
+                {isArabic === 'arbic' ? 'سعرة حرارية: ' : 'Calories: '}{' '}
+                {item.calories}
+              </p>
+            </div>
           </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
+    </>
   )
 }
 

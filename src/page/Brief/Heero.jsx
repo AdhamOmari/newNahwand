@@ -6,10 +6,6 @@ import logo from '../../../public/KHA02275.jpg'
 export default function HeroImage () {
   const language = useSelector(state => state.isArabic)
 
-  const getFontFamily = () => {
-    return language === 'arabic' ? 'Amiri' : 'Island Moments'
-  }
-
   return (
     <>
       <Helmet>
@@ -37,14 +33,12 @@ export default function HeroImage () {
                 <h1
                   className={`${styles.title}`}
                   dir={language === 'arabic' ? 'rtl' : 'ltr'}
-                  style={{ fontFamily: getFontFamily() }}
                 >
                   {language === 'arabic' ? 'نهاوند' : 'Nahawand'}
                 </h1>
                 <p
                   className={`${styles.descriptionArabic}`}
                   dir={language === 'arabic' ? 'rtl' : 'ltr'}
-                  style={{ fontFamily: getFontFamily() }}
                 >
                   {language === 'arabic'
                     ? 'بيت المشاوي نعدكم بالسعادة'

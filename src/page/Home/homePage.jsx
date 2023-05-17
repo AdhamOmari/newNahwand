@@ -4,18 +4,22 @@ import styles from './style.module.css'
 import Brief from '../Brief/Heero'
 import Footer from '../../Component/Footer/footer'
 import MenusBrowse from '../EXPLOREMENU/MenusBrowse'
-
-const Menus = lazy(() => import('../Menu/Menus'))
+import Offers from '../ExclusiveOffers/offers'
+import FoodOrderType from '../FoodOrderType/FoodOrderType'
+import RatingButton from '../Opinion/Rating'
+import ChefSelection from '../ChefSelection/ChefSelection'
 
 const HomePage = () => {
   return (
     <div className={styles.home}>
       <Brief />
       <Suspense fallback={<div>Loading...</div>}>
+        <FoodOrderType />
+        <Offers />
         <MenusBrowse />
-        {/* <Offers /> */}
+        <ChefSelection />
         <StoreLocation />
-        {/* <Menus className={styles.menusWrap} /> */}
+        <RatingButton />
         <Footer />
       </Suspense>
     </div>

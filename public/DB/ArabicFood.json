@@ -493,8 +493,8 @@
                 }
             ]
         },
-        "Nahawand packages": {
-            "image": "حزم نهواند",
+        "packages": {
+            "image": "/public/ImageFood/packages.jpg",
             "item": [
                 {
                     "id": 57,

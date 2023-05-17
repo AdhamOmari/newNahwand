@@ -1,20 +1,23 @@
 import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
-import MenuCard from './MenuCard'
 import data from '../../../public/DB/Food.json'
 import dataArabic from '../../../public/DB/ArabicFood.json'
 import styles from './style.module.css'
+import MenuCard from '../EXPLOREMENU/MenuCard'
 
-const MenusBrowse = () => {
+const ChefSelection = () => {
   const isArabic = useSelector(state => state.isArabic)
   const menuData = isArabic === 'arabic' ? dataArabic.menu : data.menu
 
+  console.log('menuData:', menuData)
+
+  const nahawandPackages = menuData?.Coldmezzesandappetizers || []
+
+  console.log('filteredMenuData:', nahawandPackages)
+
   const browseMenuText =
-    isArabic === 'arabic' ? 'تصفح قائمتنا' : 'BROWSE OUR MENU'
-  const hungryText =
-    isArabic === 'arabic'
-      ? 'هل أنت جائع؟ اطلب وتناول الطعام'
-      : 'Hungry? Order & Eat'
+    isArabic === 'arabic' ? 'اختيار الشيف' : "Chef's Selection"
+
   const seeMoreText = isArabic === 'arabic' ? 'شاهد المزيد' : 'See More'
   const linkContainerStyle =
     isArabic === 'arabic'
@@ -25,9 +28,8 @@ const MenusBrowse = () => {
     <>
       <div className={styles.menuSection}>
         <h4>{browseMenuText}</h4>
-        <p>{hungryText}</p>
       </div>
-      <MenuCard category={menuData} />
+      <MenuCard category={nahawandPackages.item} />
       <Link to='/all-menus' className={linkContainerStyle}>
         {seeMoreText}
       </Link>
@@ -35,4 +37,4 @@ const MenusBrowse = () => {
   )
 }
 
-export default MenusBrowse
+export default ChefSelection

@@ -11,6 +11,8 @@ const MenuCard = ({ category }) => {
   const move = (cat, item) => {
     navigate(`/menu/${cat}`, { state: item })
   }
+
+  console.log(category)
   const [sliderSettings] = useState({
     infinite: true,
     slidesToShow: 3,
@@ -25,7 +27,24 @@ const MenuCard = ({ category }) => {
       {
         breakpoint: 640,
         settings: {
-          slidesToShow: 2
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          prevArrow: (
+            <button
+              type='button'
+              className={`${styles.arrowButton} ${styles.prevButton}`}
+            >
+              Prev
+            </button>
+          ),
+          nextArrow: (
+            <button
+              type='button'
+              className={`${styles.arrowButton} ${styles.nextButton}`}
+            >
+              Next
+            </button>
+          )
         }
       },
       {
@@ -38,20 +57,7 @@ const MenuCard = ({ category }) => {
     prevArrow: (
       <button
         type='button'
-        style={{
-          position: 'absolute',
-          left: '0',
-          top: '50%',
-          transform: 'translateY(-50%)',
-          zIndex: '1',
-          background: 'rgba(0, 0, 0, 0.6)',
-          color: '#fff',
-          padding: '8px',
-          borderRadius: '50%',
-          border: 'none',
-          outline: 'none',
-          cursor: 'pointer'
-        }}
+        className={`${styles.arrowButton} ${styles.prevButton}`}
       >
         Prev
       </button>
@@ -59,22 +65,9 @@ const MenuCard = ({ category }) => {
     nextArrow: (
       <button
         type='button'
-        style={{
-          position: 'absolute',
-          right: '0',
-          top: '50%',
-          transform: 'translateY(50%)',
-          zIndex: '1',
-          background: '#000',
-          color: '#000',
-          padding: '8px',
-          borderRadius: '50%',
-          border: 'none',
-          outline: 'none',
-          cursor: 'pointer'
-        }}
+        className={`${styles.arrowButton} ${styles.nextButton}`}
       >
-        Next{' '}
+        Next
       </button>
     )
   })
@@ -93,6 +86,8 @@ const MenuCard = ({ category }) => {
                 marginRight: `${itemMargin}px`
               }}
             >
+              {console.log(cat.name, 'cart')}
+
               <div className={styles.categoryContainer}>
                 <img
                   src={image}
@@ -104,7 +99,7 @@ const MenuCard = ({ category }) => {
                   onClick={() => move(cat, item)}
                   className={styles.categoryLink}
                 >
-                  <h4>{cat}</h4>
+                  <h4 className={styles.itemName}>{cat}</h4>
                 </button>
               </div>
             </div>

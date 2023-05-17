@@ -1,29 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Dosis:wght@200&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Island+Moments&family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Dosis:wght@200&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800&family=Island+Moments&family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&display=swap');
-
-
-@import url(https://fonts.googleapis.com/earlyaccess/amiri.css);
-
 .brand {
-    font-family: 'Island Moments';
     font-style: normal;
     font-weight: 400;
     font-size: 43px;
     line-height: 46px;
     padding-left: 20px;
-    background: linear-gradient(99.92deg, #896704 0%, #309e01 100%);
+    background: linear-gradient(99.92deg, #AB6E15 0%, #314F4F 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
 }
 
-.arabic {
-    font-family: 'Amiri';
-    background-color: red !important;
 
-}
 
 .navLink {
     font-family: 'Inter';
@@ -34,21 +22,21 @@
     display: flex;
     align-items: center;
     text-align: center;
-    color: #568205;
+    color: #AB6E15;
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
 .searchIcon {
-    color: #896704;
+    color: #AB6E15;
     border-color: none;
     transition: background-color 0.3s ease;
     width: 40px;
 }
 
 .searchIcon:hover {
-    color: #014b01 !important;
+    color: #314F4F !important;
     transform: scale(1.5);
     border-radius: 10%;
 }
@@ -92,7 +80,7 @@
 }
 
 .languageIcon {
-    color: #014b01;
+    color: #314F4F;
     /* Adjust the spacing as needed */
 }
 
@@ -113,7 +101,8 @@
 
 [dir='rtl'] .form {
     left: unset;
-    right: 30%;
+    right: 44%;
+    width: 30px;
 }
 
 @media (max-width: 1440px) {

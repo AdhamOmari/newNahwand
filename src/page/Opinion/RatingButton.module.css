@@ -1,0 +1,89 @@
+.ratingButtonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    background: linear-gradient(99.92deg, #AB6E15 0%, #314F4F 100%);
+    flex-direction: column;
+    margin-bottom: 200px;
+    padding: 99px;
+}
+
+.ratingButtonOverlay {
+    position: absolute;
+    top: 78%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.restaurantName {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.ratingButton {
+    background-color: #B78749;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.ratingButton:hover {
+    background-color: #B78749;
+}
+
+.restaurantLogo {
+    width: 250px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    image-rendering: crisp-edges;
+}
+
+.highestRatedSection {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.highestRatedSection h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .restaurantName {
+        font-size: 20px;
+    }
+
+    .ratingButton {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .highestRatedSection {
+        padding: 10px;
+    }
+
+    .highestRatedSection h2 {
+        font-size: 18px;
+    }
+
+    .ratingButtonOverlay {
+        flex-direction: column;
+        justify-content: center;
+    }
+}

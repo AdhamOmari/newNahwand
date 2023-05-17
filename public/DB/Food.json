@@ -98,7 +98,7 @@
                 }
             ]
         },
-        "Cold mezzes and appetizers": {
+        "Coldmezzesandappetizers": {
             "image": "/public/ImageFood/Coldmezzesandappetizers.jpg",
             "item": [
                 {
@@ -493,7 +493,7 @@
                 }
             ]
         },
-        "Nahawand packages": {
+        "packages": {
             "image": "/public/ImageFood/packages.jpg",
             "item": [
                 {
