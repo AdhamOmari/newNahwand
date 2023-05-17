@@ -91,6 +91,7 @@ const MenuCard = ({ category }) => {
                   src={image}
                   alt='Image 1'
                   className={styles.categoryImage}
+                  loading='lazy' // Add this attribute for lazy-loading
                 />
 
                 <button
