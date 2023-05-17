@@ -3,9 +3,6 @@ import dataArabic from '../../../public/DB/ArabicFood.json'
 import { useSelector } from 'react-redux'
 import styles from './style.module.css'
 
-import alkeer from '../../../public/ImageFood/alkeer.jpg'
-import alkeer2 from '../../../public/ImageFood/alkeer2.jpg'
-
 const Offers = () => {
   const language = useSelector(state => state.isArabic)
   const offersData = language === 'arabic' ? dataArabic.menu : data.menu
@@ -21,6 +18,7 @@ const Offers = () => {
             src={nahawandPackages.image}
             alt={nahawandPackages.name}
             className={styles.itemImage}
+            loading='lazy' // Add this attribute for lazy-loading
           />
           <div className={styles.itemText}>
             <h4 className={styles.itemName}>

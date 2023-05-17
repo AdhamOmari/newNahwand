@@ -1,6 +1,6 @@
 {
     "menu": {
-        "soup": {
+        "الحساء": {
             "image": "../public/ImageFood/Lentil.jpg",
             "item": [
                 {
@@ -29,8 +29,8 @@
                 }
             ]
         },
-        "salad": {
-            "image": "حزم نهواند",
+        "السلطات": {
+            "image": "../ImageFood/salad.jpg",
             "item": [
                 {
                     "id": 4,
@@ -98,8 +98,8 @@
                 }
             ]
         },
-        "مقبلات باردة ومزة": {
-            "image": "حزم نهواند",
+        "Coldmezzesandappetizers": {
+            "image": "../public/ImageFood/Coldmezzesandappetizers.jpg",
             "item": [
                 {
                     "id": 12,
@@ -167,8 +167,8 @@
                 }
             ]
         },
-        "Hot appetizers": {
-            "image": "حزم نهواند",
+        "فواتح شهية ساخنة": {
+            "image": "../ImageFood/Fried.jpg",
             "item": [
                 {
                     "id": 20,
@@ -268,8 +268,8 @@
                 }
             ]
         },
-        "Italian pasta": {
-            "image": "حزم نهواند",
+        "باستا ايطالية": {
+            "image": "../public/ImageFood/passta.jpg",
             "item": [
                 {
                     "id": 32,
@@ -321,8 +321,8 @@
                 }
             ]
         },
-        "Casseroles and hot dishes": {
-            "image": "حزم نهواند",
+        "الطواجن واألطباق الساخنة": {
+            "image": "../public/ImageFood/hot.jpg",
             "item": [
                 {
                     "id": 38,
@@ -382,8 +382,8 @@
                 }
             ]
         },
-        "Barbecue": {
-            "image": "حزم نهواند",
+        "المشويات": {
+            "image": "../public/ImageFood/BBQ.jpg",
             "item": [
                 {
                     "id": 45,
@@ -435,8 +435,8 @@
                 }
             ]
         },
-        "Drinks": {
-            "image": "حزم نهواند",
+        "العصائر": {
+            "image": "../ImageFood/drinks.jpg",
             "item": [
                 {
                     "id": 51,
@@ -472,7 +472,7 @@
                 }
             ]
         },
-        "Sweets": {
+        "الحلويات": {
             "image": "حزم نهواند",
             "item": [
                 {
@@ -494,7 +494,7 @@
             ]
         },
         "packages": {
-            "image": "/public/ImageFood/packages.jpg",
+            "image": "../../src/assets/packages.webp",
             "item": [
                 {
                     "id": 57,

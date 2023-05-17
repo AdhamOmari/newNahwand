@@ -7,7 +7,7 @@ const StoreLocation = () => {
   return (
     <div className={`${styles.card} ${styles['store-location']}`} id='Location'>
       <h2 className={styles['map-title']}>
-        {language ? ' موقعنا على الخرائط' : 'Store Location'}
+        {language === 'arabic' ? ' موقعنا على الخرائط' : 'Store Location'}
       </h2>
       <div className={styles['map-container']}>
         <iframe

@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux'
 import data from '../../../public/DB/Food.json'
 import dataArabic from '../../../public/DB/ArabicFood.json'
 import styles from './style.module.css'
-import MenuCard from '../EXPLOREMENU/MenuCard'
+import OfferSlider from '../OfferSlider/OfferSlider'
 
 const ChefSelection = () => {
   const isArabic = useSelector(state => state.isArabic)
@@ -29,8 +29,8 @@ const ChefSelection = () => {
       <div className={styles.menuSection}>
         <h4>{browseMenuText}</h4>
       </div>
-      <MenuCard category={nahawandPackages.item} />
-      <Link to='/all-menus' className={linkContainerStyle}>
+      <OfferSlider category={nahawandPackages.item} />
+      <Link to='/menu' className={linkContainerStyle}>
         {seeMoreText}
       </Link>
     </>

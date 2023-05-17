@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import MenuCard from './MenuCard'
 import data from '../../../public/DB/Food.json'
@@ -8,6 +8,7 @@ import styles from './style.module.css'
 const MenusBrowse = () => {
   const isArabic = useSelector(state => state.isArabic)
   const menuData = isArabic === 'arabic' ? dataArabic.menu : data.menu
+  const navigate = useNavigate()
 
   const browseMenuText =
     isArabic === 'arabic' ? 'تصفح قائمتنا' : 'BROWSE OUR MENU'
@@ -21,6 +22,10 @@ const MenusBrowse = () => {
       ? styles.seeMoreLink
       : `${styles.seeMoreLink} ${styles.alignRight}`
 
+  const move = () => {
+    navigate(`/menu/`)
+  }
+
   return (
     <>
       <div className={styles.menuSection}>
@@ -28,9 +33,9 @@ const MenusBrowse = () => {
         <p>{hungryText}</p>
       </div>
       <MenuCard category={menuData} />
-      <Link to='/all-menus' className={linkContainerStyle}>
+      <button className={linkContainerStyle} onClick={() => move(menuData)}>
         {seeMoreText}
-      </Link>
+      </button>
     </>
   )
 }

@@ -8,6 +8,7 @@ import NavbarApp from './Component/Navbar/NavbarApp'
 import Heero from './page/Brief/Heero'
 import MenusBrowse from './page/EXPLOREMENU/MenusBrowse'
 import ShowMenuItem from './page/ShowMenuItem/ShowMenuItem'
+import AllMenus from './page/Menu/Menus'
 
 const HomePage = lazy(() => import('./page/Home/homePage'))
 const StoreLocation = lazy(() => import('./page/Location/StoreLocation'))
@@ -23,7 +24,7 @@ const App = () => {
             <Route path='/' element={<HomePage />} />
             <Route path='/Heero' element={<Heero />} />
             <Route path='/Location' element={<StoreLocation />} />
-            <Route path='/menu' element={<MenusBrowse />} />
+            <Route path='/menu' element={<AllMenus />} />
             <Route path='/menu/:category' element={<ShowMenuItem />} />
             <Route path='*' element={<NotFound />} />
           </Routes>

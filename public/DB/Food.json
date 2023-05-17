@@ -1,7 +1,7 @@
 {
     "menu": {
         "soup": {
-            "image": "../public/ImageFood/Mushroom.jpg",
+            "image": "../public/ImageFood/Lentil.jpg",
             "item": [
                 {
                     "id": 1,
@@ -30,7 +30,7 @@
             ]
         },
         "salad": {
-            "image": "../public/ImageFood/saled.jpg",
+            "image": "../ImageFood/salad.jpg",
             "item": [
                 {
                     "id": 4,
@@ -168,7 +168,7 @@
             ]
         },
         "Hot appetizers": {
-            "image": "Nahawand packages",
+            "image": "../ImageFood/Fried.jpg",
             "item": [
                 {
                     "id": 20,
