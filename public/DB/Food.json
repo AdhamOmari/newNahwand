@@ -30,7 +30,7 @@
             ]
         },
         "salad": {
-            "image": "/public/ImageFood/saled.jpg",
+            "image": "../public/ImageFood/saled.jpg",
             "item": [
                 {
                     "id": 4,
@@ -99,7 +99,7 @@
             ]
         },
         "Coldmezzesandappetizers": {
-            "image": "/public/ImageFood/Coldmezzesandappetizers.jpg",
+            "image": "../public/ImageFood/Coldmezzesandappetizers.jpg",
             "item": [
                 {
                     "id": 12,
@@ -269,7 +269,7 @@
             ]
         },
         "Italian pasta": {
-            "image": "/public/ImageFood/passta.jpg",
+            "image": "../public/ImageFood/passta.jpg",
             "item": [
                 {
                     "id": 32,
@@ -322,7 +322,7 @@
             ]
         },
         "Casseroles and hot dishes": {
-            "image": "/public/ImageFood/hot.jpg",
+            "image": "../public/ImageFood/hot.jpg",
             "item": [
                 {
                     "id": 38,
@@ -383,7 +383,7 @@
             ]
         },
         "Barbecue": {
-            "image": "/public/ImageFood/BBQ.jpg",
+            "image": "../public/ImageFood/BBQ.jpg",
             "item": [
                 {
                     "id": 45,
@@ -494,7 +494,7 @@
             ]
         },
         "packages": {
-            "image": "/public/ImageFood/packages.jpg",
+            "image": "../public/ImageFood/packages.jpg",
             "item": [
                 {
                     "id": 57,
