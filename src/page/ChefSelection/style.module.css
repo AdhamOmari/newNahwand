@@ -151,6 +151,11 @@
     top: 20px;
 }
 
+.seeMoreLink:hover {
+    background-color: #314f4f;
+    color: #ffff;
+}
+
 @media (max-width: 768px) {
     .seeMoreLink {
         left: 10px;

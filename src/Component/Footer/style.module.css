@@ -1,54 +1,39 @@
-/* style.module.css */
-.footer {
-    border: transparent;
-    border: none !important;
-    background: linear-gradient(99.92deg, #AB6E15 0%, #314F4F 100%);
+.footer-info {
+    text-align: center;
+    background-color: #728384;
+    padding: 20px;
 }
 
-.socialBtn {
-    border-radius: 50%;
+.footer-info p {
+    font-size: 14px;
+    color: #FFFFFF;
+    margin-bottom: 0;
 }
 
-.footerText {
-    color: white;
-    border: white;
+
+.social-media-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
-.logo {
-    width: 246px;
-    height: 414px;
-    object-fit: none;
-    border-radius: 20%;
+.social-media-icon {
+    font-size: 24px;
+    color: #B78749;
+    margin: 0 10px;
+    transition: color 0.3s;
 }
 
-@media (max-width: 768px) {
-
-    /* Responsive styles for screens smaller than 768px */
-    .logo {
-        width: 250px;
-    }
+.social-media-icon:hover {
+    color: #314F4F;
 }
 
-.footerText {
-    font-family: 'Cinzel', serif;
-    font-family: 'Dosis', sans-serif;
-    font-family: 'IBM Plex Sans Arabic', sans-serif;
-    font-family: 'Inter', sans-serif;
-    font-family: 'Island Moments', cursive;
-    font-family: 'Noto Kufi Arabic', sans-serif;
-    font-family: 'Oswald', sans-serif;
-    font-family: 'Raleway', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    border-radius: 10px;
-
-    /* identical to box height */
-
-
-
+.footer-info {
+    text-align: center;
 }
 
-.mb-4 {
-    margin: 0 !important;
+.footer-info p {
+    font-size: 14px;
+    color: #FFFFFF;
+    margin-bottom: 0;
 }

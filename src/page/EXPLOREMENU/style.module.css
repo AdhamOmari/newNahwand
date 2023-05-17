@@ -149,6 +149,12 @@
     position: relative;
     left: 20px;
     top: 20px;
+    border: transparent;
+}
+
+.seeMoreLink:hover {
+    background-color: #314f4f;
+    color: #ffff;
 }
 
 @media (max-width: 768px) {

@@ -17,12 +17,12 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
-        <Suspense fallback={<Spinner />}>
-          <NavbarApp />
+        <NavbarApp />
 
+        <Suspense fallback={<Spinner />}>
           <Routes>
             <Route path='/' element={<HomePage />} />
-            <Route path='/Heero' element={<Heero />} />
+            <Route path='/Herero' element={<Heero />} />
             <Route path='/Location' element={<StoreLocation />} />
             <Route path='/menu' element={<AllMenus />} />
             <Route path='/menu/:category' element={<ShowMenuItem />} />

@@ -15,12 +15,14 @@ const FoodOrderType = () => {
     en: {
       dineIn: 'Dine-in',
       delivery: 'Delivery',
-      takeout: 'Takeout'
+      takeout: 'Pickup from the car',
+      pickup: 'Pickup from the restaurant'
     },
     arabic: {
       dineIn: 'التناول في المطعم',
       delivery: 'توصيل',
-      takeout: 'الطلب للخارج'
+      takeout: 'الاستلام من السيارة',
+      pickup: 'التناول في المطعم'
     }
   }
 
@@ -37,63 +39,34 @@ const FoodOrderType = () => {
   return (
     <div className={containerClass}>
       <h3>{language === 'arabic' ? 'نوع الطلب' : 'Food Order Type:'}</h3>
-      <div className={styles.radioGroupClass}>
-        <label>
-          <input
-            type='radio'
-            value='dine-in'
-            checked={orderType === 'dine-in'}
-            onChange={handleOrderTypeChange}
-          />
-          <span
-            className={styles.customRadio}
-            onClick={() => setOrderType('dine-in')}
-          ></span>
-          <span className={styles.radioLabel}>
-            {selectedOrderTypeText.dineIn}
-          </span>
-        </label>
-        <label>
-          <input
-            type='radio'
-            value='delivery'
-            checked={orderType === 'delivery'}
-            onChange={handleOrderTypeChange}
-          />
-          <span
-            className={styles.customRadio}
-            onClick={() => setOrderType('delivery')}
-          ></span>
-          <span className={styles.radioLabel}>
-            {selectedOrderTypeText.delivery}
-          </span>
-        </label>
-        <label>
-          <input
-            type='radio'
-            value='takeout'
-            checked={orderType === 'takeout'}
-            onChange={handleOrderTypeChange}
-          />
-          <span
-            className={styles.customRadio}
-            onClick={() => setOrderType('takeout')}
-          ></span>
-          <span className={styles.radioLabel}>
-            {selectedOrderTypeText.takeout}
-          </span>
-        </label>
+      <div className={styles.dropdownContainer}>
+        <select
+          value={orderType}
+          onChange={handleOrderTypeChange}
+          className={styles.dropdownSelect}
+        >
+          <option value=''>
+            {language === 'arabic' ? 'اختر نوع الطلب' : 'Select Order Type'}
+          </option>
+          {Object.keys(selectedOrderTypeText).map(key => (
+            <option key={key} value={key}>
+              {selectedOrderTypeText[key]}
+            </option>
+          ))}
+        </select>
       </div>
       {orderType && (
         <>
-          {orderType === 'dine-in' && (
+          {(orderType === 'dineIn' ||
+            orderType === 'takeout' ||
+            orderType === 'pickup') && (
             <button
               className={`${styles.button} ${
                 language === 'arabic' ? styles.ar : ''
               }`}
               onClick={openWhatsApp}
             >
-              {language === 'ar'
+              {language === 'arabic'
                 ? 'ابدأ الطلب عبر الواتساب'
                 : 'Start Order via WhatsApp'}
             </button>
@@ -104,7 +77,6 @@ const FoodOrderType = () => {
                 language === 'arabic' ? styles.ar : ''
               }`}
             >
-              <p>{language === 'arabic' ? 'الموقع' : 'Location:'}</p>
               <p
                 className={`${styles.apps} ${
                   language === 'arabic' ? styles.ar : ''
@@ -114,6 +86,11 @@ const FoodOrderType = () => {
                   ? 'يمكنك العثور علينا على تلك التطبيقات'
                   : 'You can find us on these apps'}
               </p>
+              <ul>
+                <li>HungerStation</li>
+                <li>Mrsool</li>
+                <li>jahez</li>
+              </ul>
             </div>
           )}
         </>

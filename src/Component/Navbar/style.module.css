@@ -101,8 +101,8 @@
 
 [dir='rtl'] .form {
     left: unset;
-    right: 44%;
-    width: 30px;
+    right: 39%;
+
 }
 
 @media (max-width: 1440px) {
@@ -123,9 +123,14 @@
     .form {
         left: auto;
         margin-left: auto;
-        margin-right: 20px;
+        margin-right: 195px;
         flex-direction: column;
         /* Adjust the margin as needed */
+    }
+
+    [dir='rtl'] .form {
+
+        right: -46%;
     }
 }
 
