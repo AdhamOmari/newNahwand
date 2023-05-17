@@ -494,7 +494,7 @@
             ]
         },
         "packages": {
-            "image": "../../src/assets/packages.jpg",
+            "image": "../../src/assets/packages.webp",
             "item": [
                 {
                     "id": 57,
