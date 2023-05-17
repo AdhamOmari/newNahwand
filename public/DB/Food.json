@@ -1,7 +1,7 @@
 {
     "menu": {
         "soup": {
-            "image": "../public/ImageFood/Lentil.jpg",
+            "image": "/public/ImageFood/Lentil.jpg",
             "item": [
                 {
                     "id": 1,
@@ -30,7 +30,7 @@
             ]
         },
         "salad": {
-            "image": "../ImageFood/salad.jpg",
+            "image": "/ImageFood/salad.jpg",
             "item": [
                 {
                     "id": 4,
@@ -99,7 +99,7 @@
             ]
         },
         "Coldmezzesandappetizers": {
-            "image": "../public/ImageFood/Coldmezzesandappetizers.jpg",
+            "image": "/public/ImageFood/Coldmezzesandappetizers.jpg",
             "item": [
                 {
                     "id": 12,
@@ -168,7 +168,7 @@
             ]
         },
         "Hot appetizers": {
-            "image": "../ImageFood/Fried.jpg",
+            "image": "/ImageFood/Fried.jpg",
             "item": [
                 {
                     "id": 20,
@@ -269,7 +269,7 @@
             ]
         },
         "Italian pasta": {
-            "image": "../public/ImageFood/passta.jpg",
+            "image": "/public/ImageFood/passta.jpg",
             "item": [
                 {
                     "id": 32,
@@ -322,7 +322,7 @@
             ]
         },
         "Casseroles and hot dishes": {
-            "image": "../public/ImageFood/hot.jpg",
+            "image": "/public/ImageFood/hot.jpg",
             "item": [
                 {
                     "id": 38,
@@ -383,7 +383,7 @@
             ]
         },
         "Barbecue": {
-            "image": "../public/ImageFood/BBQ.jpg",
+            "image": "/public/ImageFood/BBQ.jpg",
             "item": [
                 {
                     "id": 45,
@@ -436,7 +436,7 @@
             ]
         },
         "Drinks": {
-            "image": "../ImageFood/drinks.jpg",
+            "image": "/ImageFood/drinks.jpg",
             "item": [
                 {
                     "id": 51,
@@ -494,7 +494,7 @@
             ]
         },
         "packages": {
-            "image": "../../src/assets/packages.webp",
+            "image": "/assets/packages.webp",
             "item": [
                 {
                     "id": 57,

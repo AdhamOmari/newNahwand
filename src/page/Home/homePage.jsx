@@ -1,19 +1,19 @@
 import { lazy, Suspense } from 'react'
+import StoreLocation from '../Location/StoreLocation'
 import styles from './style.module.css'
+import Brief from '../Brief/Heero'
+import Footer from '../../Component/Footer/footer'
+import MenusBrowse from '../EXPLOREMENU/MenusBrowse'
+import Offers from '../ExclusiveOffers/offers'
+import FoodOrderType from '../FoodOrderType/FoodOrderType'
+import RatingButton from '../Opinion/Rating'
+import ChefSelection from '../ChefSelection/ChefSelection'
 import Spinner from '../../Component/Spinner/spinner'
-
-const Brief = lazy(() => import('../Brief/Heero'))
-const StoreLocation = lazy(() => import('../Location/StoreLocation'))
-const MenusBrowse = lazy(() => import('../EXPLOREMENU/MenusBrowse'))
-const Offers = lazy(() => import('../ExclusiveOffers/offers'))
-const FoodOrderType = lazy(() => import('../FoodOrderType/FoodOrderType'))
-const RatingButton = lazy(() => import('../Opinion/Rating'))
-const ChefSelection = lazy(() => import('../ChefSelection/ChefSelection'))
-const Footer = lazy(() => import('../../Component/Footer/footer'))
 
 const HomePage = () => {
   return (
     <div className={styles.home}>
+      <Brief />
       <Suspense
         fallback={
           <div>
@@ -21,7 +21,6 @@ const HomePage = () => {
           </div>
         }
       >
-        <Brief />
         <FoodOrderType />
         <Offers />
         <MenusBrowse />
