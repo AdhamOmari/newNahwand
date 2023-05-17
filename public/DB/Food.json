@@ -494,7 +494,7 @@
             ]
         },
         "packages": {
-            "image": "../public/ImageFood/packages.jpg",
+            "image": "../public/packages.jpg",
             "item": [
                 {
                     "id": 57,
