@@ -8,8 +8,8 @@ import styles from './style.module.css'
 
 const OfferSlider = ({ category }) => {
   const navigate = useNavigate()
-  const move = (cat, item) => {
-    navigate(`/menu/${cat}`, { state: item })
+  const move = () => {
+    navigate('/menu')
   }
 
   console.log(category)
@@ -94,10 +94,7 @@ const OfferSlider = ({ category }) => {
                   loading='lazy' // Add this attribute for lazy-loading
                 />
 
-                <button
-                  onClick={() => move(cat, item)}
-                  className={styles.categoryLink}
-                >
+                <button onClick={() => move()} className={styles.categoryLink}>
                   <h4 className={styles.itemName}>{cat.name}</h4>
                 </button>
               </div>

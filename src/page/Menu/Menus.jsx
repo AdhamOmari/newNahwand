@@ -4,16 +4,21 @@ import dataArabic from '../../../public/DB/ArabicFood.json'
 import styles from './style.module.css'
 import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
+import Spinner from '../../Component/Spinner/spinner'
 
 const AllMenus = () => {
   const navigate = useNavigate()
 
   const isArabic = useSelector(state => state.isArabic)
   const menuData = isArabic === 'arabic' ? dataArabic.menu : data.menu
-  console.log(menuData)
+
   useEffect(() => {}, [isArabic])
   const move = (cat, item) => {
     navigate(`/menu/${cat}`, { state: item })
+  }
+
+  if (!data) {
+    return <Spinner />
   }
   return (
     <div className={styles.menuContainer}>

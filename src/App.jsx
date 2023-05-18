@@ -6,7 +6,7 @@ import Spinner from './Component/Spinner/spinner'
 import NotFound from './Component/Notfound'
 import NavbarApp from './Component/Navbar/NavbarApp'
 import Heero from './page/Brief/Heero'
-import MenusBrowse from './page/EXPLOREMENU/MenusBrowse'
+// import MenusBrowse from './page/EXPLOREMENU/MenusBrowse'
 import ShowMenuItem from './page/ShowMenuItem/ShowMenuItem'
 import AllMenus from './page/Menu/Menus'
 

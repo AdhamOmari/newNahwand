@@ -1,4 +1,4 @@
-import { lazy, Suspense } from 'react'
+import { Suspense } from 'react'
 import StoreLocation from '../Location/StoreLocation'
 import styles from './style.module.css'
 import Brief from '../Brief/Heero'
