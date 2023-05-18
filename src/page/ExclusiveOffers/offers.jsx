@@ -2,6 +2,7 @@ import data from '../../../public/DB/Food.json'
 import dataArabic from '../../../public/DB/ArabicFood.json'
 import { useSelector } from 'react-redux'
 import styles from './style.module.css'
+import Spinner from '../../Component/Spinner/spinner'
 
 const Offers = () => {
   const language = useSelector(state => state.isArabic)
@@ -9,7 +10,9 @@ const Offers = () => {
   const nahawandPackages = offersData?.packages || []
 
   const textAlignmentClass = language === 'arabic' ? styles.rtl : styles.ltr
-
+  if (!offersData) {
+    return <Spinner />
+  }
   return (
     <div>
       <div className={`${styles.itemContainer} ${textAlignmentClass}`}>

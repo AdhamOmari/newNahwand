@@ -17,7 +17,7 @@ const AllMenus = () => {
     navigate(`/menu/${cat}`, { state: item })
   }
 
-  if (!data) {
+  if (!menuData) {
     return <Spinner />
   }
   return (
