@@ -20,6 +20,7 @@
     max-width: 700px;
     height: auto;
     transition: opacity 0.3s;
+    border-radius: 10px;
     /* Add transition for smooth effect */
 }
 
