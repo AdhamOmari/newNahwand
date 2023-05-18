@@ -13,10 +13,10 @@ export default function NotFound () {
     <div className={styles.notfound}>
       <img src={Logo} alt='Logo' className={styles.logo} />
       <h1 className={styles.title}>
-        {' '}
         {isArabic ? 'صفحة غير موجودة' : 'Page Not Found'}
       </h1>
       <IoIosArrowBack className={styles.arrow} onClick={handleGoBack} />
+      <p>{isArabic ? 'العودة إلى الصفحة الرئيسية' : 'Go back to homepage'}</p>
     </div>
   )
 }
