@@ -1,0 +1,38 @@
+{
+    "menu": {
+        "item": [
+            {
+                "id": 1,
+                "name": "Tabbouleh",
+                "description": "Parsley, tomatoes, onions, bulgur, lemon with olive oil",
+                "price": 21,
+                "calories": 215,
+                "image": "/ImageFood/tabouleh.jpg"
+            },
+            {
+                "id": 2,
+                "name": "Stuffed Grape Leaves with Pomegranate Molasses",
+                "description": "Stuffed with vegetables, rice, pomegranate molasses, and olive oil",
+                "price": 22,
+                "calories": 464,
+                "image": "/ImageFood/dipsalrooman.jpg"
+            },
+            {
+                "id": 3,
+                "name": "Kibbeh Labanieh",
+                "description": "Homemade kibbeh with local meat, yogurt sauce, and coriander-garlic dressing",
+                "price": 45,
+                "calories": 1861,
+                "image": "/ImageFood/koopehlaban.jpg"
+            },
+            {
+                "id": 4,
+                "name": "Stuffed Grape Leaves and Lamb Ribs",
+                "description": "Grape leaves stuffed with rice and lamb ribs",
+                "price": 80,
+                "calories": 0,
+                "image": "/ImageFood/rips.jpg"
+            }
+        ]
+    }
+}

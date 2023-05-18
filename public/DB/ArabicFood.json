@@ -107,7 +107,7 @@
                     "description": "محضر بعناية فائقة",
                     "price": 19,
                     "calories": 348,
-                    "image": "../public/ImageFood/Lentil.jpg"
+                    "image": "/ImageFood/Lentil.jpg"
                 },
                 {
                     "id": 13,
@@ -115,7 +115,7 @@
                     "description": "مزيج من الثوم والبقدونس المفروم وزيت الزيتون",
                     "price": 20,
                     "calories": 410,
-                    "image": "../public/ImageFood/Lentil.jpg"
+                    "image": "/ImageFood/Lentil.jpg"
                 },
                 {
                     "id": 14,
@@ -123,7 +123,7 @@
                     "description": "الباذنجان المشوي مع الطحينة وعصير الليمون وزيت الزيتون",
                     "price": 18,
                     "calories": 265,
-                    "image": "../public/ImageFood/Lentil.jpg"
+                    "image": "/ImageFood/Lentil.jpg"
                 },
                 {
                     "id": 15,
@@ -131,7 +131,7 @@
                     "description": "الشمندر مع العسل والطحينة والتوابل",
                     "price": 19,
                     "calories": 328,
-                    "image": "../public/ImageFood/Lentil.jpg"
+                    "image": "/ImageFood/Lentil.jpg"
                 },
                 {
                     "id": 16,
@@ -139,7 +139,7 @@
                     "description": "مزيج من الجوز المهروس والفلفل الحار ودبس الرمان",
                     "price": 19,
                     "calories": 385,
-                    "image": "../public/ImageFood/Lentil.jpg"
+                    "image": "/ImageFood/Lentil.jpg"
                 },
                 {
                     "id": 17,
@@ -147,7 +147,7 @@
                     "description": "محشو بالخضروات والأرز ودبس الرمان وزيت الزيتون",
                     "price": 22,
                     "calories": 464,
-                    "image": "../public/ImageFood/Lentil.jpg"
+                    "image": "/ImageFood/Lentil.jpg"
                 },
                 {
                     "id": 18,
@@ -155,7 +155,7 @@
                     "description": "الباذنجان المشوي - الفلفل الحلو - الطماطم - الرمان",
                     "price": 20,
                     "calories": 185,
-                    "image": "../public/ImageFood/Lentil.jpg"
+                    "image": "/ImageFood/Lentil.jpg"
                 },
                 {
                     "id": 19,
@@ -163,7 +163,7 @@
                     "description": "تحتوي على الحمص، المتبل المتبل، المتبل الشمندر، بابا غنوج، ورق العنب",
                     "price": 43,
                     "calories": 0,
-                    "image": "../public/ImageFood/Lentil.jpg"
+                    "image": "/ImageFood/Lentil.jpg"
                 }
             ]
         },
@@ -494,7 +494,7 @@
             ]
         },
         "packages": {
-            "image": "/public/ImageFood/packages.webp",
+            "image": "/ImageFood/packages.webp",
             "item": [
                 {
                     "id": 57,

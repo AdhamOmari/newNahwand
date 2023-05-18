@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
-import data from '../../../public/DB/Food.json'
-import dataArabic from '../../../public/DB/ArabicFood.json'
+import data from '../../../public/DB/ChefSelectionEnglish.json'
+import dataArabic from '../../../public/DB/ChefSelectionEnglish.json'
 import styles from './style.module.css'
 import OfferSlider from '../OfferSlider/OfferSlider'
 
@@ -11,7 +11,7 @@ const ChefSelection = () => {
 
   console.log('menuData:', menuData)
 
-  const nahawandPackages = menuData?.Coldmezzesandappetizers || []
+  const nahawandPackages = menuData || []
 
   console.log('filteredMenuData:', nahawandPackages)
 

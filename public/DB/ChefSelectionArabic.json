@@ -1,0 +1,38 @@
+{
+    "menu": {
+        "item": [
+            {
+                "id": 1,
+                "name": "تبولة",
+                "description": "بقدونس وطماطم وبصل وبرغل وليمون مع زيت الزيتون",
+                "price": 21,
+                "calories": 215,
+                "image": "/ImageFood/tabouleh.jpg"
+            },
+            {
+                "id": 2,
+                "name": "ورق العنب بدبس الرمان",
+                "description": "محشو بالخضروات والأرز ودبس الرمان وزيت الزيتون",
+                "price": 22,
+                "calories": 464,
+                "image": "/ImageFood/dipsalrooman.jpg"
+            },
+            {
+                "id": 3,
+                "name": "كبة لبنية",
+                "description": "كبة محلية الصنع بلحم بلدي، صلصة اللبن، تشاش الكزبرة والثوم",
+                "price": 45,
+                "calories": 1861,
+                "image": "/ImageFood/koopehlaban.jpg"
+            },
+            {
+                "id": 4,
+                "name": "ورق العنب   و ريش الغنم",
+                "description": "ورق العنب المحشو برز بلدي وبأضلاع اللحم الخروفي",
+                "price": 80,
+                "calories": 0,
+                "image": "/ImageFood/rips.jpg"
+            }
+        ]
+    }
+}
