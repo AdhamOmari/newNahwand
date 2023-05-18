@@ -4,11 +4,13 @@ import MenuCard from './MenuCard'
 import data from '../../../public/DB/Food.json'
 import dataArabic from '../../../public/DB/ArabicFood.json'
 import styles from './style.module.css'
+import Spinner from '../../Component/Spinner/spinner'
 
 const MenusBrowse = () => {
   const isArabic = useSelector(state => state.isArabic)
   const menuData = isArabic === 'arabic' ? dataArabic.menu : data.menu
   const navigate = useNavigate()
+  if (!menuData) return <Spinner />
 
   const browseMenuText =
     isArabic === 'arabic' ? 'تصفح قائمتنا' : 'BROWSE OUR MENU'

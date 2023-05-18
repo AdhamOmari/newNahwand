@@ -4,11 +4,14 @@ import data from '../../../public/DB/ChefSelectionEnglish.json'
 import dataArabic from '../../../public/DB/ChefSelectionEnglish.json'
 import styles from './style.module.css'
 import OfferSlider from '../OfferSlider/OfferSlider'
+import Spinner from '../../Component/Spinner/spinner'
 
 const ChefSelection = () => {
   const isArabic = useSelector(state => state.isArabic)
   const menuData = isArabic === 'arabic' ? dataArabic.menu : data.menu
-
+  if (!menuData) {
+    return <Spinner />
+  }
   console.log('menuData:', menuData)
 
   const nahawandPackages = menuData || []
