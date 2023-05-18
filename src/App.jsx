@@ -5,13 +5,14 @@ import './App.css'
 import Spinner from './Component/Spinner/spinner'
 import NotFound from './Component/Notfound'
 import NavbarApp from './Component/Navbar/NavbarApp'
-import Heero from './page/Brief/Heero'
-// import MenusBrowse from './page/EXPLOREMENU/MenusBrowse'
-import ShowMenuItem from './page/ShowMenuItem/ShowMenuItem'
-import AllMenus from './page/Menu/Menus'
 
 const HomePage = lazy(() => import('./page/Home/homePage'))
+const Heero = lazy(() => import('./page/Brief/Heero'))
 const StoreLocation = lazy(() => import('./page/Location/StoreLocation'))
+const AllMenus = lazy(() => import('./page/Menu/Menus'))
+const ShowMenuItem = lazy(() => import('./page/ShowMenuItem/ShowMenuItem'))
+const RatingButton = lazy(() => import('./page/Opinion/Rating'))
+const FoodOrderType = lazy(() => import('./page/FoodOrderType/FoodOrderType'))
 
 const App = () => {
   return (
@@ -26,6 +27,9 @@ const App = () => {
             <Route path='/Location' element={<StoreLocation />} />
             <Route path='/menu' element={<AllMenus />} />
             <Route path='/menu/:category' element={<ShowMenuItem />} />
+            <Route path='/Rating' element={<RatingButton />} />
+            <Route path='/Delivery' element={<FoodOrderType />} />
+            <Route path='/ChefSelection' element={<FoodOrderType />} />
             <Route path='*' element={<NotFound />} />
           </Routes>
         </Suspense>

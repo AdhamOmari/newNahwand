@@ -151,15 +151,28 @@
 
 @media (max-width: 768px) {
     .seeMoreLink {
-        left: 10px;
-        top: 10px;
+        left: 5px;
+        top: 5px;
+        width: 102px;
+        all: unset;
+        color: #000;
+        text-decoration: none;
+        background: none;
+        border: none;
+        outline: none;
+        margin-left: 20px;
+        border: transparent;
     }
+
+
 }
 
 @media (max-width: 480px) {
     .seeMoreLink {
         left: 5px;
         top: 5px;
+        text-decoration: none;
+
     }
 }
 

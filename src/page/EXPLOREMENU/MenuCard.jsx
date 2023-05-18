@@ -6,49 +6,6 @@ import 'slick-carousel/slick/slick-theme.css'
 import { useNavigate } from 'react-router-dom'
 import styles from './style.module.css'
 
-// Custom Prev Arrow Component
-const CustomPrevArrow = ({ className, style, onClick }) => (
-  <button
-    type='button'
-    className={`${className} ${styles.arrowButton} ${styles.prevButton}`}
-    style={{
-      ...style,
-      left: '-40px',
-      width: '0',
-      height: '0',
-      borderLeft: '0 solid transparent',
-      borderRight: '15px solid #113463',
-      borderTop: '10px solid transparent',
-      borderBottom: '10px solid transparent',
-      color: 'red'
-    }}
-    onClick={onClick}
-  >
-    Prev
-  </button>
-)
-
-// Custom Next Arrow Component
-const CustomNextArrow = ({ className, style, onClick }) => (
-  <button
-    type='button'
-    className={`${className} ${styles.arrowButton} ${styles.nextButton}`}
-    style={{
-      ...style,
-      right: '-40px',
-      width: '0',
-      height: '0',
-      borderRight: '0 solid transparent',
-      borderLeft: '15px solid #113463',
-      borderTop: '10px solid transparent',
-      borderBottom: '10px solid transparent'
-    }}
-    onClick={onClick}
-  >
-    Next
-  </button>
-)
-
 const MenuCard = ({ category }) => {
   const navigate = useNavigate()
 
@@ -66,19 +23,25 @@ const MenuCard = ({ category }) => {
     responsive: [
       {
         breakpoint: 960,
+        dots: 3,
+
         settings: {
           slidesToShow: 4
         }
       },
       {
         breakpoint: 640,
+        dots: 3,
+
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
         }
       },
       {
-        breakpoint: 0,
+        breakpoint: 400,
+        dots: 1,
+
         settings: {
           slidesToShow: 1
         }

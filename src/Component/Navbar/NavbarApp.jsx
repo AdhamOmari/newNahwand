@@ -58,9 +58,16 @@ const NavbarApp = () => {
           <Nav.Link as={Link} to='/menu' className={styles.navLink}>
             {language === 'arabic' ? 'القائمة' : 'Menu'}
           </Nav.Link>
-          <Nav.Link as={Link} to='/about' className={styles.navLink}>
-            {language === 'arabic' ? 'معلومات عنا' : 'About Us'}
-          </Nav.Link>{' '}
+          <Nav.Link as={Link} to='/Rating' className={styles.navLink}>
+            {language === 'arabic' ? 'قيِّمنا' : 'Rate us'}
+          </Nav.Link>
+          <Nav.Link as={Link} to='/Delivery' className={styles.navLink}>
+            {language === 'arabic' ? 'توصيل' : 'Delivery'}
+          </Nav.Link>
+
+          <Nav.Link as={Link} to='/ChefSelection' className={styles.navLink}>
+            {language === 'arabic' ? 'اختيار الشيف' : 'Chef Selection'}
+          </Nav.Link>
           <Form inline className={styles.form}>
             <div className={styles.btnWrap}>
               {!showSearch && (

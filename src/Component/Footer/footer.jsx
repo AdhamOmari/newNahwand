@@ -16,21 +16,15 @@ const Footer = () => {
       </Helmet>
       <div className={styles['social-media-links']}>
         <a
-          href='https://www.facebook.com/yourrestaurant'
+          href='https://www.facebook.com/ALSHARQ.NAHAWAND/'
           target='_blank'
           rel='noopener noreferrer'
         >
           <FaFacebook className={styles['social-media-icon']} />
         </a>
+
         <a
-          href='https://www.twitter.com/yourrestaurant'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          <FaTwitter className={styles['social-media-icon']} />
-        </a>
-        <a
-          href='https://www.instagram.com/yourrestaurant'
+          href='https://www.instagram.com/nahawand.rest/?ref=digitaltourbus.com'
           target='_blank'
           rel='noopener noreferrer'
         >
