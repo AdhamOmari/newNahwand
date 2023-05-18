@@ -37,3 +37,8 @@
     color: #FFFFFF;
     margin-bottom: 0;
 }
+
+.footer {
+    border-radius: 20px;
+    box-shadow: -2px 3px 6px 5px rgba(0, 0, 0, 0.1);
+}

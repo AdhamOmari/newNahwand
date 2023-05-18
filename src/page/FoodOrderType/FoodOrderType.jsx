@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useSelector } from 'react-redux'
+import { IoLogoWhatsapp } from 'react-icons/io'
 
 import styles from './FoodOrderType.module.css'
 
@@ -29,7 +30,14 @@ const FoodOrderType = () => {
   const selectedOrderTypeText = orderTypeText[language] || orderTypeText.en
 
   const openWhatsApp = () => {
-    window.open('https://api.whatsapp.com/send?phone=PHONE_NUMBER', '_blank')
+    const whatsappText = 'Your WhatsApp message' // Replace with your desired WhatsApp message
+    window.open(
+      `https://api.whatsapp.com/send?phone=962796087362&text=${encodeURIComponent(
+        whatsappText
+      )}`,
+      '_blank',
+      'noopener noreferrer'
+    )
   }
 
   const containerClass = `${styles.container} ${
@@ -49,7 +57,7 @@ const FoodOrderType = () => {
             {language === 'arabic' ? 'اختر نوع الطلب' : 'Select Order Type'}
           </option>
           {Object.keys(selectedOrderTypeText).map(key => (
-            <option key={key} value={key}>
+            <option key={key} value={key} className={styles.delivery}>
               {selectedOrderTypeText[key]}
             </option>
           ))}
@@ -66,9 +74,7 @@ const FoodOrderType = () => {
               }`}
               onClick={openWhatsApp}
             >
-              {language === 'arabic'
-                ? 'ابدأ الطلب عبر الواتساب'
-                : 'Start Order via WhatsApp'}
+              <IoLogoWhatsapp size={35} color='green' />
             </button>
           )}
           {orderType === 'delivery' && (
@@ -86,7 +92,7 @@ const FoodOrderType = () => {
                   ? 'يمكنك العثور علينا على تلك التطبيقات'
                   : 'You can find us on these apps'}
               </p>
-              <ul>
+              <ul className={styles.cardList}>
                 <li>HungerStation</li>
                 <li>Mrsool</li>
                 <li>jahez</li>

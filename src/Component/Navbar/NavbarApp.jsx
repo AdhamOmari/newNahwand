@@ -60,49 +60,49 @@ const NavbarApp = () => {
           </Nav.Link>
           <Nav.Link as={Link} to='/about' className={styles.navLink}>
             {language === 'arabic' ? 'معلومات عنا' : 'About Us'}
-          </Nav.Link>
+          </Nav.Link>{' '}
+          <Form inline className={styles.form}>
+            <div className={styles.btnWrap}>
+              {!showSearch && (
+                <>
+                  <Button
+                    variant='outline-primary'
+                    onClick={handleSearchIconClick}
+                    className={`${styles.searchIcon} ${styles.searchButton}`}
+                  >
+                    {/* <FiSearch size={20} /> */}
+                  </Button>
+                  <Button
+                    variant='link'
+                    onClick={handleLanguageChange}
+                    className={styles.languageIcon}
+                  >
+                    <GrLanguage class={styles.GrLanguage} />
+                  </Button>
+                </>
+              )}
+            </div>
+            <div>
+              {showSearch && (
+                <div className={`${styles.searchForm}`}>
+                  <FormControl
+                    type='text'
+                    placeholder={language === 'arabic' ? 'ابحث' : 'Search'}
+                    className={styles.searchInput}
+                    dir={language === 'arabic' ? 'rtl' : 'ltr'}
+                  />
+                  <Button
+                    variant='link'
+                    onClick={handleSearchClose}
+                    className={styles.closeIcon}
+                  >
+                    <FiX />
+                  </Button>
+                </div>
+              )}
+            </div>
+          </Form>
         </Nav>
-        <Form inline className={styles.form}>
-          <div className={styles.btnWrap}>
-            {!showSearch && (
-              <>
-                <Button
-                  variant='outline-primary'
-                  onClick={handleSearchIconClick}
-                  className={`${styles.searchIcon} ${styles.searchButton}`}
-                >
-                  {/* <FiSearch size={20} /> */}
-                </Button>
-                <Button
-                  variant='link'
-                  onClick={handleLanguageChange}
-                  className={styles.languageIcon}
-                >
-                  <GrLanguage />
-                </Button>
-              </>
-            )}
-          </div>
-          <div>
-            {showSearch && (
-              <div className={`${styles.searchForm}`}>
-                <FormControl
-                  type='text'
-                  placeholder={language === 'arabic' ? 'ابحث' : 'Search'}
-                  className={styles.searchInput}
-                  dir={language === 'arabic' ? 'rtl' : 'ltr'}
-                />
-                <Button
-                  variant='link'
-                  onClick={handleSearchClose}
-                  className={styles.closeIcon}
-                >
-                  <FiX />
-                </Button>
-              </div>
-            )}
-          </div>
-        </Form>
       </Navbar.Collapse>
     </Navbar>
   )

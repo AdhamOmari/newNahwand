@@ -17,6 +17,8 @@ const OfferSlider = ({ category }) => {
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 2,
+    autoplay: true,
+    dots: true,
     responsive: [
       {
         breakpoint: 960,
@@ -28,23 +30,7 @@ const OfferSlider = ({ category }) => {
         breakpoint: 640,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
-          prevArrow: (
-            <button
-              type='button'
-              className={`${styles.arrowButton} ${styles.prevButton}`}
-            >
-              Prev
-            </button>
-          ),
-          nextArrow: (
-            <button
-              type='button'
-              className={`${styles.arrowButton} ${styles.nextButton}`}
-            >
-              Next
-            </button>
-          )
+          slidesToScroll: 1
         }
       },
       {

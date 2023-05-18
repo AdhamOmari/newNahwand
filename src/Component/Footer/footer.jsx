@@ -8,7 +8,7 @@ const Footer = () => {
   const language = useSelector(state => state.isArabic)
 
   return (
-    <>
+    <div className={styles.footer}>
       <Helmet>
         <title>Your Website Title</title>
         <meta name='description' content='Your website description' />
@@ -44,7 +44,7 @@ const Footer = () => {
             : '&copy; 2023 Nahawand Restaurant. All rights reserved.'}
         </p>
       </div>
-    </>
+    </div>
   )
 }
 

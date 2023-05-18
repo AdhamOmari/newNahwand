@@ -1,11 +1,12 @@
 .container {
     padding: 30px;
-    background: rgba(183, 135, 73, 0.8);
+    background: #72838412;
     /* Set the background color with rgba */
     /* Set the background color with rgba */
     position: relative;
     top: 30px;
-
+    border-radius: 20px;
+    box-shadow: -2px 3px 6px 5px rgba(0, 0, 0, 0.1);
 }
 
 .sliderContainer {
@@ -58,21 +59,7 @@
 
 }
 
-.arrowButton {
-    position: absolute;
-    top: 60%;
-    transform: translateY(-50%);
-    z-index: 1;
-    background: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    padding: 8px;
-    border-radius: 50%;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    width: 100%;
 
-}
 
 /* style.module.css */
 
@@ -139,17 +126,22 @@
 
 .seeMoreLink {
     display: inline-block;
-    padding: 8px 12px;
+    /* padding: 8px 12px; */
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-    background-color: #728384;
+    /* border-radius: 4px; */
+    /* background-color: #728384; */
     position: relative;
     left: 20px;
     top: 20px;
-    border: transparent;
+    /* transition: background-color 0.3s ease; */
+
+
+    background-color: black;
+    width: 150px;
+    height: 48px;
+    border-radius: 10px;
 }
 
 .seeMoreLink:hover {
@@ -171,6 +163,9 @@
     }
 }
 
-.alignRight {
-    text-align: right;
+
+
+div.slick-prev:before,
+div.slick-next:before {
+    visibility: hidden !important;
 }

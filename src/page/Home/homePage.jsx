@@ -12,24 +12,26 @@ import Spinner from '../../Component/Spinner/spinner'
 
 const HomePage = () => {
   return (
-    <div className={styles.home}>
+    <>
       <Brief />
-      <Suspense
-        fallback={
-          <div>
-            <Spinner />
-          </div>
-        }
-      >
-        <FoodOrderType />
-        <Offers />
-        <MenusBrowse />
-        <ChefSelection />
-        <StoreLocation />
-        <RatingButton />
-        <Footer />
-      </Suspense>
-    </div>
+      <div className={styles.home}>
+        <Suspense
+          fallback={
+            <div>
+              <Spinner />
+            </div>
+          }
+        >
+          <FoodOrderType />
+          <Offers />
+          <MenusBrowse />
+          <ChefSelection />
+          <StoreLocation />
+          <RatingButton />
+        </Suspense>
+      </div>
+      <Footer />
+    </>
   )
 }
 

@@ -18,14 +18,15 @@
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
-    line-height: 17px;
+    /* line-height: 17px; */
     display: flex;
     align-items: center;
     text-align: center;
     color: #AB6E15;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    /* gap: 20px; */
+    padding: 0 10px;
 }
 
 .searchIcon {
@@ -49,15 +50,19 @@
 
 
 .navbar {
-    justify-content: space-between;
+    justify-content: space-around;
+
 }
 
 .navbarCollapse {
-    justify-content: center;
+    justify-content: end;
+    align-items: center;
+    margin-right: 1.5rem;
 }
 
 .centeredLinks {
     justify-content: center;
+    align-items: center;
 }
 
 .searchForm {
@@ -69,18 +74,15 @@
     /* Adjust the spacing as needed */
 }
 
-.closeIcon {
-    /* Adjust the spacing as needed */
-}
 
-.languageIcon:hover {
-    transform: scale(1.5);
 
-    /* Adjust the spacing as needed */
-}
+
 
 .languageIcon {
-    color: #314F4F;
+    color: #4f3c31;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
     /* Adjust the spacing as needed */
 }
 
@@ -88,50 +90,57 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
 
 
+}
+
+.GrLanguage {
+    color: '#AB6E15';
+    padding: 0;
+
+}
+
+button {
+    padding: 0 10px;
 }
 
 .form {
     display: flex;
     align-items: center;
     position: relative;
-    gap: 10px;
+    /* gap: 10px; */
 }
 
 [dir='rtl'] .form {
     left: unset;
-    right: 39%;
+    right: 0%;
 
 }
 
 @media (max-width: 1440px) {
     .form {
 
-        left: 400px;
+        /* left: 400px; */
     }
 }
 
 @media (max-width: 1025px) {
     .form {
 
-        left: 285px;
+        /* left: 285px; */
     }
 }
 
 @media (max-width: 768px) {
-    .form {
+    /* .form {
         left: auto;
         margin-left: auto;
         margin-right: 195px;
         flex-direction: column;
-        /* Adjust the margin as needed */
-    }
+    } */
 
-    [dir='rtl'] .form {
 
-        right: -46%;
-    }
 }
 
 @media (max-width: 576px) {
@@ -145,4 +154,18 @@
         margin-top: 10px;
         /* Adjust the margin as needed */
     }
+
+    .centeredLinks {
+        gap: 10px;
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+
+    .navbar {
+        justify-content: space-between;
+        /* margin: 0 10px; */
+        /* box-shadow: -2px 3px 6px 5px rgba(0, 0, 0, 0.1); */
+    }
+
+
 }

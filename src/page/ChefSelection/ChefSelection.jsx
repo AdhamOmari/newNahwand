@@ -34,7 +34,8 @@ const ChefSelection = () => {
       </div>
       <OfferSlider category={nahawandPackages.item} />
       <Link to='/menu' className={linkContainerStyle}>
-        {seeMoreText}
+        <button>{seeMoreText}</button>
+        
       </Link>
     </>
   )

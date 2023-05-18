@@ -1,9 +1,9 @@
 .categoryLink {
     font-weight: bold;
     text-decoration: none;
-    color: #fff;
+    color: #AB6E15;
     position: relative;
-    top: 12%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: left;
@@ -13,20 +13,24 @@
     border: none;
     outline: none;
     text-transform: capitalize;
+    margin: 5px 0;
     /* Apply first letter capitalization */
 }
 
 .menuContainer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    gap: 10px;
+    margin: 1.5rem auto;
     text-align: center;
+    width: 80%;
+    justify-content: center;
 }
 
 .menuCategory {
     margin: 10px;
-    background: #728384;
-    border-radius: 10px;
+    background: #72838412;
+    border-radius: 20px;
     text-align: center;
 
 }
@@ -37,7 +41,7 @@
     align-items: center;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: -2px 3px 6px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
     align-items: baseline
 }
@@ -46,7 +50,7 @@
     width: 200px;
     height: 200px;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 20px;
     margin-bottom: 10px;
 }
 

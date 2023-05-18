@@ -1,22 +1,24 @@
 .container {
     margin: 20px;
     padding: 20px;
-    border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #b78749;
+    background-color: #72838412;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
-    color: #fff;
+    color: #AB6E15;
     justify-content: space-between;
+    box-shadow: -2px 3px 6px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 
 }
 
-@media (min-width: 768px) {
+@media (max-width: 500px) {
     .container {
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
-        align-items: flex-start;
+        align-items: center;
+        gap: 10px;
     }
 }
 
@@ -54,13 +56,15 @@ p {
 
 .button {
     margin: 20px;
-    background: linear-gradient(99.92deg, #ab6e15 0%, #314f4f 100%);
+    /* background: linear-gradient(99.92deg, #ab6e15 0%, #314f4f 100%); */
     color: #fff;
     border: none;
     padding: 8px 16px;
     border-radius: 5px;
     cursor: pointer;
 }
+
+
 
 .location,
 .apps {
@@ -100,20 +104,47 @@ p {
 }
 
 .dropdownSelect {
-    appearance: none;
-    background-color: #728384;
+    background: #0f0f0f;
     border: 1px solid #728384;
     border-radius: 5px;
-    padding: 8px 16px;
+    padding: 10px;
     font-size: 14px;
     color: #fff;
     cursor: pointer;
     direction: ltr;
+    text-align: center;
     /* Added direction for LTR text inside the dropdown */
+}
+
+.delivery {
+    margin: 8322px !important;
+
 }
 
 .dropdownSelect:focus {
     outline: none;
     border-color: #b78749;
     box-shadow: 0 0 5px rgba(183, 135, 73, 0.5);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul li {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: calc(90% - 10px);
+    /* Adjust the width as per your requirements */
+    margin-bottom: 10px;
+    color: #AB6E15;
 }
