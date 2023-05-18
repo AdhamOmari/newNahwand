@@ -1,7 +1,7 @@
 {
     "menu": {
         "soup": {
-            "image": "/public/ImageFood/Lentil.jpg",
+            "image": "/ImageFood/Lentil.jpg",
             "item": [
                 {
                     "id": 1,
@@ -99,7 +99,7 @@
             ]
         },
         "Coldmezzesandappetizers": {
-            "image": "/public/ImageFood/Coldmezzesandappetizers.jpg",
+            "image": "/ImageFood/Coldmezzesandappetizers.jpg",
             "item": [
                 {
                     "id": 12,
@@ -269,7 +269,7 @@
             ]
         },
         "Italian pasta": {
-            "image": "/public/ImageFood/passta.jpg",
+            "image": "/ImageFood/passta.jpg",
             "item": [
                 {
                     "id": 32,
@@ -322,7 +322,7 @@
             ]
         },
         "Casseroles and hot dishes": {
-            "image": "/public/ImageFood/hot.jpg",
+            "image": "/ImageFood/hot.jpg",
             "item": [
                 {
                     "id": 38,
@@ -383,7 +383,7 @@
             ]
         },
         "Barbecue": {
-            "image": "/public/ImageFood/BBQ.jpg",
+            "image": "/ImageFood/BBQ.jpg",
             "item": [
                 {
                     "id": 45,
@@ -494,7 +494,7 @@
             ]
         },
         "packages": {
-            "image": "/assets/packages.webp",
+            "image": "/ImageFood/packages.webp",
             "item": [
                 {
                     "id": 57,
