@@ -473,7 +473,7 @@
             ]
         },
         "Sweets": {
-            "image": "Nahawand packages",
+            "image": "/ImageFood/sweet.jpeg",
             "item": [
                 {
                     "id": 55,
