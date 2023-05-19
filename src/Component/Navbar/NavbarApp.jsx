@@ -59,7 +59,7 @@ const NavbarApp = () => {
             {language === 'arabic' ? 'القائمة' : 'Menu'}
           </Nav.Link>
           <Nav.Link as={Link} to='/Rating' className={styles.navLink}>
-            {language === 'arabic' ? 'قيِّمنا' : 'Rate us'}
+            {language === 'arabic' ? 'قيِّمنا' : 'Rate US'}
           </Nav.Link>
           <Nav.Link as={Link} to='/Delivery' className={styles.navLink}>
             {language === 'arabic' ? 'توصيل' : 'Delivery'}

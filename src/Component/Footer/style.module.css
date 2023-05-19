@@ -1,15 +1,7 @@
-.footer-info {
-    text-align: center;
-    background-color: #728384;
-    padding: 20px;
+.footer {
+    border-radius: 20px;
+    box-shadow: -2px 3px 6px 5px rgba(0, 0, 0, 0.1);
 }
-
-.footer-info p {
-    font-size: 14px;
-    color: #FFFFFF;
-    margin-bottom: 0;
-}
-
 
 .social-media-links {
     display: flex;
@@ -19,13 +11,13 @@
 
 .social-media-icon {
     font-size: 24px;
-    color: #B78749;
+    color: #b78749;
     margin: 0 10px;
     transition: color 0.3s;
 }
 
 .social-media-icon:hover {
-    color: #314F4F;
+    color: #314f4f;
 }
 
 .footer-info {
@@ -34,11 +26,93 @@
 
 .footer-info p {
     font-size: 14px;
-    color: #FFFFFF;
+    color: #ffffff;
     margin-bottom: 0;
 }
 
-.footer {
-    border-radius: 20px;
-    box-shadow: -2px 3px 6px 5px rgba(0, 0, 0, 0.1);
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.my-float {
+    margin-top: 2px;
+}
+
+.whatsapp-icon {
+    animation: wave 2s ease-in-out infinite, ripple 0.7s linear infinite;
+    border-radius: 70%;
+}
+
+.whatsapp-icon:hover,
+.whatsapp-icon:active, .whatsapp-icon:visited {
+    background-color: #25d366;
+}
+
+@keyframes wave {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    10% {
+        transform: rotate(-10deg);
+    }
+
+    20% {
+        transform: rotate(10deg);
+    }
+
+    30% {
+        transform: rotate(-10deg);
+    }
+
+    40% {
+        transform: rotate(10deg);
+    }
+
+    50% {
+        transform: rotate(-10deg);
+    }
+
+    60% {
+        transform: rotate(10deg);
+    }
+
+    70% {
+        transform: rotate(-10deg);
+    }
+
+    80% {
+        transform: rotate(10deg);
+    }
+
+    90% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes ripple {
+    0% {
+        box-shadow: 0 0 0 0 rgba(2, 207, 170, 0.3), 0 0 0 10px rgba(2, 207, 170, 0.3),
+            0 0 0 10px rgba(2, 207, 170, 0.3), 0 0 0 28px rgba(2, 207, 170, 0.3);
+    }
+
+    100% {
+        box-shadow: 0 0 0 12px rgba(2, 207, 170, 0.3), 0 0 0 10px rgba(2, 207, 170, 0.3),
+            0 0 0 28px rgba(2, 207, 170, 0.3), 0 0 0 15px rgba(2, 207, 170, 0);
+    }
 }
