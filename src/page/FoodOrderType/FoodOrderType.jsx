@@ -89,7 +89,7 @@ const FoodOrderType = () => {
                 }`}
               >
                 {language === 'arabic'
-                  ? 'يمكنك العثور علينا على تلك التطبيقات'
+                  ? 'يمكنك العثور علينا على  '
                   : 'You can find us on these apps'}
               </p>
               <ul className={styles.cardList}>
