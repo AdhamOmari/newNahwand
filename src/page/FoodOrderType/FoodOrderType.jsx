@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useSelector } from 'react-redux'
-import { IoLogoWhatsapp } from 'react-icons/io'
+import { AiOutlineWhatsApp } from 'react-icons/ai'
 
 import styles from './FoodOrderType.module.css'
 
@@ -74,7 +74,7 @@ const FoodOrderType = () => {
               }`}
               onClick={openWhatsApp}
             >
-              <IoLogoWhatsapp size={35} color='green' />
+              <AiOutlineWhatsApp size={35} color='green' />
             </button>
           )}
           {orderType === 'delivery' && (
