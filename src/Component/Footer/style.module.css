@@ -31,6 +31,10 @@
     margin-bottom: 0;
 }
 
+[dir='ltr'] .float {
+    left: 40px !important;
+}
+
 .float {
     position: fixed;
     width: 60px;

@@ -10,7 +10,7 @@ const ShowMenuItem = () => {
 
   const menuContainerClass =
     isArabic === 'arabic' ? styles.containerRTL : styles.containerLTR
-
+  console.log(isArabic)
   if (!items || items.length === 0) {
     return <div>No items found.</div>
   }
