@@ -99,7 +99,11 @@ const FoodOrderType = () => {
                     target='_blank'
                     rel='noopener noreferrer'
                   >
-                    <img src='/HungerStation-01-3.svg' alt='HungerStation' />
+                    <img
+                      src='/HungerStation-01-3.svg'
+                      alt='HungerStation'
+                      loading='lazy' // Add this attribute for lazy-loading
+                    />
                   </a>
                 </li>
                 <li>
@@ -108,7 +112,11 @@ const FoodOrderType = () => {
                     target='_blank'
                     rel='noopener noreferrer'
                   >
-                    <img src='/Mrsool-01.svg' alt='Mrsool' />
+                    <img
+                      src='/Mrsool-01.svg'
+                      alt='Mrsool'
+                      loading='lazy' // Add this attribute for lazy-loading
+                    />
                   </a>
                 </li>
                 <li>
@@ -117,7 +125,11 @@ const FoodOrderType = () => {
                     target='_blank'
                     rel='noopener noreferrer'
                   >
-                    <img src='/jahez.svg' alt='Jahez' />
+                    <img
+                      src='/jahez.svg'
+                      alt='Jahez'
+                      loading='lazy' // Add this attribute for lazy-loading
+                    />
                   </a>
                 </li>
               </ul>
