@@ -93,9 +93,33 @@ const FoodOrderType = () => {
                   : 'You can find us on these apps'}
               </p>
               <ul className={styles.cardList}>
-                <li>HungerStation</li>
-                <li>Mrsool</li>
-                <li>jahez</li>
+                <li>
+                  <a
+                    href='https://example.com/hungerstation'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    <img src='/HungerStation-01-3.svg' alt='HungerStation' />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href='https://example.com/mrsool'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    <img src='/Mrsool-01.svg' alt='Mrsool' />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href='https://example.com/jahez'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    <img src='/jahez.svg' alt='Jahez' />
+                  </a>
+                </li>
               </ul>
             </div>
           )}
