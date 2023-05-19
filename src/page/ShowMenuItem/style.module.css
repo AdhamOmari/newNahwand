@@ -7,14 +7,16 @@
     width: 300px;
     height: auto;
     margin: 10px;
-    background: #728384;
+    background: #72838412;
     border-radius: 5px;
     overflow: hidden;
     position: relative;
     transition: all 0.3s ease;
-    font-family: 'Roboto', sans-serif;
+
     margin: 80px auto;
     border-radius: 10px;
+    box-shadow: -2px 3px 6px 5px #0000001a;
+
 }
 
 .menuCard:hover {
@@ -30,13 +32,13 @@
     margin-top: 0;
     font-size: 20px;
     padding: 20px;
-    color: white;
+    color: #000;
 }
 
 .description {
     display: none;
     font-size: 14px;
-    color: white;
+    color: #000;
 }
 
 .menuCard:hover .description {
@@ -47,12 +49,12 @@
 .price {
     font-weight: bold;
     font-size: 18px;
-    color: #fff;
+    color: #000;
 }
 
 .calories {
     font-size: 16px;
-    color: #fff;
+    color: #000;
 }
 
 .image {
@@ -63,6 +65,7 @@
     border-radius: 10px;
 }
 
+/* Add RTL and LTR classes for menuContainer */
 .menuContainer.rtl {
     direction: rtl;
 }

@@ -5,6 +5,7 @@ import './App.css'
 import Spinner from './Component/Spinner/spinner'
 import NotFound from './Component/Notfound'
 import NavbarApp from './Component/Navbar/NavbarApp'
+import Footer from './Component/Footer/footer'
 
 const HomePage = lazy(() => import('./page/Home/homePage'))
 const Heero = lazy(() => import('./page/Brief/Heero'))
@@ -33,6 +34,8 @@ const App = () => {
             <Route path='*' element={<NotFound />} />
           </Routes>
         </Suspense>
+        <Footer />
+
       </BrowserRouter>
     </>
   )

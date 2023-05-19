@@ -8,9 +8,8 @@ const ShowMenuItem = () => {
   const items = location.state
   const isArabic = useSelector(state => state.isArabic)
 
-  const menuContainerClass = isArabic
-    ? styles.containerRTL
-    : styles.containerLTR
+  const menuContainerClass =
+    isArabic === 'arabic' ? styles.containerRTL : styles.containerLTR
 
   if (!items || items.length === 0) {
     return <div>No items found.</div>
@@ -27,10 +26,11 @@ const ShowMenuItem = () => {
               <p className={styles.description}>{item.description}</p>
               <img src={item.image} alt={item.name} className={styles.image} />
               <p className={styles.price}>
-                {isArabic === 'arbic' ? 'السعر: ريال' : 'Price: $'} {item.price}
+                {isArabic === 'arabic' ? 'السعر: ريال' : 'Price: $'}
+                {item.price}
               </p>
               <p className={styles.calories}>
-                {isArabic === 'arbic' ? 'سعرة حرارية: ' : 'Calories: '}{' '}
+                {isArabic === 'arabic' ? 'سعرة حرارية: ' : 'Calories: '}
                 {item.calories}
               </p>
             </div>

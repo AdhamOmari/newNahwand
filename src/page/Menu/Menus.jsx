@@ -5,6 +5,7 @@ import styles from './style.module.css'
 import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Spinner from '../../Component/Spinner/spinner'
+import FoodOrderType from '../FoodOrderType/FoodOrderType'
 
 const AllMenus = () => {
   const navigate = useNavigate()
@@ -21,22 +22,25 @@ const AllMenus = () => {
     return <Spinner />
   }
   return (
-    <div className={styles.menuContainer}>
-      {Object.entries(menuData).map(([category, { image, item }]) => (
-        <div key={category} className={styles.menuCategory}>
-          <div className={styles.menuCard}>
-            <img src={image} alt={`Category: ${category}`} />
+    <>
+      <FoodOrderType />
+      <div className={styles.menuContainer}>
+        {Object.entries(menuData).map(([category, { image, item }]) => (
+          <div key={category} className={styles.menuCategory}>
+            <div className={styles.menuCard}>
+              <img src={image} alt={`Category: ${category}`} />
 
-            <button
-              onClick={() => move(category, item)}
-              className={styles.categoryLink}
-            >
-              <span className={styles.menuText}>{category}</span>
-            </button>
+              <button
+                onClick={() => move(category, item)}
+                className={styles.categoryLink}
+              >
+                <span className={styles.menuText}>{category}</span>
+              </button>
+            </div>
           </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
+    </>
   )
 }
 

@@ -1,5 +1,6 @@
 import { useSelector } from 'react-redux'
-import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa'
+import { FaFacebook, FaInstagram } from 'react-icons/fa'
+import { AiOutlineWhatsApp } from 'react-icons/ai'
 
 import { Helmet } from 'react-helmet'
 import styles from './style.module.css'
@@ -26,7 +27,7 @@ const Footer = () => {
           target='_blank'
           rel='noreferrer'
         >
-          <FaWhatsapp
+          <AiOutlineWhatsApp
             className={`${styles['whatsapp-icon']} ${styles['my-float']}`}
           />
         </a>
