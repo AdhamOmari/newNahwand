@@ -4,7 +4,7 @@ import styles from './RatingButton.module.css'
 import { useSelector } from 'react-redux'
 
 const RatingButton = () => {
-  const rating = 4.3 // Average rating
+  const rating = 4.6 // Average rating
   const totalRatings = 1572 // Total number of ratings
 
   const isArabic = useSelector(state => state.isArabic)
@@ -43,9 +43,7 @@ const RatingButton = () => {
             : rating.toFixed(1)}
         </span>
         <span className={styles.totalRatings}>
-          {isArabic === 'arabic'
-            ? `${totalRatings.toLocaleString('ar-EG')} التقييمات`
-            : `${totalRatings} Ratings`}
+          {isArabic === 'arabic' ? ` التقييمات` : ` Ratings`}
         </span>
       </div>
       <button className={styles.addRatingButton} onClick={handleRatingClick}>
