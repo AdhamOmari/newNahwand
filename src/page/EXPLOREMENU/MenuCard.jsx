@@ -11,6 +11,7 @@ const MenuCard = ({ category }) => {
 
   const move = (cat, item) => {
     navigate(`/menu/${cat}`, { state: item })
+    window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
   const [sliderSettings] = useState({
