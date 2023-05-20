@@ -14,14 +14,14 @@ const FoodOrderType = () => {
 
   const orderTypeText = {
     en: {
-      dineIn: 'Dine-in',
       delivery: 'Delivery',
+      dineIn: 'Dine-in',
       takeout: 'Pickup from the car',
       pickup: 'Pickup from the restaurant'
     },
     arabic: {
-      dineIn: 'التناول في المطعم',
       delivery: 'توصيل',
+      dineIn: 'التناول في المطعم',
       takeout: 'الاستلام من السيارة',
       pickup: 'الاستلام من المطعم'
     }
