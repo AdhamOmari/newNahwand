@@ -1,11 +1,9 @@
-import React from 'react'
 import { AiFillStar } from 'react-icons/ai'
 import styles from './RatingButton.module.css'
 import { useSelector } from 'react-redux'
 
 const RatingButton = () => {
   const rating = 4.6 // Average rating
-  const totalRatings = 1572 // Total number of ratings
 
   const isArabic = useSelector(state => state.isArabic)
 
@@ -19,7 +17,7 @@ const RatingButton = () => {
   const stars = []
   const maxStars = 5
 
-  const filledStars = Math.round(rating * maxStars)
+  const filledStars = Math.floor(rating * maxStars) // Round down the value
 
   for (let i = 0; i < maxStars; i++) {
     if (i < filledStars) {
@@ -48,7 +46,7 @@ const RatingButton = () => {
       </div>
       <button className={styles.addRatingButton} onClick={handleRatingClick}>
         {isArabic === 'arabic'
-          ? 'أضف تقييمًا على خرائط Google'
+          ? ' Google أضف تقييمًا على خرائط '
           : 'Add Rating on Google Maps'}
       </button>
     </div>
