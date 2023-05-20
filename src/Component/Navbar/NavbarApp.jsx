@@ -54,20 +54,20 @@ const NavbarApp = () => {
       <Navbar.Toggle aria-controls='navbar-nav' />
       <Navbar.Collapse id='navbar-nav' className={styles.navbarCollapse}>
         <Nav className={`${styles.navLinks} ${styles.centeredLinks}`}>
-          <Nav.Link as={Link} to='/' className={styles.navLink}>
+          <Nav.Link as={Link} to='/' className={styles.navLink} smooth>
             {language === 'arabic' ? 'الرئيسية' : 'Home'}
           </Nav.Link>
-          <Nav.Link href='#menu' className={styles.navLink}>
+          <Nav.Link as={Link} to='/menu' className={styles.navLink} smooth>
             {language === 'arabic' ? 'القائمة' : 'Menu'}
           </Nav.Link>
-          <Nav.Link href='#RateUs' className={styles.navLink}>
+          <Nav.Link href='/RateUs' className={styles.navLink} smooth>
             {language === 'arabic' ? 'قيِّمنا' : 'Rate US'}
           </Nav.Link>
-          <Nav.Link href='#Delivery' className={styles.navLink}>
+          <Nav.Link href='/Delivery' className={styles.navLink} smooth>
             {language === 'arabic' ? 'توصيل' : 'Delivery'}
           </Nav.Link>
 
-          <Nav.Link href='#ChefSelection' className={styles.navLink}>
+          <Nav.Link href='/ChefSelection' className={styles.navLink} smooth>
             {language === 'arabic' ? 'اختيار الشيف' : 'Chef Selection'}
           </Nav.Link>
           <Form inline className={styles.form}>

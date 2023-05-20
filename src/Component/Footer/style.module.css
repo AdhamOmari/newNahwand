@@ -1,5 +1,11 @@
-.footer {
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 20vh;
+}
 
+.footer {
+    margin-top: auto;
     box-shadow: -2px 3px 6px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -22,7 +28,6 @@
 
 .footer-info {
     text-align: center;
-
 }
 
 .footer-info p {
@@ -60,7 +65,8 @@
 }
 
 .whatsapp-icon:hover,
-.whatsapp-icon:active, .whatsapp-icon:visited {
+.whatsapp-icon:active,
+.whatsapp-icon:visited {
     background-color: #25d366;
 }
 
@@ -112,12 +118,32 @@
 
 @keyframes ripple {
     0% {
-        box-shadow: 0 0 0 0 rgba(2, 207, 170, 0.3), 0 0 0 10px rgba(2, 207, 170, 0.3),
-            0 0 0 10px rgba(2, 207, 170, 0.3), 0 0 0 28px rgba(2, 207, 170, 0.3);
+        box-shadow: 0 0 0 0 rgba(2, 207, 170, 0.3),
+            0 0 0 10px rgba(2, 207, 170, 0.3),
+            0 0 0 10px rgba(2, 207, 170, 0.3),
+            0 0 0 28px rgba(2, 207, 170, 0.3);
     }
 
     100% {
-        box-shadow: 0 0 0 12px rgba(2, 207, 170, 0.3), 0 0 0 10px rgba(2, 207, 170, 0.3),
-            0 0 0 28px rgba(2, 207, 170, 0.3), 0 0 0 15px rgba(2, 207, 170, 0);
+        box-shadow: 0 0 0 12px rgba(2, 207, 170, 0.3),
+            0 0 0 10px rgba(2, 207, 170, 0.3),
+            0 0 0 28px rgba(2, 207, 170, 0.3),
+            0 0 0 15px rgba(2, 207, 170, 0);
+    }
+}
+
+/* Responsive Styles */
+
+@media only screen and (max-width: 768px) {
+    .social-media-links {
+        flex-wrap: wrap;
+    }
+
+    .social-media-icon {
+        margin: 10px;
+    }
+
+    .footer-info p {
+        font-size: 12px;
     }
 }

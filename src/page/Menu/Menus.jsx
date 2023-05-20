@@ -21,9 +21,14 @@ const AllMenus = () => {
   if (!menuData) {
     return <Spinner />
   }
+
   return (
-    <>
+    <main>
       <FoodOrderType />
+
+      <h1 className={styles.menuTitle}>
+        {isArabic === 'arabic' ? 'قائمة الطعام - نهاوند' : 'Menu - Nahwand'}
+      </h1>
       <div className={styles.menuContainer}>
         {Object.entries(menuData).map(([category, { image, item }]) => (
           <div key={category} className={styles.menuCategory}>
@@ -40,7 +45,7 @@ const AllMenus = () => {
           </div>
         ))}
       </div>
-    </>
+    </main>
   )
 }
 

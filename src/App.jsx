@@ -58,7 +58,7 @@ const App = () => {
             <Route path='/Location' element={<StoreLocation />} />
             <Route path='/menu' element={<AllMenus />} />
             <Route path='/menu/:category' element={<ShowMenuItem />} />
-            <Route path='/Rating' element={<RatingButton />} />
+            <Route path='/RateUs' element={<RatingButton />} />
             <Route path='/Delivery' element={<FoodOrderType />} />
             <Route path='/ChefSelection' element={<ChefSelection />} />
             <Route path='*' element={<NotFound />} />
