@@ -30,9 +30,11 @@ const FoodOrderType = () => {
   const selectedOrderTypeText = orderTypeText[language] || orderTypeText.en
 
   const openWhatsApp = () => {
-    const whatsappText = 'Your WhatsApp message' // Replace with your desired WhatsApp message
+    const whatsappText = language
+      ? 'مرحبًا، أرغب في معرفة المزيد عن عناصر القائمة في المطعم  ؟ '
+      : 'Hello, I want to know more about the menu items in the restaurant  ?'
     window.open(
-      `https://api.whatsapp.com/send?phone=962796087362&text=${encodeURIComponent(
+      `https://api.whatsapp.com/send?phone=966 55 310 4477&text=${encodeURIComponent(
         whatsappText
       )}`,
       '_blank',

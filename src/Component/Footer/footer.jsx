@@ -7,8 +7,8 @@ import styles from './style.module.css'
 const Footer = () => {
   const language = useSelector(state => state.isArabic)
   const whatsappText = language
-    ? 'مرحبًا، أرغب في معرفة المزيد عن عناصر القائمة في المطعم  '
-    : 'Hello, I want to know more about the menu items in the restaurant  '
+    ? 'مرحبًا، أرغب في معرفة المزيد عن عناصر القائمة في المطعم ؟'
+    : 'Hello, I want to know more about the menu items in the restaurant ?'
   return (
     <div className={styles.wrapper}>
       <Helmet>
@@ -22,7 +22,7 @@ const Footer = () => {
       <footer className={styles.footer}>
         <div className={styles['social-media-links']}>
           <a
-            href={`https://api.whatsapp.com/send?phone=962796087362&text=${encodeURIComponent(
+            href={`https://api.whatsapp.com/send?phone=966 55 310 4477&text=${encodeURIComponent(
               whatsappText
             )}`}
             className={styles.float}

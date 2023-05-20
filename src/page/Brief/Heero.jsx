@@ -40,7 +40,7 @@ export default function HeroImage () {
                 >
                   {language === 'arabic'
                     ? 'بيت المشاوي... نعدكم بالسعادة'
-                    : 'BBQ House, we promise you happiness'}
+                    : 'Grills House, we promise you happiness'}
                 </p>
               </div>
             </div>
