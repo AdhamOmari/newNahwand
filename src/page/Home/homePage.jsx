@@ -17,24 +17,12 @@ const HomePage = () => {
         <Brief />
         <div className={styles.home}>
           <Suspense fallback={<Spinner />}>
-            <div id='Delivery'>
-              <FoodOrderType />
-            </div>
-            <div id='Offers'>
-              <Offers />
-            </div>
-            <div id='menu'>
-              <MenusBrowse />
-            </div>
-            <div id='ChefSelection'>
-              <ChefSelection />
-            </div>
-            <div id='StoreLocation'>
-              <StoreLocation />
-            </div>
-            <div id='RateUs'>
-              <RatingButton />
-            </div>
+            <FoodOrderType />
+            <Offers />
+            <MenusBrowse />
+            <ChefSelection />
+            <StoreLocation />
+            <RatingButton />
           </Suspense>
         </div>
       </Suspense>
