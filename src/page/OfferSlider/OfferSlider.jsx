@@ -12,7 +12,6 @@ const OfferSlider = ({ category }) => {
     navigate('/menu')
   }
 
-  console.log(category)
   const [sliderSettings] = useState({
     infinite: true,
     slidesToShow: 3,

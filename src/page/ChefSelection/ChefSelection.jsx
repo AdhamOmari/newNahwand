@@ -12,11 +12,9 @@ const ChefSelection = () => {
   if (!menuData) {
     return <Spinner />
   }
-  console.log('menuData:', menuData)
 
   const nahawandPackages = menuData || []
 
-  console.log('filteredMenuData:', nahawandPackages)
 
   const browseMenuText =
     isArabic === 'arabic' ? 'اختيار الشيف' : "Chef's Selection"

@@ -15,7 +15,6 @@ const ShowMenuItem = lazy(() => import('./page/ShowMenuItem/ShowMenuItem'))
 const RatingButton = lazy(() => import('./page/Opinion/Rating'))
 const FoodOrderType = lazy(() => import('./page/FoodOrderType/FoodOrderType'))
 const ChefSelection = lazy(() => import('./page/ChefSelection/ChefSelection'))
-
 const App = () => {
   return (
     <BrowserRouter>
