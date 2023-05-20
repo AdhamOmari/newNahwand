@@ -19,7 +19,7 @@ const Offers = () => {
         <div className={styles.itemImageContainer}>
           <img
             src={nahawandPackages.image}
-            alt={nahawandPackages.name}
+            alt={'Offers'}
             className={styles.itemImage}
             loading='lazy' // Add this attribute for lazy-loading
           />

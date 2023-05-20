@@ -2,7 +2,6 @@ import { useSelector } from 'react-redux'
 import { Helmet } from 'react-helmet'
 import styles from './style.module.css'
 import logo from '../../../public/KHA02275.jpg'
-import { lazy } from 'react'
 
 export default function HeroImage () {
   const language = useSelector(state => state.isArabic)
@@ -26,7 +25,7 @@ export default function HeroImage () {
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
             height: 600,
-            lazy
+            loading: 'lazy'
           }}
         >
           <div
