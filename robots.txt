@@ -1,4 +1,2 @@
 User-agent: *
-
-
 Sitemap: https://new-nahwand.vercel.app/sitemap.xml
