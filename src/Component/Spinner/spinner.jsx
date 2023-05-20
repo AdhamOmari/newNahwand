@@ -7,10 +7,11 @@ const Spinner = () => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
+        margin: '10vh auto',
         height: '100vh'
       }}
     >
-      <CircleLoader color='#AB6E15' loading={true} size={60} />
+      <CircleLoader color='#314F4F' loading={true} size={80} />
     </div>
   )
 }
