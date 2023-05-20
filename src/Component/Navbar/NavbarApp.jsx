@@ -49,7 +49,7 @@ const NavbarApp = () => {
           language === 'arabic' ? styles.arabic : ''
         }`}
       >
-        {language === 'arabic' ? 'نهواند' : 'Nahwand'}
+      <h1  className={`${styles.brand} `}>  {language === 'arabic' ? 'نهواند' : 'Nahwand'}</h1>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls='navbar-nav' />
       <Navbar.Collapse id='navbar-nav' className={styles.navbarCollapse}>
