@@ -14,10 +14,7 @@ const MenusBrowse = () => {
 
   const browseMenuText =
     isArabic === 'arabic' ? 'تصفح قائمتنا' : 'BROWSE OUR MENU'
-  const hungryText =
-    isArabic === 'arabic'
-      ? 'هل أنت جائع؟ اطلب وتناول الطعام'
-      : 'Hungry? Order & Eat'
+
   const seeMoreText = isArabic === 'arabic' ? 'شاهد المزيد' : 'See More'
   const linkContainerStyle =
     isArabic === 'arabic'
@@ -32,7 +29,6 @@ const MenusBrowse = () => {
     <>
       <div className={styles.menuSection}>
         <h4>{browseMenuText}</h4>
-        <p>{hungryText}</p>
       </div>
       <MenuCard category={menuData} />
       <button className={linkContainerStyle} onClick={() => move(menuData)}>

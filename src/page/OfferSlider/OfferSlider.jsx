@@ -38,23 +38,7 @@ const OfferSlider = ({ category }) => {
           slidesToShow: 1
         }
       }
-    ],
-    prevArrow: (
-      <button
-        type='button'
-        className={`${styles.arrowButton} ${styles.prevButton}`}
-      >
-        Prev
-      </button>
-    ),
-    nextArrow: (
-      <button
-        type='button'
-        className={`${styles.arrowButton} ${styles.nextButton}`}
-      >
-        Next
-      </button>
-    )
+    ]
   })
 
   const itemMargin = 10 // Adjust the value as per your preference
