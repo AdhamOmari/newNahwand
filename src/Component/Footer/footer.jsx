@@ -14,8 +14,11 @@ const Footer = () => {
   return (
     <div className={styles.footer}>
       <Helmet>
-        <title>Your Website Title</title>
-        <meta name='description' content='Your website description' />
+        <title>Nahwand</title>
+        <meta
+          name='description'
+          content='بيت المشاوي الأعلى تقييمًا - Nahwand | The Highest Rated BBQ Restaurant'
+        />
         {/* Add other necessary SEO tags */}
       </Helmet>
       <div className={styles['social-media-links']}>

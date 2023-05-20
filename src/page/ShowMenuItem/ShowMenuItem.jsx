@@ -24,7 +24,12 @@ const ShowMenuItem = () => {
             <div className={styles.cardContent}>
               <h2 className={styles.menuTitle}>{item.name}</h2>
               <p className={styles.description}>{item.description}</p>
-              <img src={item.image} alt={item.name} className={styles.image} />
+              <img
+                src={item.image}
+                alt={item.name}
+                className={styles.image}
+                loading='lazy' // Add this attribute for lazy-loading
+              />
               <p className={styles.price}>
                 {isArabic === 'arabic' ? 'السعر: ريال' : 'Price: $'}
                 {item.price}

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import Form from 'react-bootstrap/Form'
@@ -15,6 +15,7 @@ const NavbarApp = () => {
   const [showSearch, setShowSearch] = useState(false)
   const language = useSelector(state => state.isArabic)
   const dispatch = useDispatch()
+  const location = useLocation()
 
   const handleSearchIconClick = () => {
     setShowSearch(!showSearch)
@@ -30,6 +31,7 @@ const NavbarApp = () => {
   }
 
   const navbarDirection = language === 'arabic' ? 'rtl' : 'ltr'
+  const hideLanguageIcon = location.pathname.includes('/menu/') // Check if the user is on the /menu/:category route
 
   return (
     <Navbar
@@ -55,22 +57,22 @@ const NavbarApp = () => {
           <Nav.Link as={Link} to='/' className={styles.navLink}>
             {language === 'arabic' ? 'الرئيسية' : 'Home'}
           </Nav.Link>
-          <Nav.Link as={Link} to='/menu' className={styles.navLink}>
+          <Nav.Link href='#menu' className={styles.navLink}>
             {language === 'arabic' ? 'القائمة' : 'Menu'}
           </Nav.Link>
-          <Nav.Link as={Link} to='/Rating' className={styles.navLink}>
+          <Nav.Link href='#RateUs' className={styles.navLink}>
             {language === 'arabic' ? 'قيِّمنا' : 'Rate US'}
           </Nav.Link>
-          <Nav.Link as={Link} to='/Delivery' className={styles.navLink}>
+          <Nav.Link href='#Delivery' className={styles.navLink}>
             {language === 'arabic' ? 'توصيل' : 'Delivery'}
           </Nav.Link>
 
-          <Nav.Link as={Link} to='/ChefSelection' className={styles.navLink}>
+          <Nav.Link href='#ChefSelection' className={styles.navLink}>
             {language === 'arabic' ? 'اختيار الشيف' : 'Chef Selection'}
           </Nav.Link>
           <Form inline className={styles.form}>
             <div className={styles.btnWrap}>
-              {!showSearch && (
+              {!showSearch && !hideLanguageIcon && (
                 <>
                   <Button
                     variant='outline-primary'
