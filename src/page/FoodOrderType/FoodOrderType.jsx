@@ -23,7 +23,7 @@ const FoodOrderType = () => {
       dineIn: 'التناول في المطعم',
       delivery: 'توصيل',
       takeout: 'الاستلام من السيارة',
-      pickup: 'التناول في المطعم'
+      pickup: 'الاستلام من المطعم'
     }
   }
 
