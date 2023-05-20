@@ -8,6 +8,7 @@ import NotFound from './Component/Notfound'
 import NavbarApp from './Component/Navbar/NavbarApp'
 import Footer from './Component/Footer/footer'
 import HomePage from './page/Home/HomePage'
+
 const Heero = lazy(() => import('./page/Brief/Heero'))
 const StoreLocation = lazy(() => import('./page/Location/StoreLocation'))
 const AllMenus = lazy(() => import('./page/Menu/Menus'))
@@ -29,10 +30,10 @@ const App = () => {
               element={
                 <>
                   <Helmet>
-                    <title>مطعم نهاوند بيت المشاوي - السعودية</title>
+                    <title>Nahawand BBQ Restaurant - Saudi Arabia</title>
                     <meta
                       name='description'
-                      content='مطعم نهاوند بيت المشاوي - السعودية'
+                      content='Nahawand BBQ Restaurant - Saudi Arabia'
                     />
                   </Helmet>
                   <HomePage />
@@ -44,11 +45,10 @@ const App = () => {
               element={
                 <>
                   <Helmet>
-                    <title>مطعم نهاوند بيت المشاوي - السعودية</title>
+                    <title>Nahawand BBQ Restaurant - Saudi Arabia</title>
                     <meta
                       name='description'
-                      content='نهاوند بيت المشاوي ،،، نعدكم بالسعادة
-مطعم نهاوند بيت المشاوي - السعودية'
+                      content='Nahawand BBQ Restaurant, we promise you happiness. Nahawand BBQ Restaurant - Saudi Arabia'
                     />
                   </Helmet>
                   <Heero />
