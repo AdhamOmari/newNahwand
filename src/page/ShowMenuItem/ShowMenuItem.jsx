@@ -33,10 +33,12 @@ const ShowMenuItem = () => {
                 {isArabic === 'arabic' ? 'السعر: ريال' : 'Price: $'}
                 {item.price}
               </p>
-              <p className={styles.calories}>
-                {isArabic === 'arabic' ? 'سعرة حرارية: ' : 'Calories: '}
-                {item.calories}
-              </p>
+              {item.calories > 0 && (
+                <p className={styles.calories}>
+                  {isArabic === 'arabic' ? 'سعرة حرارية: ' : 'Calories: '}
+                  {item.calories}
+                </p>
+              )}
             </div>
           </div>
         ))}
