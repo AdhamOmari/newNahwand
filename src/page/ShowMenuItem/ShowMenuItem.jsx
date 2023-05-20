@@ -1,6 +1,8 @@
 import { useLocation } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import styles from './style.module.css'
+import { GiFire } from 'react-icons/gi'
+
 import FoodOrderType from '../FoodOrderType/FoodOrderType'
 
 const ShowMenuItem = () => {
@@ -19,26 +21,29 @@ const ShowMenuItem = () => {
       <FoodOrderType />
       <div className={`${styles.menuContainer} ${menuContainerClass}`}>
         {items?.map(item => (
-          <div key={item.id} className={styles.menuCard}>
+          <div
+            key={item.id}
+            className={`${styles.menuCard} ${styles.flexContainer}`}
+          >
+            <img
+              src={item.image}
+              alt={item.name}
+              className={styles.image}
+              loading='lazy' // Add this attribute for lazy-loading
+            />
             <div className={styles.cardContent}>
               <h2 className={styles.menuTitle}>{item.name}</h2>
-              <p className={styles.description}>{item.description}</p>
-              <img
-                src={item.image}
-                alt={item.name}
-                className={styles.image}
-                loading='lazy' // Add this attribute for lazy-loading
-              />
               <p className={styles.price}>
-                {isArabic === 'arabic' ? 'السعر: ريال' : 'Price: $'}
+                {isArabic === 'arabic' ? ' SAR ' : ' SAR'}
                 {item.price}
               </p>
               {item.calories > 0 && (
                 <p className={styles.calories}>
-                  {isArabic === 'arabic' ? 'سعرة حرارية: ' : 'Calories: '}
                   {item.calories}
+                  <GiFire />
                 </p>
               )}
+              <p className={styles.description}>{item.description}</p>
             </div>
           </div>
         ))}

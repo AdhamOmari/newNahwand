@@ -2,10 +2,10 @@
     margin: 20px;
     padding: 20px;
     border-radius: 5px;
-    background-color: #72838412;
+    background-color: #F8F8FF;
     display: flex;
     align-items: center;
-    color: #ab6e15;
+    color: #000;
     justify-content: space-between;
     box-shadow: -2px 3px 6px 5px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -29,7 +29,7 @@ h3 {
 }
 
 .dropdownSelect {
-    background: #0f0f0f;
+    background: #314F4F;
     border: 1px solid #728384;
     border-radius: 5px;
     padding: 10px;

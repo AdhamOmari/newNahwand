@@ -39,7 +39,7 @@ export default function HeroImage () {
                   dir={language === 'arabic' ? 'rtl' : 'ltr'}
                 >
                   {language === 'arabic'
-                    ? 'بيت المشاوي نعدكم بالسعادة'
+                    ? 'بيت المشاوي... نعدكم بالسعادة'
                     : 'BBQ House, we promise you happiness'}
                 </p>
               </div>

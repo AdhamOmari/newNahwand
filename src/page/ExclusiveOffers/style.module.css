@@ -24,10 +24,6 @@
     /* Add transition for smooth effect */
 }
 
-.itemImage:hover {
-    opacity: 0.8;
-    /* Reduce opacity when hovering the image */
-}
 
 .itemText {
     position: absolute;

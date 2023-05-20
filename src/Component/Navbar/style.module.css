@@ -4,14 +4,15 @@
     font-size: 43px;
     line-height: 46px;
     padding-left: 20px;
-    background: linear-gradient(99.92deg, #AB6E15 0%, #314F4F 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
+    color: #fff;
+
 }
 
 
+.navbar .navbar-toggler .icon-bar {
+    background-color: #fff !important;
+    color: #fff !important;
+}
 
 .navLink {
     font-family: 'Inter';
@@ -22,7 +23,7 @@
     display: flex;
     align-items: center;
     text-align: center;
-    color: #AB6E15;
+    color: #fff;
     display: flex;
     justify-content: center;
     /* gap: 20px; */
@@ -51,14 +52,11 @@
 
 .navbar {
     justify-content: space-around;
+    background-color: #314F4F;
+    color: #fff;
 
 }
 
-.navbarCollapse {
-    justify-content: end;
-    align-items: center;
-    margin-right: 1.5rem;
-}
 
 .centeredLinks {
     justify-content: center;
@@ -75,15 +73,39 @@
 }
 
 
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;..");
+}
 
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;..");
+}
 
+#navbar-nav {
+    color: #fff !important;
+}
+
+.navbar-toggler-icon {
+    background-color: transparent !important;
+}
+
+#navbar-nav button :hover, #navbar-nav:focus, #navbar-nav button :active {
+    background-color: transparent !important;
+}
+
+#navbar-nav a :focus {
+    background-color: white !important;
+}
 
 .languageIcon {
-    color: #4f3c31;
     padding: 0 10px;
     display: flex;
     align-items: center;
     /* Adjust the spacing as needed */
+}
+
+.whiteIcon svg {
+    color: #fff;
 }
 
 .btnWrap {
