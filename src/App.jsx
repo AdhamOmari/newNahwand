@@ -25,36 +25,8 @@ const App = () => {
 
         <Suspense fallback={<Spinner />}>
           <Routes>
-            <Route
-              path='/'
-              element={
-                <>
-                  <Helmet>
-                    <title>Nahawand BBQ Restaurant - Saudi Arabia</title>
-                    <meta
-                      name='description'
-                      content='Nahawand BBQ Restaurant - Saudi Arabia'
-                    />
-                  </Helmet>
-                  <HomePage />
-                </>
-              }
-            />
-            <Route
-              path='/Herero'
-              element={
-                <>
-                  <Helmet>
-                    <title>Nahawand BBQ Restaurant - Saudi Arabia</title>
-                    <meta
-                      name='description'
-                      content='Nahawand BBQ Restaurant, we promise you happiness. Nahawand BBQ Restaurant - Saudi Arabia'
-                    />
-                  </Helmet>
-                  <Heero />
-                </>
-              }
-            />
+            <Route path='/' element={<HomePage />} />
+            <Route path='/Herero' element={<Heero />} />
             <Route path='/Location' element={<StoreLocation />} />
             <Route path='/menu' element={<AllMenus />} />
             <Route path='/menu/:category' element={<ShowMenuItem />} />
