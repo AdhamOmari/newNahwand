@@ -7,7 +7,7 @@
                 "description": "بقدونس وطماطم وبصل وبرغل وليمون مع زيت الزيتون",
                 "price": 21,
                 "calories": 215,
-                "image": "/ImageFood/tabouleh.jpg"
+                "image": "/ImageFood/Tabboleeh.jpg"
             },
             {
                 "id": 2,
@@ -15,7 +15,7 @@
                 "description": "محشو بالخضروات والأرز ودبس الرمان وزيت الزيتون",
                 "price": 22,
                 "calories": 464,
-                "image": "/ImageFood/dipsalrooman.jpg"
+                "image": "/ImageFood/waraqenap.jpg"
             },
             {
                 "id": 3,
@@ -23,7 +23,7 @@
                 "description": "كبة محلية الصنع بلحم بلدي، صلصة اللبن، تشاش الكزبرة والثوم",
                 "price": 45,
                 "calories": 1861,
-                "image": "/ImageFood/koopehlaban.jpg"
+                "image": "/ImageFood/lappan.jpg"
             },
             {
                 "id": 4,
