@@ -7,8 +7,8 @@ import styles from './style.module.css'
 const Footer = () => {
   const language = useSelector(state => state.isArabic)
   const whatsappText = language
-    ? 'مرحبًا، أرغب في معرفة المزيد عن عناصر القائمة في المطعم 😃 🥩'
-    : 'Hello, I want to know more about the menu items in the restaurant 😃 🥩'
+    ? 'مرحبًا، أرغب في معرفة المزيد عن عناصر القائمة في المطعم 😃 '
+    : 'Hello, I want to know more about the menu items in the restaurant 😃 '
 
   return (
     <div className={styles.wrapper}>
