@@ -1,7 +1,13 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
-    min-height: 20vh;
+    min-height: 30vh;
+    /* Change min-height to 100vh */
 }
 
 .footer {
