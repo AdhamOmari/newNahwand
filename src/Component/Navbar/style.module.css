@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Kufam:ital,wght@0,400;1,500;1,600&family=Noto+Sans+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 .brand {
     font-style: normal;
     font-weight: 400;
-    font-size: 43px;
+    font-size: 26px;
     line-height: 46px;
     padding-left: 20px;
     color: #fff;
+    font-family: 'Kufam', sans-serif;
+
 
 }
 

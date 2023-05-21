@@ -43,6 +43,10 @@ h3 {
     margin: 8px !important;
 }
 
+.location {
+    text-align: center;
+}
+
 ul {
     list-style: none;
     padding: 0;
@@ -52,16 +56,18 @@ ul {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    text-align: center;
 }
 
 ul li {
     background-color: #fff;
     border: 1px solid #ccc;
-    border-radius: 50%;
+    border-radius: 20%;
     padding: 10px;
-    width: calc(60% - 10px);
+    width: calc(90% - 10px);
     margin-bottom: 10px;
     color: #ab6e15;
+    text-align: center;
 }
 
 .button {

@@ -55,7 +55,7 @@ const Footer = () => {
           <p>
             {language === 'arabic'
               ? 'جميع الحقوق محفوظة   مطعم نهاوند. © 2023'
-              : '&copy; 2023 Nahawand Restaurant. All rights reserved.'}
+              : ' Nahawand Restaurant. All rights reserved © 2023 .'}
           </p>
         </div>
       </footer>
