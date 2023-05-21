@@ -54,7 +54,7 @@ const Footer = () => {
         <div className={styles['footer-info']}>
           <p>
             {language === 'arabic'
-              ? 'جميع الحقوق محفوظة © 2023 مطعم نهواند.'
+              ? 'جميع الحقوق محفوظة   مطعم نهاوند. © 2023'
               : '&copy; 2023 Nahawand Restaurant. All rights reserved.'}
           </p>
         </div>

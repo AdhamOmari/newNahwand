@@ -33,9 +33,9 @@ export default function HeroImage () {
             style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}
           >
             <div className='d-flex justify-content-center align-items-center h-100'>
-              <div className={`text-white ${styles.content}`}>
+              <div className={`text-white ${styles.content} ${styles.wrapper}`}>
                 <p
-                  className={`${styles.descriptionArabic}`}
+                  className={`${styles.descriptionArabic} ${styles.type}`}
                   dir={language === 'arabic' ? 'rtl' : 'ltr'}
                 >
                   {language === 'arabic'

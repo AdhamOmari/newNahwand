@@ -14,35 +14,25 @@
     font-size: 40px;
     line-height: 46px;
     padding-left: 20px;
-
 }
 
-
 .descriptionArabic {
-
-    font-style: normal;
+    font-style: italic;
     font-weight: 400;
     font-size: 2vw;
     display: flex;
     align-items: center;
     letter-spacing: 0.03em;
-    font-style: normal;
-    font-weight: 400;
     font-size: 40px;
     line-height: 46px;
     padding-left: 20px;
-
 }
 
 .content {
-
     position: absolute;
     display: flex;
     flex-direction: column;
     top: 576px;
     gap: 20px;
     left: 0px;
-    border-radius: 30%;
-
-
 }
