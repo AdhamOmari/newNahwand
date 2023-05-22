@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
@@ -16,7 +16,7 @@ const NavbarApp = () => {
   const language = useSelector(state => state.isArabic)
   const dispatch = useDispatch()
   const location = useLocation()
-
+  useEffect(() => {}, [language, dispatch])
   const handleSearchIconClick = () => {
     setShowSearch(!showSearch)
   }
@@ -49,7 +49,6 @@ const NavbarApp = () => {
         }`}
       >
         <h1 className={`${styles.brand} `}>
-          {' '}
           {language === 'arabic' ? 'نهاوند' : 'Nahwand'}
         </h1>
       </Navbar.Brand>

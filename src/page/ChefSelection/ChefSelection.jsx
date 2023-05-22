@@ -5,11 +5,13 @@ import dataArabic from '../../../public/DB/ChefSelectionArabic.json'
 import styles from './style.module.css'
 import OfferSlider from '../OfferSlider/OfferSlider'
 import Spinner from '../../Component/Spinner/spinner'
+import { useEffect } from 'react'
 
 const ChefSelection = () => {
   const isArabic = useSelector(state => state.isArabic)
   const menuData = isArabic === 'arabic' ? dataArabic.menu : data.menu
-  console.log(isArabic)
+  useEffect(() => {}, [isArabic])
+  console.log(isArabic, 'arabic')
   if (!menuData) {
     return <Spinner />
   }
