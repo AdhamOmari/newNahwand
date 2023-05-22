@@ -167,7 +167,7 @@
                 }
             ]
         },
-        " المقبلات ساخنة": {
+        " المقبلات الساخنة": {
             "image": "/ImageFood/Fried.jpg",
             "item": [
                 {
@@ -256,7 +256,7 @@
                     "description": "",
                     "price": 14,
                     "calories": 0,
-                    "image": "../public/ImageFood/Lentil.jpg"
+                    "image": "/ImageFood/bryany.jpg"
                 },
                 {
                     "id": 31,

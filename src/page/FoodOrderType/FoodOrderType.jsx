@@ -6,6 +6,7 @@ import styles from './FoodOrderType.module.css'
 
 const FoodOrderType = () => {
   const language = useSelector(state => state.isArabic)
+  console.log(language)
   const [orderType, setOrderType] = useState('')
 
   const handleOrderTypeChange = event => {
@@ -55,9 +56,7 @@ const FoodOrderType = () => {
           onChange={handleOrderTypeChange}
           className={styles.dropdownSelect}
         >
-          <option value=''>
-            {language === 'arabic' ? 'اختر نوع الطلب' : 'Select Order Type'}
-          </option>
+          <option value=''>{language === 'arabic' ? '-' : '-'}</option>
           {Object.keys(selectedOrderTypeText).map(key => (
             <option key={key} value={key} className={styles.delivery}>
               {selectedOrderTypeText[key]}
