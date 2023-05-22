@@ -10,7 +10,7 @@ import FoodOrderType from '../FoodOrderType/FoodOrderType'
 const AllMenus = () => {
   const navigate = useNavigate()
 
-  const isArabic = useSelector(state => state.isArabic)
+  const { isArabic } = useSelector(state => state.rootReducer)
   const menuData = isArabic === 'arabic' ? dataArabic.menu : data.menu
 
   useEffect(() => {}, [isArabic])

@@ -2,7 +2,7 @@ import styles from './style.module.css'
 import { useSelector } from 'react-redux'
 
 const StoreLocation = () => {
-  const language = useSelector(state => state.isArabic)
+  const { isArabic: language } = useSelector(state => state.rootReducer)
   const latitude = 26.298368369233014 // Replace with the latitude of the target location
   const longitude = 50.18112060674594 // Replace with the longitude of the target location
 

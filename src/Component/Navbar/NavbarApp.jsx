@@ -13,7 +13,8 @@ import { MdLanguage } from 'react-icons/md'
 
 const NavbarApp = () => {
   const [showSearch, setShowSearch] = useState(false)
-  const language = useSelector(state => state.isArabic)
+  const { isArabic: language } = useSelector(state => state.rootReducer)
+
   const dispatch = useDispatch()
   const location = useLocation()
   useEffect(() => {}, [language, dispatch])
@@ -49,7 +50,7 @@ const NavbarApp = () => {
         }`}
       >
         <h1 className={`${styles.brand} `}>
-          {language === 'arabic' ? 'نهاوند' : 'Nahwand'}
+          {language === 'arabic' ? 'نهاوند' : 'Nahawand'}
         </h1>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls='navbar-nav' />
@@ -65,14 +66,19 @@ const NavbarApp = () => {
           <Nav.Link as={Link} to='/menu' className={styles.navLink} smooth>
             {language === 'arabic' ? 'القائمة' : 'Menu'}
           </Nav.Link>
-          <Nav.Link href='/ChefSelection' className={styles.navLink} smooth>
-            {language === 'arabic' ? 'اختيار الشيف' : 'Chef Selection'}
+          <Nav.Link
+            as={Link}
+            to='/ChefSelection'
+            className={styles.navLink}
+            smooth
+          >
+            {language === 'arabic' ? 'اختيار الشيف' : `Chef's Selection`}
           </Nav.Link>
-          <Nav.Link href='/Delivery' className={styles.navLink} smooth>
+          <Nav.Link as={Link} to='/Delivery' className={styles.navLink} smooth>
             {language === 'arabic' ? 'توصيل' : 'Delivery'}
           </Nav.Link>
 
-          <Nav.Link href='/RateUs' className={styles.navLink} smooth>
+          <Nav.Link as={Link} to='/RateUs' className={styles.navLink} smooth>
             {language === 'arabic' ? 'قيِّمنا' : 'Rate US'}
           </Nav.Link>
           <Form inline className={styles.form}>
@@ -86,7 +92,7 @@ const NavbarApp = () => {
                   >
                     {/* <FiSearch size={20} /> */}
                   </Button>
-                  <Button
+                  {/* <Button
                     variant='link'
                     onClick={handleLanguageChange}
                     className={styles.languageIcon}
@@ -94,7 +100,7 @@ const NavbarApp = () => {
                     <div className={styles.languageIcon}>
                       <MdLanguage style={{ color: '#FFF' }} />
                     </div>
-                  </Button>
+                  </Button> */}
                 </>
               )}
             </div>

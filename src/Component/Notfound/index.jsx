@@ -7,7 +7,7 @@ export default function NotFound () {
   const handleGoBack = () => {
     window.location.href = '/'
   }
-  const isArabic = useSelector(state => state.isArabic)
+  const { isArabic } = useSelector(state => state.rootReducer)
 
   return (
     <div className={styles.notfound}>

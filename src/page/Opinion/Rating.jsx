@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux'
 const RatingButton = () => {
   const rating = 4.6 // Average rating
 
-  const isArabic = useSelector(state => state.isArabic)
+  const { isArabic } = useSelector(state => state.rootReducer)
 
   const handleRatingClick = () => {
     window.open(

@@ -24,7 +24,7 @@ const MenuCard = ({ category }) => {
     responsive: [
       {
         breakpoint: 960,
-        dots: 3,
+        dots: 2,
 
         settings: {
           slidesToShow: 4
@@ -32,7 +32,7 @@ const MenuCard = ({ category }) => {
       },
       {
         breakpoint: 640,
-        dots: 3,
+        dots: 1,
 
         settings: {
           slidesToShow: 1,

@@ -127,18 +127,15 @@
     margin-bottom: 20px;
 }
 
-.seeMoreLink {
+/* .seeMoreLink {
     display: inline-block;
-    /* padding: 8px 12px; */
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    /* border-radius: 4px; */
-    /* background-color: #728384; */
+
     position: relative;
     left: 20px;
     top: 20px;
-    /* transition: background-color 0.3s ease; */
 
 
     background-color: #314F4F;
@@ -174,14 +171,84 @@
     .seeMoreLink {
         left: 5px;
         top: 5px;
-        text-decoration: none;
 
+}
+}
+
+*/
+div.slick-prev:before,
+div.slick-next:before {
+    visibility: hidden !important;
+}
+
+.seeMoreLink {
+    display: inline-block;
+    /* padding: 8px 12px; */
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    /* border-radius: 4px; */
+    /* background-color: #728384; */
+    position: relative;
+    left: 20px;
+    top: 20px;
+    /* transition: background-color 0.3s ease; */
+    background-color: #314F4F;
+    width: 150px;
+    height: 48px;
+    border-radius: 10px;
+
+}
+
+@media (max-width: 768px) {
+    .seeMoreLink {
+        left: 10px;
+        top: 10px;
+        width: 102px;
+        all: unset;
+        color: #000;
+        text-decoration: none;
+        background: none;
+        border: none;
+        outline: none;
+        margin-left: 15px;
+        font-size: 14px;
+        border: transparent;
+        position: relative;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .seeMoreLink {
+
+        all: unset;
+        color: #000;
+        text-decoration: none;
+        background: none;
+        border: none;
+        outline: none;
+        margin-left: 15px;
+        margin-top: -26px;
+        font-size: 14px;
+        border: transparent;
+        position: absolute;
     }
 }
 
 
+.alignRight {
+    text-align: right;
+}
 
-div.slick-prev:before,
-div.slick-next:before {
-    visibility: hidden !important;
+/* custom-slider-theme.css */
+
+@media (max-width: 480px) {
+    .slick-dots li {
+        display: none;
+    }
+
+    .slick-dots li:nth-child(-n + 4) {
+        display: block;
+    }
 }

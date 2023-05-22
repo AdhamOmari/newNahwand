@@ -146,7 +146,7 @@
 .seeMoreLink {
     display: inline-block;
     padding: 8px 12px;
-    color: #fff;
+    color: #000;
     text-decoration: none;
     font-weight: bold;
     border-radius: 4px;
@@ -169,6 +169,8 @@
         left: 5px;
         top: 5px;
         width: 102px;
+        margin-left: 15px;
+        font-size: 14px;
 
     }
 }

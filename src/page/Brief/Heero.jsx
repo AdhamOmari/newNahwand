@@ -4,7 +4,7 @@ import styles from './style.module.css'
 import logo from '../../../public/KHA02275.jpg'
 
 export default function HeroImage () {
-  const language = useSelector(state => state.isArabic)
+  const { isArabic: language } = useSelector(state => state.rootReducer)
 
   return (
     <>

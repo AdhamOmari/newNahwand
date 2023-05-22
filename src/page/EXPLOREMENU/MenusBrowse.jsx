@@ -7,7 +7,7 @@ import styles from './style.module.css'
 import Spinner from '../../Component/Spinner/spinner'
 
 const MenusBrowse = () => {
-  const isArabic = useSelector(state => state.isArabic)
+  const { isArabic }= useSelector(state => state.rootReducer)
   const menuData = isArabic === 'arabic' ? dataArabic.menu : data.menu
   const navigate = useNavigate()
   if (!menuData) return <Spinner />

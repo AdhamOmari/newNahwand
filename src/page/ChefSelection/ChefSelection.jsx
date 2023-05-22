@@ -8,7 +8,7 @@ import Spinner from '../../Component/Spinner/spinner'
 import { useEffect } from 'react'
 
 const ChefSelection = () => {
-  const isArabic = useSelector(state => state.isArabic)
+  const { isArabic } = useSelector(state => state.rootReducer)
   const menuData = isArabic === 'arabic' ? dataArabic.menu : data.menu
   useEffect(() => {}, [isArabic])
   console.log(isArabic, 'arabic')

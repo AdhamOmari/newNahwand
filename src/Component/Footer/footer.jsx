@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet'
 import styles from './style.module.css'
 
 const Footer = () => {
-  const language = useSelector(state => state.isArabic)
+  const { isArabic: language } = useSelector(state => state.rootReducer)
   const whatsappText = language
     ? 'مرحبًا، أرغب في معرفة المزيد عن عناصر القائمة في المطعم ؟'
     : 'Hello, I want to know more about the menu items in the restaurant ?'

@@ -4,7 +4,7 @@ import Spinner from '../../Component/Spinner/spinner'
 import offerImage from '../../../public/offer.jpg' // Replace with the path to your offer image
 
 const Offers = () => {
-  const language = useSelector(state => state.isArabic)
+  const { isArabic: language } = useSelector(state => state.rootReducer)
 
   if (!offerImage) {
     return <Spinner />

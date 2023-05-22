@@ -5,7 +5,7 @@ import { AiOutlineWhatsApp } from 'react-icons/ai'
 import styles from './FoodOrderType.module.css'
 
 const FoodOrderType = () => {
-  const language = useSelector(state => state.isArabic)
+  const { isArabic: language } = useSelector(state => state.rootReducer)
   console.log(language)
   const [orderType, setOrderType] = useState('')
 

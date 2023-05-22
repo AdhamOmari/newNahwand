@@ -8,7 +8,7 @@ import FoodOrderType from '../FoodOrderType/FoodOrderType'
 const ShowMenuItem = () => {
   const location = useLocation()
   const items = location.state
-  const isArabic = useSelector(state => state.isArabic)
+  const { isArabic }= useSelector(state => state.rootReducer)
 
   const menuContainerClass =
     isArabic === 'arabic' ? styles.containerRTL : styles.containerLTR
