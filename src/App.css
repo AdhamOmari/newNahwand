@@ -8,6 +8,7 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
+
 /* English Font Family */
 body[lang='en'] {
     font-family: 'Instrument Sans', sans-serif;

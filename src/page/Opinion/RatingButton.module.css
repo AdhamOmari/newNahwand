@@ -10,11 +10,11 @@
     transform-style: preserve-3d;
     perspective: 1000px;
     /* Set the perspective depth */
-    background: linear-gradient(180deg, rgba(94, 219, 194, 0) 37.5%, #5EDBC2 100%);
+    background: linear-gradient(180deg, rgba(94, 219, 194, 0) 37.5%, #90a5c1 100%);
 }
 
 .filledStar {
-    color: #5EDBC2;
+    color: #90a5c1;
 }
 
 .ratingStars {
@@ -47,7 +47,7 @@
 
 .addRatingButton {
     padding: 10px 20px;
-    background-color: #5EDBC2;
+    background-color: #90a5c1;
     color: #fff;
     font-weight: bold;
     border: none;

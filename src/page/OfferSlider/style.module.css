@@ -68,8 +68,8 @@
     position: absolute;
     width: 55px;
     height: 28px;
-    left: 39vh;
-    top: 31vh;
+    left: 12vh;
+    top: 15vh;
 
     font-family: 'Cairo';
     font-style: normal;
@@ -77,7 +77,7 @@
     font-size: 15px;
     line-height: 28px;
     text-transform: uppercase;
-    z-index: 10000000;
+    z-index: 10000000000;
     color: #FFFFFF;
 }
 
@@ -175,7 +175,7 @@
         font-family: 'Cairo';
         font-style: normal;
         font-weight: 600;
-        font-size: 18px;
+        font-size: 15px;
         line-height: 28px;
         text-transform: uppercase;
         z-index: 10000000;
@@ -200,7 +200,7 @@
         font-family: 'Cairo';
         font-style: normal;
         font-weight: 800;
-        font-size: 18px;
+        font-size: 15px;
         line-height: 28px;
         text-transform: uppercase;
         z-index: 10000000;
@@ -268,7 +268,7 @@
 
 
 .cover {
-    background: linear-gradient(180deg, rgba(94, 219, 194, 0) 0%, #5EDBC2 100%);
+    background: linear-gradient(180deg, rgba(94, 219, 194, 0) 0%, #90a5c1 100%);
     position: relative;
     width: 425px;
     left: 0px;

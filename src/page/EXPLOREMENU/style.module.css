@@ -68,8 +68,8 @@
     position: absolute;
     width: 55px;
     height: 28px;
-    left: 39vh;
-    top: 31vh;
+    left: 12vh;
+    top: 15vh;
 
     font-family: 'Cairo';
     font-style: normal;
@@ -268,7 +268,7 @@
 
 
 .cover {
-    background: linear-gradient(180deg, rgba(94, 219, 194, 0) 0%, #5EDBC2 100%);
+    background: linear-gradient(180deg, rgba(94, 219, 194, 0) 0%, #90a5c1 100%);
     position: relative;
     width: 425px;
     left: 0px;

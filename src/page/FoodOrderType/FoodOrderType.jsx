@@ -81,7 +81,7 @@ const FoodOrderType = () => {
               <div className={styles.cardIcon}>{order.icon}</div>
               <p className={`${styles.cardText} ${styles.cardTextWithIcon}`}>
                 {orderType === order.type && (
-                  <BsCheckCircle size={20} color='#5EDBC2' />
+                  <BsCheckCircle size={20} color='#90a5c1' />
                 )}
                 {order.text}
               </p>
