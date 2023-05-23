@@ -68,12 +68,12 @@
     position: absolute;
     width: 55px;
     height: 28px;
-    left: 43px;
-    top: 132px;
+    left: 39vh;
+    top: 31vh;
 
     font-family: 'Cairo';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 900;
     font-size: 15px;
     line-height: 28px;
     text-transform: uppercase;
@@ -175,7 +175,7 @@
         font-family: 'Cairo';
         font-style: normal;
         font-weight: 600;
-        font-size: 15px;
+        font-size: 18px;
         line-height: 28px;
         text-transform: uppercase;
         z-index: 10000000;
@@ -190,12 +190,19 @@
         background: none;
         border: none;
         outline: none;
-        margin-left: 17px;
+        margin-left: 12vh;
         margin-top: -11px;
         font-size: 14px;
         border: transparent;
         position: absolute;
         color: #c6dad5;
+        z-index: 10000000;
+        font-family: 'Cairo';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 28px;
+        text-transform: uppercase;
         z-index: 10000000;
 
     }

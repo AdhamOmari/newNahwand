@@ -1,6 +1,6 @@
+/* Default styles */
 .foodOrderTypeWrapper {
     width: 100%;
-    white-space: nowrap;
     display: flex;
     justify-content: space-around;
     margin-top: 10px;
@@ -9,17 +9,15 @@
     align-items: center;
     border-radius: 6px;
     padding-top: 16px;
-    max-width: 424px;
-
 }
 
 .cardContainer {
     display: flex;
     justify-content: flex-start;
     margin-bottom: 20px;
-    width: 340px;
+    width: 500px;
     gap: 10px;
-
+    flex-wrap: wrap;
 }
 
 .card {
@@ -29,26 +27,22 @@
     cursor: pointer;
 }
 
-.card:hover {
-    border-color: green;
-}
-
+.card:hover,
 .selected {
     border-color: green;
 }
 
 .cardIcon {
-    width: 100%;
+    /* width: 100%; */
     border: 1px solid rgba(106, 110, 123, .2);
     box-shadow: 0 2px 4px rgba(0, 0, 0, .05);
     border-radius: 0.4rem;
     height: 4.2rem;
+    width: 3.2rem;
     padding: 0.4rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
-
-
     background: #5EDBC2;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
@@ -62,33 +56,32 @@
     /* Add this line to create a border */
     padding: 5px;
     /* Optional: Add padding to adjust the spacing around the icon */
-
 }
 
 .cardText {
-
-    padding: 6px 12px;
+    padding: 2px;
     overflow: hidden;
     position: relative;
     font-size: 9px;
-    max-width: 264px;
-    min-width: 72px;
+    max-width: 46px;
+    /* min-width: 72px; */
     box-sizing: border-box;
-    min-height: 48px;
+    min-height: 50px;
     text-align: center;
-    flex-shrink: 0;
+    /* flex-shrink: 0; */
     font-weight: 500;
     line-height: 1.75;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column-reverse;
-    align-items: center;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-line-clamp: 1;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
     font-family: 'Cairo';
     font-style: normal;
     font-weight: 900;
     text-transform: uppercase;
-
 }
+
 
 .button {
     background-color: transparent;
@@ -113,7 +106,6 @@
     align-items: center;
 }
 
-
 .cardList a {
     text-decoration: none;
 }
@@ -129,7 +121,16 @@
     align-items: center;
 }
 
+/* Responsive styles */
 @media (max-width: 768px) {
+    .foodOrderTypeWrapper {
+        flex-wrap: wrap;
+    }
+
+    .cardContainer {
+        width: 100%;
+    }
+
     .card {
         width: calc(30% - 20px);
         height: auto;
