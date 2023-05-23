@@ -56,8 +56,11 @@
 
 .navbar {
     justify-content: space-around;
-    background-color: #314F4F;
-    color: #fff;
+    background-color: #F5F5F5;
+    background: #5EDBC2;
+    border-bottom: 1px solid #F5FFFB;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 4px 4px;
 
 }
 

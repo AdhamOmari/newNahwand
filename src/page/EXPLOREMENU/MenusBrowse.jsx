@@ -7,7 +7,7 @@ import styles from './style.module.css'
 import Spinner from '../../Component/Spinner/spinner'
 
 const MenusBrowse = () => {
-  const { isArabic }= useSelector(state => state.rootReducer)
+  const { isArabic } = useSelector(state => state.rootReducer)
   const menuData = isArabic === 'arabic' ? dataArabic.menu : data.menu
   const navigate = useNavigate()
   if (!menuData) return <Spinner />
@@ -29,6 +29,7 @@ const MenusBrowse = () => {
     <>
       <div className={styles.menuSection}>
         <h4>{browseMenuText}</h4>
+        <h4 className={styles.browseMenuTextTitle}>خاضع للضريبة </h4>
       </div>
       <MenuCard category={menuData} />
       <button className={linkContainerStyle} onClick={() => move(menuData)}>

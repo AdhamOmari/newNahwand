@@ -1,6 +1,13 @@
 import { useState } from 'react'
 import { useSelector } from 'react-redux'
 import { AiOutlineWhatsApp } from 'react-icons/ai'
+import {
+  FaMotorcycle,
+  FaUtensils,
+  FaCarSide,
+  FaShoppingBag
+} from 'react-icons/fa'
+import { BsCheckCircle } from 'react-icons/bs'
 
 import styles from './FoodOrderType.module.css'
 
@@ -9,31 +16,43 @@ const FoodOrderType = () => {
   console.log(language)
   const [orderType, setOrderType] = useState('')
 
-  const handleOrderTypeChange = event => {
-    setOrderType(event.target.value)
+  const handleOrderTypeChange = type => {
+    setOrderType(type)
   }
 
-  const orderTypeText = {
-    en: {
-      delivery: 'Delivery',
-      dineIn: 'Dine-in',
-      takeout: 'Pickup from the car',
-      pickup: 'Pickup from the restaurant'
+  const orderTypes = [
+    {
+      type: 'delivery',
+      text: language === 'arabic' ? 'توصيل' : 'Delivery',
+      icon: <FaMotorcycle size={20} color='#FFFF' />
     },
-    arabic: {
-      delivery: 'توصيل',
-      dineIn: 'التناول في المطعم',
-      takeout: 'الاستلام من السيارة',
-      pickup: 'الاستلام من المطعم'
+    {
+      type: 'dineIn',
+      text: language === 'arabic' ? 'التناول في المطعم' : 'Dine-in',
+      icon: <FaUtensils size={20} color='#FFFF' />
+    },
+    {
+      type: 'takeout',
+      text:
+        language === 'arabic'
+          ? 'استلام الطلب من السيارة '
+          : 'Pickup from the car',
+      icon: <FaCarSide size={20} color='#FFFF' />
+    },
+    {
+      type: 'pickup',
+      text:
+        language === 'arabic'
+          ? 'الاستلام من المطعم'
+          : 'Pickup from the restaurant',
+      icon: <FaShoppingBag size={20} color='#FFFF' />
     }
-  }
-
-  const selectedOrderTypeText = orderTypeText[language] || orderTypeText.en
+  ]
 
   const openWhatsApp = () => {
     const whatsappText = language
-      ? 'مرحبًا، أرغب في معرفة المزيد عن عناصر القائمة في المطعم  ؟ '
-      : 'Hello, I want to know more about the menu items in the restaurant  ?'
+      ? 'مرحبًا، أرغب في معرفة المزيد عن عناصر القائمة في المطعم ؟'
+      : 'Hello, I want to know more about the menu items in the restaurant?'
     window.open(
       `https://api.whatsapp.com/send?phone=966 55 310 4477&text=${encodeURIComponent(
         whatsappText
@@ -48,96 +67,80 @@ const FoodOrderType = () => {
   }`
 
   return (
-    <div className={containerClass}>
-      <h3>{language === 'arabic' ? 'نوع الطلب' : 'Food Order Type:'}</h3>
-      <div className={styles.dropdownContainer}>
-        <select
-          value={orderType}
-          onChange={handleOrderTypeChange}
-          className={styles.dropdownSelect}
-        >
-          <option value=''>{language === 'arabic' ? '-' : '-'}</option>
-          {Object.keys(selectedOrderTypeText).map(key => (
-            <option key={key} value={key} className={styles.delivery}>
-              {selectedOrderTypeText[key]}
-            </option>
-          ))}
-        </select>
-      </div>
-      {orderType && (
-        <>
-          {(orderType === 'dineIn' ||
-            orderType === 'takeout' ||
-            orderType === 'pickup') && (
-            <button
-              className={`${styles.button} ${
-                language === 'arabic' ? styles.ar : ''
-              }`}
-              onClick={openWhatsApp}
-            >
-              <AiOutlineWhatsApp size={35} color='green' />
-            </button>
-          )}
-          {orderType === 'delivery' && (
+    <div className={styles.foodOrderTypeWrapper}>
+      <div className={containerClass}>
+        <div className={styles.cardContainer}>
+          {orderTypes.map(order => (
             <div
-              className={`${styles.location} ${
-                language === 'arabic' ? styles.ar : ''
+              key={order.type}
+              className={`${styles.card} ${
+                orderType === order.type ? styles.selected : ''
               }`}
+              onClick={() => handleOrderTypeChange(order.type)}
             >
-              <p
-                className={`${styles.apps} ${
+              <div className={styles.cardIcon}>{order.icon}</div>
+              <p className={`${styles.cardText} ${styles.cardTextWithIcon}`}>
+                {orderType === order.type && (
+                  <BsCheckCircle size={20} color='#5EDBC2' />
+                )}
+                {order.text}
+              </p>
+            </div>
+          ))}
+        </div>
+        {orderType && (
+          <>
+            {(orderType === 'dineIn' ||
+              orderType === 'takeout' ||
+              orderType === 'pickup') && (
+              <button
+                className={`${styles.button} ${
                   language === 'arabic' ? styles.ar : ''
                 }`}
+                onClick={openWhatsApp}
               >
-                {language === 'arabic'
-                  ? 'يمكنك العثور علينا على  '
-                  : 'You can find us on these apps'}
-              </p>
-              <ul className={styles.cardList}>
-                <li>
-                  <a
-                    href='https://example.com/hungerstation'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                  >
-                    <img
-                      src='/HungerStation-01-3.svg'
-                      alt='HungerStation'
-                      loading='lazy' // Add this attribute for lazy-loading
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href='https://example.com/mrsool'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                  >
-                    <img
-                      src='/Mrsool-01.svg'
-                      alt='Mrsool'
-                      loading='lazy' // Add this attribute for lazy-loading
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href='https://example.com/jahez'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                  >
-                    <img
-                      src='/jahez.svg'
-                      alt='Jahez'
-                      loading='lazy' // Add this attribute for lazy-loading
-                    />
-                  </a>
-                </li>
-              </ul>
-            </div>
-          )}
-        </>
-      )}
+                <AiOutlineWhatsApp size={35} color='green' />
+              </button>
+            )}
+            {orderType === 'delivery' && (
+              <div className={styles.location}>
+                <h4 className={styles.apps}>
+                  {language === 'arabic' ? 'التطبيقات' : 'Apps'}
+                </h4>
+                <ul className={styles.cardList}>
+                  <li>
+                    <a href='/'>
+                      <img
+                        src='/HungerStation-01-3.svg'
+                        alt='App 1'
+                        className={styles.cardImage}
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href='/'>
+                      <img
+                        src='/Mrsool-01.svg'
+                        alt='App 2'
+                        className={styles.cardImage}
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href='/'>
+                      <img
+                        src='/jahez.svg'
+                        alt='App 3'
+                        className={styles.cardImage}
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            )}
+          </>
+        )}
+      </div>
     </div>
   )
 }

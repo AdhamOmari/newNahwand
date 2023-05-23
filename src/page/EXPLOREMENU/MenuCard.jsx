@@ -78,6 +78,7 @@ const MenuCard = ({ category }) => {
                   className={styles.categoryLink}
                 >
                   <h4 className={styles.itemName}>{cat}</h4>
+                  <div className={styles.cover}></div>
                 </button>
               </div>
             </div>

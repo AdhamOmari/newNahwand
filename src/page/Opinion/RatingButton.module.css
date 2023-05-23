@@ -1,14 +1,16 @@
 .ratingContainer {
+    border-radius: 6px;
+    box-shadow: -2px 3px 6px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px;
-    background: #F8F8FF;
-    position: relative;
-    top: 30px;
-    border-radius: 20px;
-    box-shadow: -2px 3px 6px 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 100px;
+    border-bottom: 2px solid #728384;
+    animation: fade-in-3d 1s ease-in-out;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    /* Set the perspective depth */
+    background: linear-gradient(180deg, rgba(94, 219, 194, 0) 37.5%, #5EDBC2 100%);
 }
 
 .filledStar {
@@ -29,22 +31,35 @@
     font-size: 24px;
     font-weight: bold;
     color: #000;
+    font-family: 'Cairo';
+    font-style: normal;
+    text-transform: uppercase;
+
+
 }
 
 .totalRatings {
     font-size: 14px;
     color: #000;
+    font-size: 18px;
+
 }
 
 .addRatingButton {
     padding: 10px 20px;
-    background-color: #fff;
-    color: #000;
+    background-color: #5EDBC2;
+    color: #fff;
     font-weight: bold;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    box-shadow: -2px 3px 6px 5px rgba(0, 0, 0, 0.1);
+
+
+    font-size: 18px;
+
+
 }
 
 .addRatingButton:hover {

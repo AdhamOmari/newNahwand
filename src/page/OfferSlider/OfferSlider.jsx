@@ -65,6 +65,7 @@ const OfferSlider = ({ category }) => {
 
                 <button onClick={() => move()} className={styles.categoryLink}>
                   <h4 className={styles.itemName}>{cat.name}</h4>
+                  <div className={styles.cover}></div>
                 </button>
               </div>
             </div>

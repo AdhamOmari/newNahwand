@@ -9,7 +9,7 @@
                     "description": "مع الخبز المحمص بالثوم والكمون والليمون",
                     "price": 19,
                     "calories": 160,
-                    "image": "../public/ImageFood/Lentil.jpg"
+                    "image": "/ImageFood/Lentil.jpg"
                 },
                 {
                     "id": 2,
@@ -17,7 +17,7 @@
                     "description": "فطر مطهي مع الكريمة وبهارات الشيف مع الخبز المحمص",
                     "price": 22,
                     "calories": 345,
-                    "image": "../public/ImageFood/Mushroom.jpg"
+                    "image": "/ImageFood/Mushroom.jpg"
                 },
                 {
                     "id": 3,
@@ -25,7 +25,7 @@
                     "description": "ملوخية محضرة بالطريقة المصرية",
                     "price": 19,
                     "calories": 164,
-                    "image": "../public/ImageFood/Molokhia.jpg"
+                    "image": "/ImageFood/Molokhia.jpg"
                 }
             ]
         },
@@ -232,7 +232,7 @@
                     "description": "مقلية مقرمشة ",
                     "price": 20,
                     "calories": 520,
-                    "image": "../public/ImageFood/Lentil.jpg"
+                    "image": "/image-003.svg"
                 },
                 {
                     "id": 28,
@@ -240,7 +240,7 @@
                     "description": "مقلية بشكل مقرمش مع صوص الكاتشب",
                     "price": 13,
                     "calories": 480,
-                    "image": "../public/ImageFood/Lentil.jpg"
+                    "image": "/image-003.svg"
                 },
                 {
                     "id": 29,
@@ -301,7 +301,7 @@
                     "description": "مع الكريمة والفطر البري وجبنة بارميزان",
                     "price": 39,
                     "calories": 630,
-                    "image": "../public/ImageFood/Lentil.jpg"
+                    "image": "/image-003.svg"
                 },
                 {
                     "id": 36,
@@ -309,7 +309,7 @@
                     "description": "مع صلصة طماطم الحارة والريحان وجبنة بارميزان والأعشاب",
                     "price": 38,
                     "calories": 510,
-                    "image": "../public/ImageFood/Lentil.jpg"
+                    "image": "/image-003.svg"
                 },
                 {
                     "id": 37,
@@ -317,7 +317,7 @@
                     "description": "مع صلصة طماطم والأعشاب",
                     "price": 38,
                     "calories": 480,
-                    "image": "../public/ImageFood/Lentil.jpg"
+                    "image": "/image-003.svg"
                 }
             ]
         },
@@ -378,7 +378,7 @@
                     "description": "ورق عنب محشي ارز باللحم البلدي  مع ريش الغنم",
                     "price": 80,
                     "calories": 0,
-                    "image": "../public/ImageFood/Lentil.jpg"
+                    "image": "/image-003.svg"
                 }
             ]
         },
@@ -399,7 +399,7 @@
                     "description": " لحم تندر الين متبل مشوي على الفحم يقدم مع الخضار المشوية ",
                     "price": 52,
                     "calories": 1692,
-                    "image": "../public/ImageFood/Lentil.jpg"
+                    "image": "/image-003.svg"
                 },
                 {
                     "id": 47,
@@ -407,7 +407,7 @@
                     "description": "   لحم بلدي متبل بالبهارات الخاصة مشوي على الفحم يقدم مع الخضار المشوية ",
                     "price": 44,
                     "calories": 1760,
-                    "image": "../public/ImageFood/Lentil.jpg"
+                    "image": "/image-003.svg"
                 },
                 {
                     "id": 48,
@@ -423,7 +423,7 @@
                     "description": " دجاج متبل بالبهارات المميزة يشوى على الفحم يقدم مع الخضار المشوية  ",
                     "price": 40,
                     "calories": 2045,
-                    "image": "../public/ImageFood/Lentil.jpg"
+                    "image": "/image-003.svg"
                 },
                 {
                     "id": 50,
@@ -452,7 +452,7 @@
                     "description": "",
                     "price": 5,
                     "calories": 151,
-                    "image": "../public/ImageFood/Lentil.jpg"
+                    "image": "/image-003.svg"
                 },
                 {
                     "id": 53,
@@ -460,7 +460,7 @@
                     "description": "",
                     "price": 2,
                     "calories": 0,
-                    "image": "../public/ImageFood/Lentil.jpg"
+                    "image": "/image-003.svg"
                 },
                 {
                     "id": 54,
@@ -468,7 +468,7 @@
                     "description": "",
                     "price": 4,
                     "calories": 0,
-                    "image": "../public/ImageFood/Lentil.jpg"
+                    "image": "/image-003.svg"
                 }
             ]
         },

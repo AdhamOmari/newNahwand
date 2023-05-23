@@ -9,7 +9,7 @@
                     "description": "With toasted bread, garlic, cumin, and lemon",
                     "price": 19,
                     "calories": 160,
-                    "image": "../public/ImageFood/Lentil.jpg"
+                    "image": "/ImageFood/Lentil.jpg"
                 },
                 {
                     "id": 2,
@@ -17,7 +17,7 @@
                     "description": "Cooked mushrooms with cream and chef's spices, served with toasted bread",
                     "price": 22,
                     "calories": 345,
-                    "image": "../public/ImageFood/Mushroom.jpg"
+                    "image": "/ImageFood/Mushroom.jpg"
                 },
                 {
                     "id": 3,
@@ -25,7 +25,7 @@
                     "description": "Molokhia prepared in the Egyptian style",
                     "price": 19,
                     "calories": 164,
-                    "image": "../public/ImageFood/Molokhia.jpg"
+                    "image": "/ImageFood/Molokhia.jpg"
                 }
             ]
         },
@@ -86,7 +86,7 @@
                     "description": "Assorted seasonal vegetables seasoned with lemon juice and olive oil",
                     "price": 19,
                     "calories": 205,
-                    "image": ""
+                    "image": "/image-003.svg"
                 },
                 {
                     "id": 11,
@@ -94,7 +94,7 @@
                     "description": "Fattoush - Tabbouleh - Rocket Salad - Seasonal Salad",
                     "price": 36,
                     "calories": 0,
-                    "image": ""
+                    "image": "/image-003.svg"
                 }
             ]
         },
