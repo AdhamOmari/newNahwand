@@ -59,6 +59,7 @@
 }
 
 .itemName {
+
     width: 100%;
     max-width: 397px;
     position: relative;
@@ -68,9 +69,8 @@
     position: absolute;
     width: 55px;
     height: 28px;
-    left: 12vh;
-    top: 15vh;
-
+    left: 19vh;
+    top: 32vh;
     font-family: 'Cairo';
     font-style: normal;
     font-weight: 900;
@@ -80,6 +80,9 @@
     z-index: 10000000;
     color: #FFFFFF;
 }
+
+
+
 
 .prevButton {
     left: 0;

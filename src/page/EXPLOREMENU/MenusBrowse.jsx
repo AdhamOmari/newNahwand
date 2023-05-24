@@ -29,7 +29,6 @@ const MenusBrowse = () => {
     <>
       <div className={styles.menuSection}>
         <h4>{browseMenuText}</h4>
-        <h4 className={styles.browseMenuTextTitle}>خاضع للضريبة </h4>
       </div>
       <MenuCard category={menuData} />
       <button className={linkContainerStyle} onClick={() => move(menuData)}>

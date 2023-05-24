@@ -1,6 +1,7 @@
 import { lazy, Suspense } from 'react'
 import styles from './style.module.css'
 import Spinner from '../../Component/Spinner/spinner'
+import HeroImage from '../Brief/Heero'
 
 const StoreLocation = lazy(() => import('../Location/StoreLocation'))
 const MenusBrowse = lazy(() => import('../EXPLOREMENU/MenusBrowse'))
@@ -13,10 +14,10 @@ const HomePage = () => {
   return (
     <>
       <Suspense fallback={<Spinner />}>
-        {/* <Brief /> */}
+        <HeroImage />
         <div className={styles.home}>
           <Suspense fallback={<Spinner />}>
-            <FoodOrderType />
+            {/* <FoodOrderType /> */}
             <Offers />
             <MenusBrowse />
             <ChefSelection />

@@ -1,168 +1,100 @@
-html, body {
-    height: 100%;
-    margin: 0;
-}
-
 .wrapper {
     display: flex;
     flex-direction: column;
-    min-height: 30vh;
-    /* Change min-height to 100vh */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: -2px 3px 6px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-bottom: 2px solid #728384;
+    animation: _fade-in-3d_seuus_1 1s ease-in-out;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    background: linear-gradient(180deg, rgba(94, 219, 194, 0) 37.5%, #90a5c1 100%);
 }
 
 .footer {
-    margin-top: auto;
-    box-shadow: -2px 3px 6px 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-bottom: 2px solid #728384;
-    animation: fade-in-3d 1s ease-in-out;
-    transform-style: preserve-3d;
-    perspective: 1000px;
-    /* Set the perspective depth */
+    text-align: center;
+    padding: 20px;
 }
 
 .social-media-links {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    /* Align icons to the right */
+    flex-wrap: wrap;
     margin-bottom: 20px;
-    z-index: 10000000000000;
 }
 
 .social-media-icon {
     font-size: 24px;
-    margin: 0 10px;
-    transition: color 0.3s;
-    z-index: 10000000000000;
-
-}
-
-.social-media-icon:hover {
-    color: #314f4f;
+    margin-left: 10px;
+    /* Adjust margin to create space between icon and text */
 }
 
 .footer-info {
-    text-align: center;
-    font-family: 'Kufam', sans-serif;
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
-.footer-info p {
-    font-size: 14px;
-    color: #000;
-    margin-bottom: 0;
+.location-section,
+.work-hours,
+.contact-info {
+    flex: 1 1 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
 }
 
-[dir='ltr'] .float {
-    left: 40px !important;
+.section-title,
+.work-hours-title,
+.contact-info-title {
+    margin-bottom: 10px;
 }
 
-.float {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 40px;
-    right: 40px;
-    background-color: #25d366;
-    color: #fff;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 2px 2px 3px #999;
-    z-index: 100;
+.location-icon,
+.contact-info-icon {
+    font-size: 24px;
+    margin-right: 5px;
 }
 
-.my-float {
-    margin-top: 2px;
+.footer-text {
+    margin-top: 20px;
 }
 
-.whatsapp-icon {
-    animation: wave 2s ease-in-out infinite, ripple 0.7s linear infinite;
-    border-radius: 70%;
-}
-
-.whatsapp-icon:hover,
-.whatsapp-icon:active,
-.whatsapp-icon:visited {
-    background-color: #25d366;
-}
-
-@keyframes wave {
-    0% {
-        transform: rotate(0deg);
+@media (min-width: 768px) {
+    .wrapper {
+        flex-direction: row;
     }
 
-    10% {
-        transform: rotate(-10deg);
+    .footer {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
     }
 
-    20% {
-        transform: rotate(10deg);
-    }
-
-    30% {
-        transform: rotate(-10deg);
-    }
-
-    40% {
-        transform: rotate(10deg);
-    }
-
-    50% {
-        transform: rotate(-10deg);
-    }
-
-    60% {
-        transform: rotate(10deg);
-    }
-
-    70% {
-        transform: rotate(-10deg);
-    }
-
-    80% {
-        transform: rotate(10deg);
-    }
-
-    90% {
-        transform: rotate(-10deg);
-    }
-
-    100% {
-        transform: rotate(0deg);
-    }
-}
-
-@keyframes ripple {
-    0% {
-        box-shadow: 0 0 0 0 rgba(2, 207, 170, 0.3),
-            0 0 0 10px rgba(2, 207, 170, 0.3),
-            0 0 0 10px rgba(2, 207, 170, 0.3),
-            0 0 0 28px rgba(2, 207, 170, 0.3);
-    }
-
-    100% {
-        box-shadow: 0 0 0 12px rgba(2, 207, 170, 0.3),
-            0 0 0 10px rgba(2, 207, 170, 0.3),
-            0 0 0 28px rgba(2, 207, 170, 0.3),
-            0 0 0 15px rgba(2, 207, 170, 0);
-    }
-}
-
-/* Responsive Styles */
-
-@media only screen and (max-width: 768px) {
     .social-media-links {
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0;
     }
 
-    .social-media-icon {
-        margin: 10px;
+    .footer-info {
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 0;
     }
 
-    .footer-info p {
-        font-size: 12px;
+    .location-section,
+    .work-hours,
+    .contact-info {
+        flex: 1 1 auto;
+        margin-right: 20px;
+        margin-bottom: 0;
     }
 }

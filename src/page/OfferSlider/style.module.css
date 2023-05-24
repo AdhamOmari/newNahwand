@@ -68,16 +68,15 @@
     position: absolute;
     width: 55px;
     height: 28px;
-    left: 12vh;
-    top: 15vh;
-
+    left: 19vh;
+    top: 32vh;
     font-family: 'Cairo';
     font-style: normal;
     font-weight: 900;
     font-size: 15px;
     line-height: 28px;
     text-transform: uppercase;
-    z-index: 10000000000;
+    z-index: 10000000;
     color: #FFFFFF;
 }
 

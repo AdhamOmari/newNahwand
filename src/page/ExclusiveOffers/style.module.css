@@ -134,3 +134,23 @@
         font-size: 14px;
     }
 }
+
+.headingClass {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    margin-left: 20px;
+    margin-top: 20px;
+    position: relative;
+    top: 60px;
+    padding-bottom: 30px;
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #333333;
+}

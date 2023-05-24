@@ -198,3 +198,50 @@ button {
 
 
 }
+
+
+.foodOrderType {
+    display: flex;
+    flex-direction: row;
+}
+
+.foodOrderTypeItem {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.foodOrderTypeIcon {
+    font-size: 20px;
+    margin-right: 5px;
+    color: #fff;
+}
+
+.foodOrderTypeText {
+    font-size: 14px;
+    color: #fff;
+
+}
+
+.foodOrderType {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.foodOrderTypeItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.foodOrderTypeIcon {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.foodOrderTypeText {
+    font-size: 14px;
+    text-align: center;
+}

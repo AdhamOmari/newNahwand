@@ -1,52 +1,31 @@
 import { useSelector } from 'react-redux'
-import { Helmet } from 'react-helmet'
 import styles from './style.module.css'
-import logo from '../../../public/KHA02275.jpg'
+import Spinner from '../../Component/Spinner/spinner'
+import offerImage from '../../../public/04.jpg' // Replace with the path to your offer image
 
-export default function HeroImage () {
+const HeroImage = () => {
   const { isArabic: language } = useSelector(state => state.rootReducer)
 
+  if (!offerImage) {
+    return <Spinner />
+  }
+
+  const textAlignmentClass = language === 'arabic' ? styles.rtl : styles.ltr
+
   return (
-    <>
-      <Helmet>
-        <title>Nahwand</title>
-        <meta
-          name='description'
-          content='بيت المشاوي الأعلى تقييمًا - Nahwand | The Highest Rated BBQ Restaurant'
-        />
-        {/* Add other necessary SEO tags */}
-      </Helmet>
-      <header style={{ paddingLeft: 0 }}>
-        <div
-          className={`p-5 text-center bg-image`}
-          style={{
-            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${logo})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-            height: 600,
-            loading: 'lazy'
-          }}
-        >
-          <div
-            className={`${styles.mask}`}
-            style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}
-          >
-            <div className='d-flex justify-content-center align-items-center h-100'>
-              <div className={`text-white ${styles.content} ${styles.wrapper}`}>
-                <p
-                  className={`${styles.descriptionArabic} ${styles.type}`}
-                  dir={language === 'arabic' ? 'rtl' : 'ltr'}
-                >
-                  {language === 'arabic'
-                    ? 'بيت المشاوي... نعدكم بالسعادة'
-                    : 'Grills House, we promise you happiness'}
-                </p>
-              </div>
-            </div>
-          </div>
+    <div>
+      <div className={`${styles.itemContainer} ${textAlignmentClass}`}>
+        <div className={styles.itemImageContainer}>
+          <img
+            src={offerImage}
+            alt='Offers'
+            className={styles.itemImage}
+            loading='lazy' // Add this attribute for lazy-loading
+          />
         </div>
-      </header>
-    </>
+      </div>
+    </div>
   )
 }
+
+export default HeroImage

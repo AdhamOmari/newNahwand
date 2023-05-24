@@ -2,37 +2,30 @@ import { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
-import Form from 'react-bootstrap/Form'
-import FormControl from 'react-bootstrap/FormControl'
+import { FaMotorcycle, FaUtensils } from 'react-icons/fa'
+
 import Button from 'react-bootstrap/Button'
-import { FiX } from 'react-icons/fi'
 import styles from './style.module.css'
 import { useSelector, useDispatch } from 'react-redux'
-import { setLanguage } from '../../Redux/Language/LangugeAction'
-import { MdLanguage } from 'react-icons/md'
 
 const NavbarApp = () => {
   const [showSearch, setShowSearch] = useState(false)
   const { isArabic: language } = useSelector(state => state.rootReducer)
 
   const dispatch = useDispatch()
-  const location = useLocation()
+  // const location = useLocation()
   useEffect(() => {}, [language, dispatch])
   const handleSearchIconClick = () => {
     setShowSearch(!showSearch)
   }
 
-  const handleSearchClose = () => {
-    setShowSearch(false)
-  }
-
-  const handleLanguageChange = () => {
-    const newLanguage = language === 'arabic' ? 'english' : 'arabic'
-    dispatch(setLanguage(newLanguage))
-  }
+  // const handleLanguageChange = () => {
+  //   const newLanguage = language === 'arabic' ? 'english' : 'arabic'
+  //   dispatch(setLanguage(newLanguage))
+  // }
 
   const navbarDirection = language === 'arabic' ? 'rtl' : 'ltr'
-  const hideLanguageIcon = location.pathname.includes('/menu/') // Check if the user is on the /menu/:category route
+  // const hideLanguageIcon = location.pathname.includes('/menu/') // Check if the user is on the /menu/:category route
 
   return (
     <Navbar
@@ -53,6 +46,16 @@ const NavbarApp = () => {
           {language === 'arabic' ? 'نهاوند' : 'Nahawand'}
         </h1>
       </Navbar.Brand>
+      <Nav className={styles.foodOrderType}>
+        <div className={styles.foodOrderTypeItem}>
+          <FaMotorcycle className={styles.foodOrderTypeIcon} />
+          <span className={styles.foodOrderTypeText}>Delivery</span>
+        </div>
+        <div className={styles.foodOrderTypeItem}>
+          <FaUtensils className={styles.foodOrderTypeIcon} />
+          <span className={styles.foodOrderTypeText}>Dine-in</span>
+        </div>
+      </Nav>
       <Navbar.Toggle aria-controls='navbar-nav' />
       <Navbar.Collapse
         id='navbar-nav'
@@ -81,18 +84,14 @@ const NavbarApp = () => {
           <Nav.Link as={Link} to='/RateUs' className={styles.navLink} smooth>
             {language === 'arabic' ? 'قيِّمنا' : 'Rate US'}
           </Nav.Link>
-          <Form inline className={styles.form}>
-            <div className={styles.btnWrap}>
-              {!showSearch && !hideLanguageIcon && (
-                <>
-                  <Button
-                    variant='outline-primary'
-                    onClick={handleSearchIconClick}
-                    className={`${styles.searchIcon} ${styles.searchButton}`}
-                  >
-                    {/* <FiSearch size={20} /> */}
-                  </Button>
-                  {/* <Button
+          <Button
+            variant='outline-primary'
+            onClick={handleSearchIconClick}
+            className={`${styles.searchIcon} ${styles.searchButton}`}
+          >
+            {/* <FiSearch size={20} /> */}
+          </Button>
+          {/* <Button
                     variant='link'
                     onClick={handleLanguageChange}
                     className={styles.languageIcon}
@@ -101,29 +100,6 @@ const NavbarApp = () => {
                       <MdLanguage style={{ color: '#FFF' }} />
                     </div>
                   </Button> */}
-                </>
-              )}
-            </div>
-            <div>
-              {showSearch && (
-                <div className={`${styles.searchForm}`}>
-                  <FormControl
-                    type='text'
-                    placeholder={language === 'arabic' ? 'ابحث' : 'Search'}
-                    className={styles.searchInput}
-                    dir={language === 'arabic' ? 'rtl' : 'ltr'}
-                  />
-                  <Button
-                    variant='link'
-                    onClick={handleSearchClose}
-                    className={styles.closeIcon}
-                  >
-                    <FiX />
-                  </Button>
-                </div>
-              )}
-            </div>
-          </Form>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
