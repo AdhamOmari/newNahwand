@@ -50,8 +50,8 @@
                 },
                 {
                     "id": 6,
-                    "name": "روكا",
-                    "description": "جرجير وطماطم كرزية ومشروم وحب الرمان وجبن مجدول مع دبس رمان",
+                    "name": "سلطة روكا ",
+                    "description": "جرجير وطماطم كرزية ومشروم وحب الرمان وجبن مجدول مع دبس الرمان",
                     "price": 21,
                     "calories": 210,
                     "image": "/ImageFood/rooka.jpeg"
@@ -59,7 +59,7 @@
                 {
                     "id": 7,
                     "name": "تبولة كينوا",
-                    "description": " بقدونس وطماطم وبصل وبرغل وليمون مع زيت الزيتون وحبوب الكينو",
+                    "description": " بقدونس وطماطم وبصل وبرغل وليمون مع زيت الزيتون وحبوب الكينوا",
                     "price": 27,
                     "calories": 221,
                     "image": "/ImageFood/kewa.jpeg"
@@ -74,8 +74,8 @@
                 },
                 {
                     "id": 9,
-                    "name": "سيزر",
-                    "description": "صوص السيزر المميز مع الخس وصدور الدجاج والخبز المحمص والجبن البرميزان",
+                    "name": " سلطة سيزر بالدجاج  ",
+                    "description": " الخس وصدور الدجاج والخبز المحمص والجبن البرميزان  مع صوص السيزر المميز  ",
                     "price": 38,
                     "calories": 240,
                     "image": "/ImageFood/sezar.jpeg"
@@ -86,7 +86,7 @@
                     "description": "تشكيلة من الخضراوات الموسمية تتبل بعصير الليمون وزيت الزيتون",
                     "price": 19,
                     "calories": 205,
-                    "image": ""
+                    "image": "/public/image-003.svg"
                 },
                 {
                     "id": 11,
@@ -94,7 +94,7 @@
                     "description": "فتوش - تبولة - روكا - سلطة الموسم",
                     "price": 36,
                     "calories": 0,
-                    "image": ""
+                    "image": "/public/image-003.svg"
                 }
             ]
         },
@@ -104,7 +104,7 @@
                 {
                     "id": 12,
                     "name": "حمص",
-                    "description": "مصنوع بحرفية عالية",
+                    "description": " حمص يمزج بالطحينية  و زيت الزيتون   ",
                     "price": 19,
                     "calories": 348,
                     "image": "/ImageFood/hommos.jpg"
@@ -128,7 +128,7 @@
                 {
                     "id": 15,
                     "name": "متبل الشمندر",
-                    "description": "الشمندر مع العسل والطحينة والتوابل",
+                    "description": "الشمندر مع العسل والطحينية والتوابل",
                     "price": 19,
                     "calories": 328,
                     "image": "/ImageFood/shamandermtbal.jpg"
@@ -144,7 +144,7 @@
                 {
                     "id": 17,
                     "name": "ورق العنب بدبس الرمان",
-                    "description": "محشي بالخضار و ألرز و دبس الرمان وزيت الزيتون",
+                    "description": "محشي بالخضار و الرز  بدبس الرمان وزيت الزيتون",
                     "price": 22,
                     "calories": 464,
                     "image": "/ImageFood/enap.jpg"
@@ -152,10 +152,10 @@
                 {
                     "id": 18,
                     "name": "بابا غنوج",
-                    "description": "الباذنجان المشوي مع الفلفل الحلو و الطماطم و الرمان",
+                    "description": "باذنجان مشوي مع الفلفل الحلو و الطماطم و رمان",
                     "price": 20,
                     "calories": 185,
-                    "image": "/ImageFood/Lentil.jpg"
+                    "image": "/public/image-003.svg"
                 },
                 {
                     "id": 19,
@@ -163,7 +163,7 @@
                     "description": " حمص-متبل- محمرة -متبل شمندر-بابا غنوج -ورق عنب",
                     "price": 43,
                     "calories": 0,
-                    "image": "/ImageFood/Lentil.jpg"
+                    "image": "/public/image-003.svg"
                 }
             ]
         },
@@ -172,8 +172,8 @@
             "item": [
                 {
                     "id": 20,
-                    "name": "كبة مقلية",
-                    "description": "محشية باللحم والمكسرات ومقلية في الزيت",
+                    "name": "كبة لحم",
+                    "description": " كبة برغل محشية باللحم والمكسرات ومقلية بالزيت",
                     "price": 24,
                     "calories": 520,
                     "image": "/ImageFood/koppeh.jpg"
@@ -181,7 +181,7 @@
                 {
                     "id": 21,
                     "name": "بورك جبن",
-                    "description": "خليط من ثالث اجبان محشي بعجينة مصنعة لدينا مع حبة البركة والبقدونس",
+                    "description": " عجينة مصنعة لدينا  بحبة البركة والبقدونس محشية بخليط من ثلاث اجبان ",
                     "price": 23,
                     "calories": 320,
                     "image": "/ImageFood/borakjben.jpg"
@@ -189,7 +189,7 @@
                 {
                     "id": 22,
                     "name": "سمبوسك لحم",
-                    "description": "محشوة باللحم البلدية  مع البهارات على الطريقة الاصلية",
+                    "description": " عجينة محشوة باللحم البلدي  مع البهارات على الطريقة الاصلية",
                     "price": 24,
                     "calories": 350,
                     "image": "/ImageFood/sambosah.jpg"
@@ -197,7 +197,7 @@
                 {
                     "id": 23,
                     "name": "صفائح لحم",
-                    "description": "مع الأعشاب والبهارات العربية مخبوزة في الفرن",
+                    "description": " عجينة محشوة باللحم البلدي مع الأعشاب والبهارات العربية مخبوزة في الفرن",
                     "price": 24,
                     "calories": 0,
                     "image": "/ImageFood/sfeha.jpg"
@@ -205,7 +205,7 @@
                 {
                     "id": 24,
                     "name": "فطائر السبانخ",
-                    "description": "مع الجوز والصنوبر وحب الرمان وزيت الزيتون والسماق",
+                    "description": " فطائر سبانخ مع الجوز والصنوبر وحب الرمان وزيت الزيتون والسماق",
                     "price": 16,
                     "calories": 0,
                     "image": "/ImageFood/sabanekh.jpg"
@@ -216,12 +216,12 @@
                     "description": "تحتوي على كبة مقلية - بورك الجبن - فطائر السبانخ - صفائح لحم",
                     "price": 43,
                     "calories": 0,
-                    "image": "../public/ImageFood/Lentil.jpg"
+                    "image": "/public/image-003.svg"
                 },
                 {
                     "id": 26,
                     "name": "حمص  باللحم",
-                    "description": "قطع اللحم مطهية بالسمنة مع الصنوبر على الحمص ",
+                    "description": " حمص بقطع  اللحم مطهية بالسمنة و الصنوبر ",
                     "price": 33,
                     "calories": 625,
                     "image": "/ImageFood/hoomoslaham.jpg"
@@ -232,7 +232,7 @@
                     "description": "مقلية مقرمشة ",
                     "price": 20,
                     "calories": 520,
-                    "image": "/image-003.svg"
+                    "image": "/public/image-003.svg"
                 },
                 {
                     "id": 28,
@@ -240,7 +240,7 @@
                     "description": "مقلية بشكل مقرمش مع صوص الكاتشب",
                     "price": 13,
                     "calories": 480,
-                    "image": "/image-003.svg"
+                    "image": "/public/image-003.svg"
                 },
                 {
                     "id": 29,
@@ -260,7 +260,7 @@
                 },
                 {
                     "id": 31,
-                    "name": "أرز شعيرية",
+                    "name": "أرز بالشعيرية",
                     "description": "",
                     "price": 14,
                     "calories": 0,
@@ -269,7 +269,7 @@
             ]
         },
         "باستا ايطالية": {
-            "image": "/ImageFood/passta.jpg",
+            "image": "/ImageFood/pastagroup.jpeg",
             "item": [
                 {
                     "id": 32,
