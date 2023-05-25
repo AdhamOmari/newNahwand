@@ -338,7 +338,7 @@
                     "description": "ورق عنب محشي ارز باللحم البلدي  مع كوارع العجل البلدي",
                     "price": 45,
                     "calories": 0,
-                    "image": "/ImageFood/kaware3.jpg"
+                    "image": "/ImageFood/enab-fix.jpeg"
                 },
                 {
                     "id": 40,
@@ -354,7 +354,7 @@
                     "description": "كبة بيتي باللحم البلدي وصوص الزبادي الرايب وطشة الكزبرة والثوم",
                     "price": 45,
                     "calories": 1861,
-                    "image": "/ImageFood/lappan.jpg"
+                    "image": "/ImageFood/lappanya-fix.jpeg"
                 },
                 {
                     "id": 42,
@@ -362,7 +362,7 @@
                     "description": " مطهي على الطريقة الهندية الاصلية مخبوز بالفرن ",
                     "price": 45,
                     "calories": 1327,
-                    "image": "/ImageFood/bryany.jpg"
+                    "image": "/ImageFood/bryany-fix.jpeg"
                 },
                 {
                     "id": 43,

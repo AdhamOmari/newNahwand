@@ -46,6 +46,10 @@
     align-items: center;
     flex-wrap: wrap;
     z-index: 100000;
+    background: linear-gradient(rgba(94, 219, 194, 0) 0%, #425559 100%);
+    width: 100%;
+    padding: 10px;
+    font-weight: 800;
 }
 
 .price {
@@ -71,6 +75,9 @@
     margin-bottom: 100px;
     margin-bottom: -11px;
     font-weight: 700;
+    background: linear-gradient(rgba(94, 219, 194, 0) 0%, #425559 100%);
+    width: 20%;
+
 
 }
 
@@ -218,14 +225,4 @@
     transform: translate(-50%, -50%);
     z-index: 9999;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-.cover {
-    background: linear-gradient(180deg, rgba(94, 219, 194, 0) 0%, #425559 100%);
-    position: absolute;
-    width: 425px;
-    left: 0px;
-    top: 267px;
-    height: 112px;
-
 }
