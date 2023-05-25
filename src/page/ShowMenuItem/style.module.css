@@ -90,11 +90,60 @@
 }
 
 .expandedImage {
-    width: 50vw;
+    width: 100vw;
     height: 100vh;
     object-fit: contain;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 9999;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Add transitions for smoother animation */
+.expandedImage {
+    transition: opacity 0.3s ease;
+}
+
+/* Add overlay background for better visibility */
+.expandedImage:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 9998;
+}
+
+/* Add close button */
+.closeButton {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+/* Add hover effect for close button */
+.closeButton:hover {
+    opacity: 0.8;
+}
+
+/* Add padding to the expanded image */
+.expandedImageContainer {
+    padding: 20px;
 }
