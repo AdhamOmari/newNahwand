@@ -1,8 +1,8 @@
 .menuCard {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     align-items: center;
-    width: 349px;
+    width: 312px;
     max-width: 400px;
     height: auto;
     margin: 10px;
@@ -24,6 +24,11 @@
 .cardContent {
     flex: 1;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    margin-top: -7px;
 }
 
 .cardContent h2 {
@@ -34,12 +39,13 @@
 
 .description {
     font-size: 14px;
-    color: gray;
+    color: #fff;
     margin-top: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
+    z-index: 100000;
 }
 
 .price {
@@ -50,19 +56,25 @@
     width: 100px;
     text-align: center;
     border-radius: 10px;
+    margin-bottom: 5px;
+
 }
 
 .calories {
     font-size: 16px;
-    color: gray;
+    color: #fff;
     display: flex;
     justify-content: space-evenly;
     width: 50px;
-    align-items: center
+    align-items: center;
+    z-index: 100000000;
+    margin-bottom: 100px;
+    margin-bottom: -11px;
+
 }
 
 .image {
-    width: 57%;
+    width: 100%;
     height: auto;
     object-fit: cover;
     margin-bottom: 10px;
@@ -213,7 +225,7 @@
     position: absolute;
     width: 425px;
     left: 0px;
-    top: 140px;
+    top: 267px;
     height: 112px;
 
 }

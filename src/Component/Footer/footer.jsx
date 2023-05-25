@@ -114,7 +114,7 @@ const Footer = () => {
               />
             </div>
             <p className={styles['location-address']}>
-              حي العليا شارع فراس بن النضر
+              حي العليا - شارع فراس بن النضر
             </p>
           </section>
           <p className={styles['footer-text']}>
