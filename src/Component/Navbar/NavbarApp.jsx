@@ -12,6 +12,7 @@ import {
 import styles from './style.module.css'
 import { useSelector, useDispatch } from 'react-redux'
 import { AiOutlineWhatsApp } from 'react-icons/ai'
+import { Helmet } from 'react-helmet'
 
 const NavbarApp = () => {
   const { isArabic: language } = useSelector(state => state.rootReducer)
@@ -25,6 +26,10 @@ const NavbarApp = () => {
   }
 
   const navbarDirection = language === 'arabic' ? 'rtl' : 'ltr'
+  const pageTitle =
+    language === 'arabic'
+      ? ' مطعم نهاوند - صفحة رئيسية بيت المشاوي '
+      : 'Nahawand - Home'
 
   const openWhatsApp = () => {
     const encodedText =
@@ -33,6 +38,10 @@ const NavbarApp = () => {
     const whatsappLink = `https://api.whatsapp.com/send?phone=966553104477&text=${encodedText}`
     window.open(whatsappLink, '_blank')
   }
+  const pageDescription =
+    language === 'arabic'
+      ? 'مطعم نهاوند - استمتع بتجربة طعام رائعة معنا'
+      : 'Nahawand Restaurant - Enjoy a great dining experience with us'
 
   const orderTypes = [
     {
@@ -65,125 +74,137 @@ const NavbarApp = () => {
   }, [selectedOrderType])
 
   return (
-    <Navbar
-      expand='lg'
-      variant='dark'
-      sticky='top'
-      className={styles.navbar}
-      dir={navbarDirection}
-    >
-      <Navbar.Brand
-        as={Link}
-        to='/'
-        className={`${styles.brand} ${
-          language === 'arabic' ? styles.arabic : ''
-        }`}
+    <>
+      {' '}
+      <Helmet>
+        <title>{pageTitle}</title>
+        <meta name='description' content={pageDescription} />
+      </Helmet>{' '}
+      <Navbar
+        expand='lg'
+        variant='dark'
+        sticky='top'
+        className={styles.navbar}
+        dir={navbarDirection}
       >
-        <h1 className={styles.brand}>
-          {language === 'arabic' ? 'نهاوند' : 'Nahawand'}
-        </h1>
-      </Navbar.Brand>
-      <Nav className={styles.foodOrderType}>
-        {orderTypes.map(order => (
-          <div
-            key={order.type}
-            className={`${styles.foodOrderTypeItem} ${
-              selectedOrderType === order.type ? styles.activeItem : ''
-            }`}
-            onClick={() => handleOrderTypeChange(order.type)}
-          >
-            {order.icon}
-            <span className={styles.foodOrderTypeText}>{order.text}</span>
-          </div>
-        ))}
-      </Nav>
-      <Navbar.Toggle aria-controls='navbar-nav' />
-      <Navbar.Collapse
-        id='navbar-nav'
-        className={styles.navbarCollapse}
-        bg-light
-      >
-        <Nav className={`${styles.navLinks} ${styles.centeredLinks}`}>
-          <Nav.Link as={Link} to='/' className={styles.navLink} smooth>
-            {language === 'arabic' ? 'الرئيسية' : 'Home'}
-          </Nav.Link>
-          <Nav.Link as={Link} to='/menu' className={styles.navLink} smooth>
-            {language === 'arabic' ? 'القائمة' : 'Menu'}
-          </Nav.Link>
-          <Nav.Link
-            as={Link}
-            to='/ChefSelection'
-            className={styles.navLink}
-            smooth
-          >
-            {language === 'arabic' ? 'اختيار الشيف' : `Chef's Selection`}
-          </Nav.Link>
-          <Nav.Link as={Link} to='/Delivery' className={styles.navLink} smooth>
-            {language === 'arabic' ? 'توصيل' : 'Delivery'}
-          </Nav.Link>
-
-          <Nav.Link as={Link} to='/RateUs' className={styles.navLink} smooth>
-            {language === 'arabic' ? 'قيِّمنا' : 'Rate US'}
-          </Nav.Link>
-        </Nav>
-      </Navbar.Collapse>
-      {orderTypes.map(order => {
-        if (selectedOrderType === order.type && order.type === 'delivery') {
-          return (
-            <div className={styles.location} key={order.type}>
-              <h4 className={styles.apps}>
-                {/* {language === 'arabic' ? 'موجودون على ' : 'Apps'} */}
-              </h4>
-              <ul className={styles.cardList}>
-                <li>
-                  <a href='/'>
-                    <img
-                      src='/HungerStation-01-3.svg'
-                      alt='App 1'
-                      className={styles.cardImage}
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href='/'>
-                    <img
-                      src='/Mrsool-01.svg'
-                      alt='App 2'
-                      className={styles.cardImage}
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href='/'>
-                    <img
-                      src='/jahez.svg'
-                      alt='App 3'
-                      className={styles.cardImage}
-                    />
-                  </a>
-                </li>
-              </ul>
-            </div>
-          )
-        } else if (
-          selectedOrderType === order.type &&
-          order.type !== 'delivery'
-        ) {
-          return (
-            <button
+        <Navbar.Brand
+          as={Link}
+          to='/'
+          className={`${styles.brand} ${
+            language === 'arabic' ? styles.arabic : ''
+          }`}
+        >
+          <h1 className={styles.brand}>
+            {language === 'arabic' ? 'نهاوند' : 'Nahawand'}
+          </h1>
+        </Navbar.Brand>
+        <Nav className={styles.foodOrderType}>
+          {orderTypes.map(order => (
+            <div
               key={order.type}
-              className={`${styles.button} ${
-                language === 'arabic' ? styles.ar : ''
+              className={`${styles.foodOrderTypeItem} ${
+                selectedOrderType === order.type ? styles.activeItem : ''
               }`}
-              onClick={openWhatsApp}
+              onClick={() => handleOrderTypeChange(order.type)}
             >
-              <AiOutlineWhatsApp size={35} color='white' />
-            </button>
-          )
-        }
-        return null
-      })}
-    </Navbar>
+              {order.icon}
+              <span className={styles.foodOrderTypeText}>{order.text}</span>
+            </div>
+          ))}
+        </Nav>
+        <Navbar.Toggle aria-controls='navbar-nav' />
+        <Navbar.Collapse
+          id='navbar-nav'
+          className={styles.navbarCollapse}
+          bg-light
+        >
+          <Nav className={`${styles.navLinks} ${styles.centeredLinks}`}>
+            <Nav.Link as={Link} to='/' className={styles.navLink} smooth>
+              {language === 'arabic' ? 'الرئيسية' : 'Home'}
+            </Nav.Link>
+            <Nav.Link as={Link} to='/menu' className={styles.navLink} smooth>
+              {language === 'arabic' ? 'القائمة' : 'Menu'}
+            </Nav.Link>
+            <Nav.Link
+              as={Link}
+              to='/ChefSelection'
+              className={styles.navLink}
+              smooth
+            >
+              {language === 'arabic' ? 'اختيار الشيف' : `Chef's Selection`}
+            </Nav.Link>
+            <Nav.Link
+              as={Link}
+              to='/Delivery'
+              className={styles.navLink}
+              smooth
+            >
+              {language === 'arabic' ? 'توصيل' : 'Delivery'}
+            </Nav.Link>
+
+            <Nav.Link as={Link} to='/RateUs' className={styles.navLink} smooth>
+              {language === 'arabic' ? 'قيِّمنا' : 'Rate US'}
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+        {orderTypes.map(order => {
+          if (selectedOrderType === order.type && order.type === 'delivery') {
+            return (
+              <div className={styles.location} key={order.type}>
+                <h4 className={styles.apps}>
+                  {/* {language === 'arabic' ? 'موجودون على ' : 'Apps'} */}
+                </h4>
+                <ul className={styles.cardList}>
+                  <li>
+                    <a href='/'>
+                      <img
+                        src='/HungerStation-01-3.svg'
+                        alt='App 1'
+                        className={styles.cardImage}
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href='/'>
+                      <img
+                        src='/Mrsool-01.svg'
+                        alt='App 2'
+                        className={styles.cardImage}
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href='/'>
+                      <img
+                        src='/jahez.svg'
+                        alt='App 3'
+                        className={styles.cardImage}
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            )
+          } else if (
+            selectedOrderType === order.type &&
+            order.type !== 'delivery'
+          ) {
+            return (
+              <button
+                key={order.type}
+                className={`${styles.button} ${
+                  language === 'arabic' ? styles.ar : ''
+                }`}
+                onClick={openWhatsApp}
+              >
+                <AiOutlineWhatsApp size={35} color='white' />
+              </button>
+            )
+          }
+          return null
+        })}
+      </Navbar>
+    </>
   )
 }
 
