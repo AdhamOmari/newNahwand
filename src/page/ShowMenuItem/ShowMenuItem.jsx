@@ -69,6 +69,8 @@ const ShowMenuItem = () => {
               </p>
             )}
             <p className={styles.description}>{item.description}</p>
+            <div className={styles.cover}></div>
+
           </div>
         </div>
       ))}
