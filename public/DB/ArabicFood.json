@@ -86,7 +86,7 @@
                     "description": "تشكيلة من الخضراوات الموسمية تتبل بعصير الليمون وزيت الزيتون",
                     "price": 19,
                     "calories": 205,
-                    "image": "/public/image-003.svg"
+                    "image": "/image-003.svg"
                 },
                 {
                     "id": 11,
@@ -94,7 +94,7 @@
                     "description": "فتوش - تبولة - روكا - سلطة الموسم",
                     "price": 36,
                     "calories": 0,
-                    "image": "/public/image-003.svg"
+                    "image": "/image-003.svg"
                 }
             ]
         },
@@ -155,7 +155,7 @@
                     "description": "باذنجان مشوي مع الفلفل الحلو و الطماطم و رمان",
                     "price": 20,
                     "calories": 185,
-                    "image": "/public/image-003.svg"
+                    "image": "/image-003.svg"
                 },
                 {
                     "id": 19,
@@ -163,7 +163,7 @@
                     "description": " حمص-متبل- محمرة -متبل شمندر-بابا غنوج -ورق عنب",
                     "price": 43,
                     "calories": 0,
-                    "image": "/public/image-003.svg"
+                    "image": "/image-003.svg"
                 }
             ]
         },
@@ -216,7 +216,7 @@
                     "description": "تحتوي على كبة مقلية - بورك الجبن - فطائر السبانخ - صفائح لحم",
                     "price": 43,
                     "calories": 0,
-                    "image": "/public/image-003.svg"
+                    "image": "/image-003.svg"
                 },
                 {
                     "id": 26,
@@ -301,7 +301,7 @@
                     "description": "مع الكريمة والفطر البري وجبنة البارميزان",
                     "price": 39,
                     "calories": 630,
-                    "image": "/public/image-003.svg"
+                    "image": "/image-003.svg"
                 },
                 {
                     "id": 36,
@@ -309,7 +309,7 @@
                     "description": "مع صلصة الطماطم الحارة والريحان وجبنة البارميزان والأعشاب",
                     "price": 38,
                     "calories": 510,
-                    "image": "/public/image-003.svg"
+                    "image": "/image-003.svg"
                 },
                 {
                     "id": 37,
@@ -317,7 +317,7 @@
                     "description": "مع صلصة الطماطم والأعشاب",
                     "price": 38,
                     "calories": 480,
-                    "image": "/public/image-003.svg"
+                    "image": "/image-003.svg"
                 }
             ]
         },
@@ -378,7 +378,7 @@
                     "description": "ورق عنب محشي ارز باللحم البلدي  مع ريش الغنم",
                     "price": 80,
                     "calories": 0,
-                    "image": "/public/image-003.svg"
+                    "image": "/image-003.svg"
                 }
             ]
         },
@@ -399,7 +399,7 @@
                     "description": " لحم تندر لاين متبل , مشوي على الفحم يقدم مع الخضار المشوية ",
                     "price": 52,
                     "calories": 1692,
-                    "image": "/public/image-003.svg"
+                    "image": "/image-003.svg"
                 },
                 {
                     "id": 47,
@@ -407,7 +407,7 @@
                     "description": "   لحم بلدي مفروم متبل بالبهارات الخاصة , مشوي على الفحم , يقدم مع الخضار المشوية ",
                     "price": 44,
                     "calories": 1760,
-                    "image": "/public/image-003.svg"
+                    "image": "/image-003.svg"
                 },
                 {
                     "id": 48,
@@ -423,7 +423,7 @@
                     "description": " دجاج مفروم متبل بالبهارات المميزة, يشوى على الفحم ويقدم مع الخضار المشوية  ",
                     "price": 40,
                     "calories": 2045,
-                    "image": "/public/image-003.svg"
+                    "image": "/image-003.svg"
                 },
                 {
                     "id": 50,
