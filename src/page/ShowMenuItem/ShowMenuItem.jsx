@@ -1,24 +1,28 @@
+import { useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import styles from './style.module.css'
 import { GiFire } from 'react-icons/gi'
 
-import FoodOrderType from '../FoodOrderType/FoodOrderType'
-
 const ShowMenuItem = () => {
   const location = useLocation()
   const items = location.state
-  const { isArabic }= useSelector(state => state.rootReducer)
+  const { isArabic } = useSelector(state => state.rootReducer)
+  const [isImageExpanded, setIsImageExpanded] = useState(false)
 
   const menuContainerClass =
     isArabic === 'arabic' ? styles.containerRTL : styles.containerLTR
+
+  const handleImageClick = () => {
+    setIsImageExpanded(!isImageExpanded)
+  }
+
   if (!items || items.length === 0) {
     return <div>No items found.</div>
   }
 
   return (
     <>
-      <FoodOrderType />
       <div className={`${styles.menuContainer} ${menuContainerClass}`}>
         {items?.map(item => (
           <div
@@ -28,8 +32,11 @@ const ShowMenuItem = () => {
             <img
               src={item.image}
               alt={item.name}
-              className={styles.image}
-              loading='lazy' // Add this attribute for lazy-loading
+              className={`${styles.image} ${
+                isImageExpanded ? styles.expandedImage : ''
+              }`}
+              onClick={handleImageClick}
+              loading='lazy'
             />
             <div className={styles.cardContent}>
               <h2 className={styles.menuTitle}>{item.name}</h2>

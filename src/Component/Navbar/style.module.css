@@ -4,10 +4,10 @@
     font-style: normal;
     font-weight: 400;
     font-size: 26px;
-    line-height: 46px;
     padding-left: 20px;
     color: #fff;
     font-family: 'Kufam', sans-serif;
+    width: 77px;
 
 
 }
@@ -218,7 +218,7 @@ button {
 }
 
 .foodOrderTypeText {
-    font-size: 14px;
+    font-size: 10px;
     color: #fff;
 
 }
@@ -227,13 +227,15 @@ button {
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 214px;
+    justify-content: space-between;
+
 }
 
 .foodOrderTypeItem {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 10px;
 }
 
 .foodOrderTypeIcon {
@@ -242,6 +244,83 @@ button {
 }
 
 .foodOrderTypeText {
-    font-size: 14px;
+    font-size: 10px;
     text-align: center;
+
+
+}
+
+.cardList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    /* Remove bullet points */
+    text-align: center;
+
+}
+
+.apps {
+    align-items: center;
+    color: #fff;
+}
+
+.cardList li {
+    flex-basis: 33.33%;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.cardImage {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    display: block;
+    align-items: center;
+}
+
+.button {
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button {
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+.button svg {
+    color: white;
+}
+
+.location {
+    text-align: center;
+}
+
+.apps {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+
+@media (max-width: 330px) {
+    .foodOrderType {
+        width: 163px;
+
+    }
+
+    .foodOrderTypeText {
+        display: none;
+    }
 }

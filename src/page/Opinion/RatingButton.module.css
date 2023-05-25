@@ -11,6 +11,7 @@
     perspective: 1000px;
     /* Set the perspective depth */
     background: linear-gradient(180deg, rgba(94, 219, 194, 0) 37.5%, #425559 100%);
+    margin-bottom: 60px;
 }
 
 .filledStar {

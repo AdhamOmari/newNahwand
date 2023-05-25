@@ -99,7 +99,7 @@
             ]
         },
         " المقبلات الباردة   ": {
-            "image": "ImageFood/coldapetayzar.jpg",
+            "image": "/ImageFood/coldapetayzar.jpg",
             "item": [
                 {
                     "id": 12,

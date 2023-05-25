@@ -36,6 +36,10 @@
     font-size: 14px;
     color: gray;
     margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .price {
@@ -58,7 +62,7 @@
 }
 
 .image {
-    width: 30%;
+    width: 57%;
     height: auto;
     object-fit: cover;
     margin-bottom: 10px;
@@ -83,4 +87,14 @@
 .containerLTR {
     direction: ltr;
     text-align: left;
+}
+
+.expandedImage {
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
 }

@@ -1,7 +1,6 @@
 /* style.module.css */
 .store-location {
     padding: 20px;
-    margin: 90px auto;
 
 }
 
@@ -81,7 +80,8 @@
         position: relative;
         animation: slide-up-3d 1s ease-in-out;
         transform-origin: top;
-        margin-bottom: 20px;
+        margin-bottom: 147px;
+        margin-top: 90px;
     }
 
     @keyframes slide-up-3d {

@@ -1,7 +1,7 @@
 .categoryLink {
     font-weight: bold;
     text-decoration: none;
-    color: #AB6E15;
+    color: #050505;
     position: relative;
     top: 15%;
     left: 50%;
@@ -14,64 +14,190 @@
     outline: none;
     text-transform: capitalize;
     margin: 5px 0;
-    /* Apply first letter capitalization */
 }
 
-.menuContainer {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin: 1.5rem auto;
-    text-align: center;
-    width: 80%;
-    justify-content: center;
+.wrap {
+    margin-bottom: 200px;
 }
 
 .menuCategory {
-    margin: 10px;
-    background: #F8F8FF;
-    border-radius: 20px;
-    text-align: center;
-
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .menuCard {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: -2px 3px 6px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    align-items: baseline
+    position: relative;
 }
 
 .menuCard img {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: auto;
+    margin: 0px;
     object-fit: cover;
-    border-radius: 20px;
-    margin-bottom: 10px;
+    border-radius: 6px;
 }
 
-.menuCard h3 {
-    font-size: 18px;
+.cover {
+    background: linear-gradient(180deg, rgba(94, 219, 194, 0) 0%, #425559 100%);
+    position: relative;
+    height: 112px;
+    z-index: 100000;
+    width: 100%;
+    border-radius: 6px;
+    top: 58.5rem;
+
+}
+
+.menuCard h2 {
+    position: absolute;
+    top: 89%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
     font-weight: bold;
-    text-align: center;
-    margin-bottom: 10px;
     text-transform: capitalize;
-    text-align: center;
-
+    z-index: 100000;
+    width: 100%;
+    max-width: 397px;
+    bottom: 26px;
+    font-size: 16px;
+    white-space: nowrap;
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 900;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
 
-.menuCard p {
-    font-size: 14px;
-    margin-bottom: 5px;
-}
 
 .menuTitle {
     text-align: center;
-    background: linear-gradient(99.92deg, #AB6E15 0%, #425559 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #000;
+    margin: 60px;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+    .menuCategory {
+        padding: 10px;
+    }
+
+    .cover {
+        top: 31.5rem;
+        height: 80px;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .menuCard h2 {
+        font-size: 16px;
+        left: 9%;
+
+    }
+
+    .menuTitle {
+        margin: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .categoryLink {
+        top: 10%;
+        font-size: 14px;
+    }
+
+    .cover {
+        top: 17rem;
+        height: 60px;
+        width: auto !important;
+    }
+
+    .menuCard h2 {
+        font-size: 22px;
+        top: 82%;
+        left: 29%;
+        z-index: 20000000;
+    }
+
+    .menuTitle {
+        margin: 20px;
+    }
+}
+
+
+@media (max-width: 320px) {
+    .categoryLink {
+        top: 8%;
+        font-size: 12px;
+    }
+
+    .cover {
+        top: 12.5rem;
+        height: 50px;
+        width: auto !important;
+    }
+
+    .menuCard h2 {
+        font-size: 18px;
+        top: 80%;
+        left: 25%;
+        z-index: 20000000;
+    }
+
+    .menuTitle {
+        margin: 15px;
+    }
+}
+
+
+@media (min-width: 375px) and (max-width: 423px) {
+    .categoryLink {
+        top: 8%;
+        font-size: 14px;
+    }
+
+    .cover {
+        top: 15rem;
+        height: 60px;
+        width: auto !important;
+    }
+
+    .menuCard h2 {
+        font-size: 20px;
+        top: 82%;
+        left: 25%;
+        z-index: 20000000;
+    }
+
+    .menuTitle {
+        margin: 20px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .categoryLink {
+        top: 10%;
+        font-size: 16px;
+    }
+
+    .cover {
+        top: 41rem;
+        height: 100px;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .menuCard h2 {
+        font-size: 18px;
+    }
+
+    .menuTitle {
+        margin: 40px;
+    }
 }

@@ -5,7 +5,6 @@ import styles from './style.module.css'
 import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Spinner from '../../Component/Spinner/spinner'
-import FoodOrderType from '../FoodOrderType/FoodOrderType'
 
 const AllMenus = () => {
   const navigate = useNavigate()
@@ -23,24 +22,27 @@ const AllMenus = () => {
   }
 
   return (
-    <main>
-      <FoodOrderType />
-
+    <main className={styles.wrap}>
       <h1 className={styles.menuTitle}>
         {isArabic === 'arabic' ? 'قائمة الطعام - نهاوند' : 'Menu - Nahwand'}
       </h1>
       <div className={styles.menuContainer}>
         {Object.entries(menuData).map(([category, { image, item }]) => (
           <div key={category} className={styles.menuCategory}>
+            <button
+              onClick={() => move(category, item)}
+              className={styles.categoryLink}
+            ></button>
+            <div className={styles.cover}></div>
+
             <div className={styles.menuCard}>
               <img src={image} alt={`Category: ${category}`} />
-
-              <button
+              <h2
+                className={styles.categoryTitle}
                 onClick={() => move(category, item)}
-                className={styles.categoryLink}
               >
-                <span className={styles.menuText}>{category}</span>
-              </button>
+                {category}
+              </h2>
             </div>
           </div>
         ))}

@@ -1,31 +1,68 @@
 import { useEffect, useState } from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
-import { FaMotorcycle, FaUtensils } from 'react-icons/fa'
+import {
+  FaMotorcycle,
+  FaUtensils,
+  FaPhoneAlt,
+  FaStoreAlt
+} from 'react-icons/fa'
 
-import Button from 'react-bootstrap/Button'
 import styles from './style.module.css'
 import { useSelector, useDispatch } from 'react-redux'
+import { AiOutlineWhatsApp } from 'react-icons/ai'
 
 const NavbarApp = () => {
-  const [showSearch, setShowSearch] = useState(false)
   const { isArabic: language } = useSelector(state => state.rootReducer)
+  const [selectedOrderType, setSelectedOrderType] = useState('')
 
   const dispatch = useDispatch()
-  // const location = useLocation()
   useEffect(() => {}, [language, dispatch])
-  const handleSearchIconClick = () => {
-    setShowSearch(!showSearch)
+
+  const handleOrderTypeChange = type => {
+    setSelectedOrderType(type)
   }
 
-  // const handleLanguageChange = () => {
-  //   const newLanguage = language === 'arabic' ? 'english' : 'arabic'
-  //   dispatch(setLanguage(newLanguage))
-  // }
-
   const navbarDirection = language === 'arabic' ? 'rtl' : 'ltr'
-  // const hideLanguageIcon = location.pathname.includes('/menu/') // Check if the user is on the /menu/:category route
+
+  const openWhatsApp = () => {
+    const encodedText =
+      'مرحبًا، أرغب في معرفة المزيد عن عناصر القائمة في المطعم ؟'
+
+    const whatsappLink = `https://api.whatsapp.com/send?phone=966553104477&text=${encodedText}`
+    window.open(whatsappLink, '_blank')
+  }
+
+  const orderTypes = [
+    {
+      type: 'delivery',
+      text: language === 'arabic' ? 'توصيل' : 'Delivery',
+      icon: <FaMotorcycle size={20} color='#FFFF' />
+    },
+    {
+      type: 'dineIn',
+      text: language === 'arabic' ? ' في المطعم' : 'Dine-in',
+      icon: <FaUtensils size={20} color='#FFFF' />
+    },
+    {
+      type: 'takeout',
+      text: language === 'arabic' ? 'اتصل بنا' : 'Call us',
+      icon: <FaPhoneAlt size={20} color='#FFFF' />
+    },
+    {
+      type: 'pickup',
+      text: language === 'arabic' ? '  الاستلام' : 'Pickup from the restaurant',
+      icon: <FaStoreAlt size={20} color='#FFFF' />
+    }
+  ]
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setSelectedOrderType('')
+    }, 5000) // 5 seconds
+
+    return () => clearTimeout(timeout)
+  }, [selectedOrderType])
 
   return (
     <Navbar
@@ -42,19 +79,23 @@ const NavbarApp = () => {
           language === 'arabic' ? styles.arabic : ''
         }`}
       >
-        <h1 className={`${styles.brand} `}>
+        <h1 className={styles.brand}>
           {language === 'arabic' ? 'نهاوند' : 'Nahawand'}
         </h1>
       </Navbar.Brand>
       <Nav className={styles.foodOrderType}>
-        <div className={styles.foodOrderTypeItem}>
-          <FaMotorcycle className={styles.foodOrderTypeIcon} />
-          <span className={styles.foodOrderTypeText}>Delivery</span>
-        </div>
-        <div className={styles.foodOrderTypeItem}>
-          <FaUtensils className={styles.foodOrderTypeIcon} />
-          <span className={styles.foodOrderTypeText}>Dine-in</span>
-        </div>
+        {orderTypes.map(order => (
+          <div
+            key={order.type}
+            className={`${styles.foodOrderTypeItem} ${
+              selectedOrderType === order.type ? styles.activeItem : ''
+            }`}
+            onClick={() => handleOrderTypeChange(order.type)}
+          >
+            {order.icon}
+            <span className={styles.foodOrderTypeText}>{order.text}</span>
+          </div>
+        ))}
       </Nav>
       <Navbar.Toggle aria-controls='navbar-nav' />
       <Navbar.Collapse
@@ -84,24 +125,64 @@ const NavbarApp = () => {
           <Nav.Link as={Link} to='/RateUs' className={styles.navLink} smooth>
             {language === 'arabic' ? 'قيِّمنا' : 'Rate US'}
           </Nav.Link>
-          <Button
-            variant='outline-primary'
-            onClick={handleSearchIconClick}
-            className={`${styles.searchIcon} ${styles.searchButton}`}
-          >
-            {/* <FiSearch size={20} /> */}
-          </Button>
-          {/* <Button
-                    variant='link'
-                    onClick={handleLanguageChange}
-                    className={styles.languageIcon}
-                  >
-                    <div className={styles.languageIcon}>
-                      <MdLanguage style={{ color: '#FFF' }} />
-                    </div>
-                  </Button> */}
         </Nav>
       </Navbar.Collapse>
+      {orderTypes.map(order => {
+        if (selectedOrderType === order.type && order.type === 'delivery') {
+          return (
+            <div className={styles.location} key={order.type}>
+              <h4 className={styles.apps}>
+                {language === 'arabic' ? 'التطبيقات' : 'Apps'}
+              </h4>
+              <ul className={styles.cardList}>
+                <li>
+                  <a href='/'>
+                    <img
+                      src='/HungerStation-01-3.svg'
+                      alt='App 1'
+                      className={styles.cardImage}
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href='/'>
+                    <img
+                      src='/Mrsool-01.svg'
+                      alt='App 2'
+                      className={styles.cardImage}
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href='/'>
+                    <img
+                      src='/jahez.svg'
+                      alt='App 3'
+                      className={styles.cardImage}
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          )
+        } else if (
+          selectedOrderType === order.type &&
+          order.type !== 'delivery'
+        ) {
+          return (
+            <button
+              key={order.type}
+              className={`${styles.button} ${
+                language === 'arabic' ? styles.ar : ''
+              }`}
+              onClick={openWhatsApp}
+            >
+              <AiOutlineWhatsApp size={35} color='white' />
+            </button>
+          )
+        }
+        return null
+      })}
     </Navbar>
   )
 }

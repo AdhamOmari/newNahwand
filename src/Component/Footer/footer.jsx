@@ -37,7 +37,9 @@ const Footer = () => {
             rel='noreferrer'
           >
             <AiOutlineWhatsApp
-              className={`${styles['whatsapp-icon']} ${styles['my-float']}`}
+              className={`${styles['whatsapp-icon']} `}
+              color='#fff'
+              size={25}
             />
           </a>
           <a
@@ -45,7 +47,11 @@ const Footer = () => {
             target='_blank'
             rel='noopener noreferrer'
           >
-            <FaFacebook className={styles['social-media-icon']} />
+            <FaFacebook
+              className={styles['social-media-icon']}
+              color='#fff'
+              size={25}
+            />
           </a>
           <a
             href='https://www.instagram.com/nahawand.rest/?ref=digitaltourbus.com'
@@ -53,29 +59,25 @@ const Footer = () => {
             rel='noopener noreferrer'
           >
             <FaInstagram
-              className={styles['social-media-icon']}
-              color='orange'
+              className={`${styles['social-media-icon']} ${styles['instagram-icon']}`}
+              color='#fff'
+              size={25}
             />
           </a>
           <a
-            href='https://www.tiktok.com/@nahawand.restaurant'
+            href='www.tiktok.com/@nahawand.restaurant'
             target='_blank'
             rel='noopener noreferrer'
           >
-            <FaTiktok className={styles['social-media-icon']} color='#69C9D0' />
+            <FaTiktok
+              className={styles['social-media-icon']}
+              color='#fff'
+              size={25}
+            />
           </a>
         </div>
 
         <div className={styles['footer-info']}>
-          <section className={styles['location-section']}>
-            <div className={styles['location-icon-container']}>
-              <FaMapMarkerAlt className={styles['location-icon']} />
-              <p className={styles['location-address']}>
-                حي العليا شارع فراس بن النضر
-              </p>
-            </div>
-          </section>
-
           <div className={styles['work-hours']}>
             <h4 className={styles['work-hours-title']}>ساعات العمل</h4>
             <div className={styles['work-hours-days']}>
@@ -87,15 +89,34 @@ const Footer = () => {
 
           <div className={styles['contact-info']}>
             <div className={styles['contact-info-item']}>
-              <AiOutlinePhone className={styles['contact-info-icon']} />
-              <p> 055310447</p>
+              <AiOutlinePhone
+                className={styles['contact-info-icon']}
+                size={20}
+                color='#fff'
+              />
+              <p>0553104477</p>
             </div>
             <div className={styles['contact-info-item']}>
-              <FaEnvelope className={styles['contact-info-icon']} />
-              <p> Info@nahawand.sa.com</p>
+              <FaEnvelope
+                className={styles['contact-info-icon']}
+                size={20}
+                color='#fff'
+              />
+              <p>Info@nahawand.sa.com</p>
             </div>
           </div>
-
+          <section className={styles['location-section']}>
+            <div className={styles['location-icon-container']}>
+              <FaMapMarkerAlt
+                className={styles['location-icon']}
+                color='#fff'
+                size={20}
+              />
+            </div>
+            <p className={styles['location-address']}>
+              حي العليا شارع فراس بن النضر
+            </p>
+          </section>
           <p className={styles['footer-text']}>
             {language === 'arabic'
               ? 'جميع الحقوق محفوظة   مطعم نهاوند. © 2023'
