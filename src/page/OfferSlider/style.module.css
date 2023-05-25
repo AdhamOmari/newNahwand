@@ -266,6 +266,10 @@
 
 }
 
+.prevButton,
+.nextButton {
+    display: none;
+}
 
 .browseMenuTextTitle {
     position: absolute;
