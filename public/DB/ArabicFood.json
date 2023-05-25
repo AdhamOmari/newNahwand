@@ -94,7 +94,7 @@
                     "description": "فتوش - تبولة - روكا - سلطة الموسم",
                     "price": 36,
                     "calories": 0,
-                    "image": "/image-003.svg"
+                    "image": "/ImageFood/slaadmshakeel.jpeg"
                 }
             ]
         },
@@ -346,7 +346,7 @@
                     "description": "مع طشة الثوم والكزبرة تقدم مع ارز بالشعيرية",
                     "price": 43,
                     "calories": 0,
-                    "image": "/ImageFood/mlokheah.jpg"
+                    "image": "/ImageFood/fixmlokhya.jpeg"
                 },
                 {
                     "id": 41,
@@ -399,7 +399,7 @@
                     "description": " لحم تندر لاين متبل , مشوي على الفحم يقدم مع الخضراوات  المشوية ",
                     "price": 52,
                     "calories": 1692,
-                    "image": "/image-003.svg"
+                    "image": "/ImageFood/awsalfix.jpg"
                 },
                 {
                     "id": 47,
