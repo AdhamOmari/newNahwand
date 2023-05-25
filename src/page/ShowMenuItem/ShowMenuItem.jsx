@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import styles from './style.module.css'
 import { GiFire } from 'react-icons/gi'
+import { AiOutlineClose } from 'react-icons/ai'
 
 const ShowMenuItem = () => {
   const location = useLocation()
@@ -15,6 +16,10 @@ const ShowMenuItem = () => {
 
   const handleImageClick = () => {
     setIsImageExpanded(!isImageExpanded)
+  }
+
+  const handleCloseClick = () => {
+    setIsImageExpanded(false)
   }
 
   if (!items || items.length === 0) {
@@ -38,6 +43,11 @@ const ShowMenuItem = () => {
               onClick={handleImageClick}
               loading='lazy'
             />
+            {isImageExpanded && (
+              <div className={styles.closeButton} onClick={handleCloseClick}>
+                <AiOutlineClose />
+              </div>
+            )}
             <div className={styles.cardContent}>
               <h2 className={styles.menuTitle}>{item.name}</h2>
               <p className={styles.price}>

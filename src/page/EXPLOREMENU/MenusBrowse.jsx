@@ -22,6 +22,8 @@ const MenusBrowse = () => {
       : `${styles.seeMoreLink} ${styles.alignRight}`
 
   const move = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+
     navigate(`/menu/`)
   }
 

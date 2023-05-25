@@ -14,6 +14,8 @@ const AllMenus = () => {
 
   useEffect(() => {}, [isArabic])
   const move = (cat, item) => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+
     navigate(`/menu/${cat}`, { state: item })
   }
 
