@@ -18,9 +18,11 @@ const MenuCard = ({ category }) => {
     infinite: true,
     dots: true,
     slidesToShow: 3,
-    slidesToScroll: 2,
+    slidesToScroll: 1,
     arrows: false,
     autoplay: true,
+    autoplaySpeed: 5000, // Increased autoplay speed to 3 seconds
+    speed: 500, // Animation speed in milliseconds
     responsive: [
       {
         breakpoint: 960,
