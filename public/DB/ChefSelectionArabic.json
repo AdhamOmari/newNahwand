@@ -23,7 +23,7 @@
                 "description": "كبة بيتي باللحم البلدي وصوص الزبادي الرايب وطشة الكزبرة والثوم",
                 "price": 45,
                 "calories": 1861,
-                "image": "/ImageFood/koopehjpn.jpg"
+                "image": "/ImageFood/lappan.jpg"
             },
             {
                 "id": 4,
@@ -31,7 +31,7 @@
                 "description": "لحم بلدي مفروم محشو بخليط من الجبن المشوي الذائب  بالفرن، يُقدم مع البطاطس والخضار المشوية",
                 "price": 49,
                 "calories": 0,
-                "image": "/ImageFood/cheezmeet.png"
+                "image": "/ImageFood/koopehjpn.jpg"
             }
         ]
     }
