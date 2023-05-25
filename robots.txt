@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://new-nahwand.vercel.app/sitemap.xml
+Sitemap:https://www.nahawandbbq.com/sitemap.xml
