@@ -152,7 +152,7 @@
     position: relative;
     left: 20px;
     top: 20px;
-    background-color: #314F4F;
+    background-color: #425559;
     width: 150px;
     height: 48px;
     border-radius: 10px;
@@ -271,7 +271,7 @@
 
 
 .cover {
-    background: linear-gradient(180deg, rgba(94, 219, 194, 0) 0%, #90a5c1 100%);
+    background: linear-gradient(180deg, rgba(94, 219, 194, 0) 0%, #425559 100%);
     position: relative;
     width: 425px;
     left: 0px;

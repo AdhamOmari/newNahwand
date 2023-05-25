@@ -11,7 +11,7 @@ const Spinner = () => {
         height: '100vh'
       }}
     >
-      <CircleLoader color='#314F4F' loading={true} size={80} />
+      <CircleLoader color='#425559' loading={true} size={120} />
     </div>
   )
 }

@@ -11,7 +11,7 @@
     animation: _fade-in-3d_seuus_1 1s ease-in-out;
     transform-style: preserve-3d;
     perspective: 1000px;
-    background: linear-gradient(180deg, rgba(94, 219, 194, 0) 37.5%, #90a5c1 100%);
+    background: linear-gradient(180deg, rgba(94, 219, 194, 0) 37.5%, #425559 100%);
 }
 
 .footer {
