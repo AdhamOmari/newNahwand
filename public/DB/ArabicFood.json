@@ -269,7 +269,7 @@
             ]
         },
         "باستا ايطالية": {
-            "image": "/ImageFood/passta.jpg",
+            "image": "/ImageFood/bastas.jpeg",
             "item": [
                 {
                     "id": 32,
@@ -322,7 +322,7 @@
             ]
         },
         " الاطباق الرئيسية ": {
-            "image": "/ImageFood/alldish.jpeg",
+            "image": "/ImageFood/cheezmeet.png",
             "item": [
                 {
                     "id": 38,
@@ -370,7 +370,7 @@
                     "description": "لحم بلدي مفروم محشو بخليط من الجبن المشوي الذائب  بالفرن، يُقدم مع البطاطس والخضار المشوية",
                     "price": 49,
                     "calories": 0,
-                    "image": "/ImageFood/koopehjpn.jpg"
+                    "image": "/ImageFood/cheezmeet.png"
                 },
                 {
                     "id": 44,
@@ -378,7 +378,7 @@
                     "description": "ورق عنب محشي ارز باللحم البلدي  مع ريش الغنم",
                     "price": 80,
                     "calories": 0,
-                    "image": "/image-003.svg"
+                    "image": "/public/image-003.svg"
                 }
             ]
         },

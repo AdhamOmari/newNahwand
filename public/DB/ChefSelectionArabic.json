@@ -12,10 +12,10 @@
             {
                 "id": 2,
                 "name": "ورق العنب بدبس الرمان",
-                "description": "محشو بالخضروات والأرز ودبس الرمان وزيت الزيتون",
+                "description": "محشي بالخضار و الرز  بدبس الرمان وزيت الزيتون",
                 "price": 22,
                 "calories": 464,
-                "image": "/ImageFood/waraqenap.jpg"
+                "image": "/ImageFood/enap.jpg"
             },
             {
                 "id": 3,
@@ -27,11 +27,11 @@
             },
             {
                 "id": 4,
-                "name": "ورق العنب ريش",
+                "name": "ورق العنب وريش",
                 "description": "ورق عنب محشي ارز باللحم البلدي  مع ريش الغنم",
                 "price": 80,
                 "calories": 0,
-                "image": "/ImageFood/rips.jpg"
+                "image": "/public/image-003.svg"
             }
         ]
     }
