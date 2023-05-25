@@ -90,7 +90,7 @@
 }
 
 .expandedImage {
-    width: 100vw;
+    width: 50vw;
     height: 100vh;
     object-fit: contain;
     position: fixed;

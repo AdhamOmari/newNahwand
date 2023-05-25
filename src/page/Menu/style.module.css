@@ -41,7 +41,7 @@
 
 .cover {
     background: linear-gradient(180deg, rgba(94, 219, 194, 0) 0%, #425559 100%);
-    position: relative;
+    position: absolute;
     height: 112px;
     z-index: 100000;
     width: 100%;
