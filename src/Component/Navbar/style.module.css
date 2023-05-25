@@ -324,3 +324,23 @@ button {
         display: none;
     }
 }
+
+@media (max-width: 330px) {
+    .foodOrderType {
+        width: 163px;
+    }
+
+    .foodOrderTypeText {
+        display: none;
+    }
+}
+
+@media (min-width: 331px) {
+    .foodOrderType {
+        width: auto;
+    }
+
+    .foodOrderTypeText {
+        display: inline-block;
+    }
+}
