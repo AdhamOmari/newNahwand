@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet'
 import styles from './style.module.css'
 import { useSelector } from 'react-redux'
 
@@ -11,6 +12,22 @@ const StoreLocation = () => {
 
   return (
     <div className={`${styles.card} ${styles['store-location']}`} id='Location'>
+      <Helmet>
+        <title>
+          {language === 'arabic'
+            ? 'موقع مطعم  نهاوند  الاعلى  تقييما مشويات'
+            : 'Store Location'}
+          - Your Website
+        </title>
+        <meta
+          name='description'
+          content={
+            language === 'arabic'
+              ? 'مطعم نهاوند الاعلى تقييما'
+              : 'Your Store Location - The best restaurant in town'
+          }
+        />
+      </Helmet>
       <div className={styles['map-container']}>
         <iframe
           title='Store Map'
