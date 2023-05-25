@@ -9,6 +9,8 @@ import styles from './style.module.css'
 const OfferSlider = ({ category }) => {
   const navigate = useNavigate()
   const move = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+
     navigate('/menu')
   }
 

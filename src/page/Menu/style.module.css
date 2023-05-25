@@ -75,9 +75,24 @@
 
 
 .menuTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: space-around;
+
+    flex-wrap: wrap;
+
+    position: relative;
+    top: 60px;
+    padding-bottom: 30px;
+    font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #333333;
     text-align: center;
-    color: #000;
-    margin: 60px;
 }
 
 /* Responsive Styles */
@@ -100,9 +115,7 @@
 
     }
 
-    .menuTitle {
-        margin: 30px;
-    }
+
 }
 
 @media (max-width: 480px) {
@@ -120,13 +133,11 @@
     .menuCard h2 {
         font-size: 22px;
         top: 86%;
-        left: 24%;
+        left: 28%;
         z-index: 20000000;
     }
 
-    .menuTitle {
-        margin: 20px;
-    }
+
 }
 
 
@@ -145,13 +156,11 @@
     .menuCard h2 {
         font-size: 18px;
         top: 80%;
-        left: 25%;
+        left: 28%;
         z-index: 20000000;
     }
 
-    .menuTitle {
-        margin: 15px;
-    }
+
 }
 
 
@@ -170,13 +179,11 @@
     .menuCard h2 {
         font-size: 20px;
         top: 82%;
-        left: 25%;
+        left: 28%;
         z-index: 20000000;
     }
 
-    .menuTitle {
-        margin: 20px;
-    }
+
 }
 
 
@@ -197,7 +204,4 @@
         font-size: 18px;
     }
 
-    .menuTitle {
-        margin: 40px;
-    }
 }
