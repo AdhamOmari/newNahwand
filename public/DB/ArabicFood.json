@@ -232,7 +232,7 @@
                     "description": "مقلية مقرمشة ",
                     "price": 20,
                     "calories": 520,
-                    "image": "/public/image-003.svg"
+                    "image": "/image-003.svg"
                 },
                 {
                     "id": 28,
@@ -240,7 +240,7 @@
                     "description": "مقلية بشكل مقرمش مع صوص الكاتشب",
                     "price": 13,
                     "calories": 480,
-                    "image": "/public/image-003.svg"
+                    "image": "/image-003.svg"
                 },
                 {
                     "id": 29,
