@@ -155,7 +155,7 @@
     margin: 10px;
     position: fixed;
     top: 50%;
-    left: 50%;
+    left: 40%;
     transform: translate(-50%, -50%);
     z-index: 9999;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -180,9 +180,9 @@
 }
 
 .expandedImage {
-    max-width: 100%;
+    max-width: 90%;
     max-height: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .closeButton {
@@ -202,7 +202,7 @@
     margin: 10px;
     position: fixed;
     top: 50%;
-    left: 50%;
+    left: 48%;
     transform: translate(-50%, -50%);
     z-index: 9999;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
