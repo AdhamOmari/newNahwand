@@ -132,7 +132,7 @@ const NavbarApp = () => {
           return (
             <div className={styles.location} key={order.type}>
               <h4 className={styles.apps}>
-                {language === 'arabic' ? 'موجودون على ' : 'Apps'}
+                {/* {language === 'arabic' ? 'موجودون على ' : 'Apps'} */}
               </h4>
               <ul className={styles.cardList}>
                 <li>

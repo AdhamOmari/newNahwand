@@ -14,9 +14,7 @@ const Offers = () => {
 
   return (
     <div>
-      <h2 className={`${textAlignmentClass} ${styles.headingClass}`}>
-        بكجات نهاوند
-      </h2>{' '}
+      <h2 className={`${textAlignmentClass} ${styles.headingClass}`}>العروض</h2>
       {/* Add the heading with the class name */}
       <div className={`${styles.itemContainer} ${textAlignmentClass}`}>
         <div className={styles.itemImageContainer}>

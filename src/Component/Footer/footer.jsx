@@ -65,7 +65,7 @@ const Footer = () => {
             />
           </a>
           <a
-            href='www.tiktok.com/@nahawand.restaurant'
+            href='https://www.tiktok.com/@nahawand.restaurant'
             target='_blank'
             rel='noopener noreferrer'
           >
