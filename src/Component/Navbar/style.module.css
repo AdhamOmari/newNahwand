@@ -313,14 +313,30 @@ button {
     margin-bottom: 5px;
 }
 
-
-@media (max-width: 330px) {
+@media (max-width: 400px) {
     .foodOrderType {
-        width: 131px;
+        width: 126px;
 
     }
 
     .foodOrderTypeText {
         display: none;
+    }
+}
+
+@media (max-width: 330px) {
+    .foodOrderType {
+        width: 163px;
+
+    }
+
+    .foodOrderTypeText {
+        display: none;
+    }
+}
+
+@media (max-width: 280px) {
+    .foodOrderType {
+        width: 126px;
     }
 }
