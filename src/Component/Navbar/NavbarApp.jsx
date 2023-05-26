@@ -37,32 +37,35 @@ const NavbarApp = () => {
   }
 
   const pageTitles =
-    language === 'arabic' ? 'بيت المشاوي  نهاوند- Nahawand' : ' نهاوند Nahawand - بيت المشاوي'
+    language === 'arabic'
+      ? 'بيت المشاوي  نهاوند- Nahawand'
+      : 'نهاوند Nahawand - بيت المشاوي'
 
   const orderTypes = [
     {
       type: 'delivery',
       text: language === 'arabic' ? 'توصيل' : 'Delivery',
       icon: <FaMotorcycle size={20} color='#FFFF' />,
-      label: language === 'arabic' ? ' نهاوند توصيل' : 'Delivery'
+      label: language === 'arabic' ? 'نهاوند توصيل' : 'Delivery'
     },
     {
       type: 'dineIn',
-      text: language === 'arabic' ? ' في المطعم' : 'Dine-in',
+      text: language === 'arabic' ? 'في المطعم' : 'Dine-in',
       icon: <FaUtensils size={20} color='#FFFF' />,
-      label: language === 'arabic' ? ' نهاوند في المطعم' : 'Dine-in'
+      label: language === 'arabic' ? 'نهاوند في المطعم' : 'Dine-in'
     },
     {
       type: 'takeout',
       text: language === 'arabic' ? 'اتصل بنا' : 'Call us',
       icon: <FaPhoneAlt size={20} color='#FFFF' />,
-      label: language === 'arabic' ? ' نهاوند اتصل بنا' : 'Call us'
+      label: language === 'arabic' ? 'نهاوند اتصل بنا' : 'Call us'
     },
     {
       type: 'pickup',
-      text: language === 'arabic' ? '  الاستلام' : 'Pickup from the restaurant',
+      text: language === 'arabic' ? 'الاستلام' : 'Pickup from the restaurant',
       icon: <FaStoreAlt size={20} color='#FFFF' />,
-      label: language === 'arabic' ? ' نهاوند الاستلام' : 'Pickup from the restaurant'
+      label:
+        language === 'arabic' ? 'نهاوند الاستلام' : 'Pickup from the restaurant'
     }
   ]
 
@@ -111,6 +114,8 @@ const NavbarApp = () => {
               }`}
               onClick={() => handleOrderTypeChange(order.type)}
               aria-label={order.label}
+              role='button'
+              tabIndex={0}
             >
               {order.icon}
               <span className={styles.foodOrderTypeText}>{order.text}</span>
@@ -162,7 +167,6 @@ const NavbarApp = () => {
             >
               {language === 'arabic' ? 'توصيل' : 'Delivery'}
             </Nav.Link>
-
             <Nav.Link
               as={Link}
               to='/RateUs'

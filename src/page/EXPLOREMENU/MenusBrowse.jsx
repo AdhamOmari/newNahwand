@@ -44,7 +44,7 @@ const MenusBrowse = () => {
         />
       </Helmet>
       <section className={styles.menuSection}>
-        <h2>{browseMenuText}</h2>
+        <h1>{browseMenuText}</h1>
       </section>
       <MenuCard category={menuData} />
       <button

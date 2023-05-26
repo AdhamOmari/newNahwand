@@ -32,12 +32,12 @@ const Offers = () => {
         <meta name='description' content={description} />
       </Helmet>
       <section>
-        <h2
+        <h1
           className={`${textAlignmentClass} ${styles.headingClass}`}
           aria-label='Offers'
         >
           العروض
-        </h2>
+        </h1>
         <div className={`${styles.itemContainer} ${textAlignmentClass}`}>
           <div className={styles.itemImageContainer}>
             <img
