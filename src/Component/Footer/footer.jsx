@@ -15,16 +15,17 @@ const Footer = () => {
   const whatsappText = language
     ? 'مرحبًا، أرغب في معرفة المزيد عن عناصر القائمة في المطعم ؟'
     : 'Hello, I want to know more about the menu items in the restaurant ?'
+  const pageTitle =
+    language === 'arabic' ? 'بيت المشاوي - Nahawand' : 'Nahawand - بيت المشاوي'
 
   return (
     <div className={styles.wrapper}>
       <Helmet>
-        <title>Nahwand</title>
+        <title>{pageTitle}</title>
         <meta
           name='description'
-          content='بيت المشاوي الأعلى تقييمًا - Nahwand | The Highest Rated BBQ Restaurant'
+          content=' سلطات طازجة بيت المشاوي ،مشويات ، مشاوي ، افضل مطعم ،  ريش غنم اكل مصري ، اكل لبناني ، برياني هندي ، مقبلات لبناني ، باستا ايطالية ، مشاوي شامية ، مشاوي تركية ، مانتو روز ، كارديو كافيه لحوم بلدية دجاج طازج'
         />
-        {/* Add other necessary SEO tags */}
       </Helmet>
       <footer className={styles.footer}>
         <div className={styles['social-media-links']}>

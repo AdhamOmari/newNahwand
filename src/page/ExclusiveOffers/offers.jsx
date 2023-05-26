@@ -2,6 +2,7 @@ import { useSelector } from 'react-redux'
 import styles from './style.module.css'
 import Spinner from '../../Component/Spinner/spinner'
 import offerImage from '../../../public/offer.jpg' // Replace with the path to your offer image
+import { Helmet } from 'react-helmet'
 
 const Offers = () => {
   const { isArabic: language } = useSelector(state => state.rootReducer)
@@ -16,27 +17,40 @@ const Offers = () => {
   const offerItems = offersDescription.split(' - ')
 
   const textAlignmentClass = language === 'arabic' ? styles.rtl : styles.ltr
+  const pageTitle =
+    language === 'arabic' ? 'بيت المشاوي - Nahawand العروض' : ' العروض Nahawand - بيت المشاوي'
 
   return (
-    <div>
-      <h2 className={`${textAlignmentClass} ${styles.headingClass}`}>العروض</h2>
-      {/* Add the heading with the class name */}
-      <div className={`${styles.itemContainer} ${textAlignmentClass}`}>
-        <div className={styles.itemImageContainer}>
-          <img
-            src={offerImage}
-            alt='Offers'
-            className={styles.itemImage}
-            loading='lazy' // Add this attribute for lazy-loading
-          />
-          <div className={styles.offerDescription}>
-            {offerItems.map((item, index) => (
-              <div key={index}>{item}</div>
-            ))}
+    <>
+      <Helmet>
+        <title>{pageTitle}</title>
+        <meta
+          name='description'
+          content='  اختيار الشيف, سلطات طازجة بيت المشاوي ،مشويات ، مشاوي ، افضل مطعم ،  ريش غنم اكل مصري ، اكل لبناني ، برياني هندي ، مقبلات لبناني ، باستا ايطالية ، مشاوي شامية ، مشاوي تركية ، مانتو روز ، كارديو كافيه لحوم بلدية دجاج طازج'
+        />
+      </Helmet>
+      <div>
+        <h2 className={`${textAlignmentClass} ${styles.headingClass}`}>
+          العروض
+        </h2>
+        {/* Add the heading with the class name */}
+        <div className={`${styles.itemContainer} ${textAlignmentClass}`}>
+          <div className={styles.itemImageContainer}>
+            <img
+              src={offerImage}
+              alt='Offers'
+              className={styles.itemImage}
+              loading='lazy' // Add this attribute for lazy-loading
+            />
+            <div className={styles.offerDescription}>
+              {offerItems.map((item, index) => (
+                <div key={index}>{item}</div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 

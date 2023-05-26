@@ -1,6 +1,7 @@
 import { AiFillStar } from 'react-icons/ai'
 import styles from './RatingButton.module.css'
 import { useSelector } from 'react-redux'
+import { Helmet } from 'react-helmet'
 
 const RatingButton = () => {
   const rating = 4.6 // Average rating
@@ -30,26 +31,39 @@ const RatingButton = () => {
       )
     }
   }
+  const pageTitle =
+    isArabic === 'arabic'
+      ? ' التقييمات بيت المشاوي - Nahawand'
+      : 'Nahawand - بيت المشاوي'
 
   return (
-    <div className={styles.ratingContainer}>
-      <div className={styles.ratingStars}>{stars}</div>
-      <div className={styles.ratingInfo}>
-        <span className={styles.ratingValue}>
-          {isArabic
-            ? rating.toFixed(1).toLocaleString('ar-EG')
-            : rating.toFixed(1)}
-        </span>
-        <span className={styles.totalRatings}>
-          {isArabic === 'arabic' ? ` التقييمات` : ` Ratings`}
-        </span>
+    <>
+      <Helmet>
+        <title>{pageTitle}</title>
+        <meta
+          name='description'
+          content=' سلطات طازجة بيت المشاوي ،مشويات ، مشاوي ، افضل مطعم ،  ريش غنم اكل مصري ، اكل لبناني ، برياني هندي ، مقبلات لبناني ، باستا ايطالية ، مشاوي شامية ، مشاوي تركية ، مانتو روز ، كارديو كافيه لحوم بلدية دجاج طازج'
+        />
+      </Helmet>{' '}
+      <div className={styles.ratingContainer}>
+        <div className={styles.ratingStars}>{stars}</div>
+        <div className={styles.ratingInfo}>
+          <span className={styles.ratingValue}>
+            {isArabic
+              ? rating.toFixed(1).toLocaleString('ar-EG')
+              : rating.toFixed(1)}
+          </span>
+          <span className={styles.totalRatings}>
+            {isArabic === 'arabic' ? ` التقييمات` : ` Ratings`}
+          </span>
+        </div>
+        <button className={styles.addRatingButton} onClick={handleRatingClick}>
+          {isArabic === 'arabic'
+            ? ' Google أضف تقييمًا على خرائط '
+            : 'Add Rating on Google Maps'}
+        </button>
       </div>
-      <button className={styles.addRatingButton} onClick={handleRatingClick}>
-        {isArabic === 'arabic'
-          ? ' Google أضف تقييمًا على خرائط '
-          : 'Add Rating on Google Maps'}
-      </button>
-    </div>
+    </>
   )
 }
 

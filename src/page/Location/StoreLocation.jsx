@@ -9,23 +9,18 @@ const StoreLocation = () => {
 
   const locationName =
     language === 'arabic' ? 'مطعم نهاوند الاعلى تقييما' : 'Your Store Location'
+  const pageTitle =
+    language === 'arabic'
+      ? 'بيت المشاوي - Nahawand موقع'
+      : ' موقع Nahawand - بيت المشاوي'
 
   return (
     <div className={`${styles.card} ${styles['store-location']}`} id='Location'>
       <Helmet>
-        <title>
-          {language === 'arabic'
-            ? 'موقع مطعم  نهاوند  الاعلى  تقييما مشويات'
-            : 'Store Location'}
-          - Your Website
-        </title>
+        <title>{pageTitle}</title>
         <meta
           name='description'
-          content={
-            language === 'arabic'
-              ? 'مطعم نهاوند الاعلى تقييما'
-              : 'Your Store Location - The best restaurant in town'
-          }
+          content='  اختيار الشيف, سلطات طازجة بيت المشاوي ،مشويات ، مشاوي ، افضل مطعم ،  ريش غنم اكل مصري ، اكل لبناني ، برياني هندي ، مقبلات لبناني ، باستا ايطالية ، مشاوي شامية ، مشاوي تركية ، مانتو روز ، كارديو كافيه لحوم بلدية دجاج طازج'
         />
       </Helmet>
       <div className={styles['map-container']}>

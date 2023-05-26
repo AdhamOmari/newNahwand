@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux'
 import styles from './style.module.css'
 import { GiFire } from 'react-icons/gi'
 import { AiOutlineClose } from 'react-icons/ai'
+import { Helmet } from 'react-helmet'
 
 const ShowMenuItem = () => {
   const location = useLocation()
@@ -25,56 +26,69 @@ const ShowMenuItem = () => {
   if (!items || items.length === 0) {
     return <div>No items found.</div>
   }
+  const pageTitle =
+    isArabic === 'arabic'
+      ? 'قائمة بيت المشاوي - Nahawand'
+      : 'قائمة Nahawand - بيت المشاوي'
 
   return (
-    <div className={`${styles.menuContainer} ${menuContainerClass}`}>
-      {items.map((item, index) => (
-        <div
-          key={item.id}
-          className={`${styles.menuCard} ${styles.flexContainer} ${
-            expandedImage === index ? styles.expanded : ''
-          }`}
-        >
-          <img
-            src={item.image}
-            alt={item.name}
-            className={styles.image}
-            onClick={() => handleImageClick(index)}
-            loading='lazy'
-          />
-          {expandedImage === index && (
-            <div className={styles.overlay}>
-              <div className={styles.closeButton} onClick={handleCloseClick}>
-                <AiOutlineClose />
-              </div>
-              <div className={styles.expandedImageContainer}>
-                <img
-                  src={item.image}
-                  alt={item.name}
-                  className={styles.expandedImage}
-                />
-              </div>
-            </div>
-          )}
-          <div className={styles.cardContent}>
-            <h2 className={styles.menuTitle}>{item.name}</h2>
-            <p className={styles.price}>
-              {isArabic === 'arabic' ? ' SAR ' : ' SAR'}
-              {item.price}
-            </p>
-            {item.calories > 0 && (
-              <p className={styles.calories}>
-                {item.calories}
-                <GiFire />
-              </p>
-            )}
-            <p className={styles.description}>{item.description}</p>
-            <div className={styles.cover}></div>
+    <>
+      <Helmet>
+        <title>{pageTitle}</title>
+        <meta
+          name='description'
+          content='  اختيار الشيف, سلطات طازجة بيت المشاوي ،مشويات ، مشاوي ، افضل مطعم ،  ريش غنم اكل مصري ، اكل لبناني ، برياني هندي ، مقبلات لبناني ، باستا ايطالية ، مشاوي شامية ، مشاوي تركية ، مانتو روز ، كارديو كافيه لحوم بلدية دجاج طازج'
+        />
+      </Helmet>
 
+      <div className={`${styles.menuContainer} ${menuContainerClass}`}>
+        {items.map((item, index) => (
+          <div
+            key={item.id}
+            className={`${styles.menuCard} ${styles.flexContainer} ${
+              expandedImage === index ? styles.expanded : ''
+            }`}
+          >
+            <img
+              src={item.image}
+              alt={item.name}
+              className={styles.image}
+              onClick={() => handleImageClick(index)}
+              loading='lazy'
+            />
+            {expandedImage === index && (
+              <div className={styles.overlay}>
+                <div className={styles.closeButton} onClick={handleCloseClick}>
+                  <AiOutlineClose />
+                </div>
+                <div className={styles.expandedImageContainer}>
+                  <img
+                    src={item.image}
+                    alt={item.name}
+                    className={styles.expandedImage}
+                  />
+                </div>
+              </div>
+            )}
+            <div className={styles.cardContent}>
+              <h2 className={styles.menuTitle}>{item.name}</h2>
+              <p className={styles.price}>
+                {isArabic === 'arabic' ? ' SAR ' : ' SAR'}
+                {item.price}
+              </p>
+              {item.calories > 0 && (
+                <p className={styles.calories}>
+                  {item.calories}
+                  <GiFire />
+                </p>
+              )}
+              <p className={styles.description}>{item.description}</p>
+              <div className={styles.cover}></div>
+            </div>
           </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
+    </>
   )
 }
 

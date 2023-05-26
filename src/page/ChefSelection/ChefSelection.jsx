@@ -6,6 +6,7 @@ import styles from './style.module.css'
 import OfferSlider from '../OfferSlider/OfferSlider'
 import Spinner from '../../Component/Spinner/spinner'
 import { useEffect } from 'react'
+import { Helmet } from 'react-helmet'
 
 const ChefSelection = () => {
   const { isArabic } = useSelector(state => state.rootReducer)
@@ -26,9 +27,18 @@ const ChefSelection = () => {
     isArabic === 'arabic'
       ? styles.seeMoreLink
       : `${styles.seeMoreLink} ${styles.alignRight}`
+  const pageTitle =
+    isArabic === 'arabic' ? 'بيت المشاوي - Nahawand' : 'Nahawand - بيت المشاوي'
 
   return (
     <>
+      <Helmet>
+        <title>{pageTitle}</title>
+        <meta
+          name='description'
+          content='  اختيار الشيف, سلطات طازجة بيت المشاوي ،مشويات ، مشاوي ، افضل مطعم ،  ريش غنم اكل مصري ، اكل لبناني ، برياني هندي ، مقبلات لبناني ، باستا ايطالية ، مشاوي شامية ، مشاوي تركية ، مانتو روز ، كارديو كافيه لحوم بلدية دجاج طازج'
+        />
+      </Helmet>
       <div className={styles.menuSection}>
         <h4>{browseMenuText}</h4>
       </div>

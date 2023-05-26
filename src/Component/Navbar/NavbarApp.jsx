@@ -26,10 +26,6 @@ const NavbarApp = () => {
   }
 
   const navbarDirection = language === 'arabic' ? 'rtl' : 'ltr'
-  const pageTitle =
-    language === 'arabic'
-      ? ' مطعم نهاوند - صفحة رئيسية بيت المشاوي '
-      : 'Nahawand - Home'
 
   const openWhatsApp = () => {
     const encodedText =
@@ -38,10 +34,9 @@ const NavbarApp = () => {
     const whatsappLink = `https://api.whatsapp.com/send?phone=966553104477&text=${encodedText}`
     window.open(whatsappLink, '_blank')
   }
-  const pageDescription =
-    language === 'arabic'
-      ? 'مطعم نهاوند - استمتع بتجربة طعام رائعة معنا'
-      : 'Nahawand Restaurant - Enjoy a great dining experience with us'
+
+  const pageTitles =
+    language === 'arabic' ? 'بيت المشاوي - Nahawand' : 'Nahawand - بيت المشاوي'
 
   const orderTypes = [
     {
@@ -75,11 +70,13 @@ const NavbarApp = () => {
 
   return (
     <>
-      {' '}
       <Helmet>
-        <title>{pageTitle}</title>
-        <meta name='description' content={pageDescription} />
-      </Helmet>{' '}
+        <title>{pageTitles}</title>
+        <meta
+          name='description'
+          content=' سلطات طازجة بيت المشاوي ،مشويات ، مشاوي ، افضل مطعم ،  ريش غنم اكل مصري ، اكل لبناني ، برياني هندي ، مقبلات لبناني ، باستا ايطالية ، مشاوي شامية ، مشاوي تركية ، مانتو روز ، كارديو كافيه لحوم بلدية دجاج طازج'
+        />
+      </Helmet>
       <Navbar
         expand='lg'
         variant='dark'

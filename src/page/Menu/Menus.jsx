@@ -24,17 +24,19 @@ const AllMenus = () => {
     return <Spinner />
   }
 
-  const pageTitle = isArabic === 'arabic' ? 'قائمة الطعام ' : 'Menu - Nahwand'
-  const pageDescription =
+  const pageTitle =
     isArabic === 'arabic'
-      ? 'استكشف قائمة الطعام لمطعم نهاوند'
-      : 'Explore the menu of Nahwand restaurant'
+      ? '  الطعام  بيت المشاوي  قائمة - Nahawand'
+      : '  الطعام  بيت المشاوي  قائمة - Nahawand'
 
   return (
     <main className={styles.wrap}>
       <Helmet>
         <title>{pageTitle}</title>
-        <meta name='description' content={pageDescription} />
+        <meta
+          name='description'
+          content='  اختيار الشيف, سلطات طازجة بيت المشاوي ،مشويات ، مشاوي ، افضل مطعم ،  ريش غنم اكل مصري ، اكل لبناني ، برياني هندي ، مقبلات لبناني ، باستا ايطالية ، مشاوي شامية ، مشاوي تركية ، مانتو روز ، كارديو كافيه لحوم بلدية دجاج طازج'
+        />
       </Helmet>
       <h1 className={styles.menuTitle}>{pageTitle}</h1>
       <div className={styles.menuContainer}>
