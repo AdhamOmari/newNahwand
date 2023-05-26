@@ -316,22 +316,11 @@ button {
 
 @media (max-width: 330px) {
     .foodOrderType {
-        width: 163px;
+        width: 131px;
 
     }
 
     .foodOrderTypeText {
         display: none;
     }
-}
-
-.whatsapp-icon {
-    color: #AB6E15;
-    width: 40px;
-    height: 40px;
-}
-
-.button:hover .whatsapp-icon {
-    transform: scale(1.5);
-    border-radius: 10%;
 }
