@@ -319,14 +319,12 @@ button {
 
     }
 
-    .foodOrderTypeText {
-        display: none;
-    }
+
 }
 
 @media (max-width: 330px) {
     .foodOrderType {
-        width: 163px;
+        width: 171px;
 
     }
 
