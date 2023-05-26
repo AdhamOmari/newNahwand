@@ -35,9 +35,25 @@ const ChefSelection = () => {
 
   return (
     <>
-      <Helmet>
+       <Helmet>
         <title>{pageTitle}</title>
         <meta name='description' content={description} />
+        <meta
+          name='keywords'
+          content='restaurant, food, menu, chef, delivery'
+        />
+        <meta
+          name='address'
+          content='الخبر السعودية، شارع حي العليا - شارع فراس بن النضر'
+        />
+                <meta name='keywords' content={description} />
+
+        <meta name='keywords' content='مطعم، طعام، قائمة طعام، شيف، توصيل' />
+        <meta name='author' content='نهاوند بيت المشاوي ' />
+        <meta name='robots' content='index, follow' />
+        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+        <meta httpEquiv='Content-Type' content='text/html; charset=utf-8' />
+        <link rel='canonical' href='https://www.nahawandbbq.com/' />
       </Helmet>
       <section className={styles.menuSection}>
         <h4 aria-label='Browse Menu'>{browseMenuText}</h4>
