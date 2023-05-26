@@ -12,7 +12,7 @@ const ChefSelection = () => {
   const { isArabic } = useSelector(state => state.rootReducer)
   const menuData = isArabic === 'arabic' ? dataArabic.menu : data.menu
   useEffect(() => {}, [isArabic])
-  console.log(isArabic, 'arabic')
+
   if (!menuData) {
     return <Spinner />
   }
@@ -30,22 +30,24 @@ const ChefSelection = () => {
   const pageTitle =
     isArabic === 'arabic' ? 'بيت المشاوي - Nahawand' : 'Nahawand - بيت المشاوي'
 
+  const description =
+    'اختيار الشيف, سلطات طازجة بيت المشاوي، مشويات، مشاوي، افضل مطعم، ريش غنم اكل مصري، اكل لبناني، برياني هندي، مقبلات لبناني، باستا ايطالية، مشاوي شامية، مشاوي تركية، مانتو روز، كارديو كافيه لحوم بلدية دجاج طازج'
+
   return (
     <>
       <Helmet>
         <title>{pageTitle}</title>
-        <meta
-          name='description'
-          content='  اختيار الشيف, سلطات طازجة بيت المشاوي ،مشويات ، مشاوي ، افضل مطعم ،  ريش غنم اكل مصري ، اكل لبناني ، برياني هندي ، مقبلات لبناني ، باستا ايطالية ، مشاوي شامية ، مشاوي تركية ، مانتو روز ، كارديو كافيه لحوم بلدية دجاج طازج'
-        />
+        <meta name='description' content={description} />
       </Helmet>
-      <div className={styles.menuSection}>
-        <h4>{browseMenuText}</h4>
-      </div>
+      <section className={styles.menuSection}>
+        <h4 aria-label='Browse Menu'>{browseMenuText}</h4>
+      </section>
       <OfferSlider category={nahawandPackages.item} />
-      <Link to='/menu' className={linkContainerStyle}>
-        <button>{seeMoreText}</button>
-      </Link>
+      <div className={linkContainerStyle}>
+        <Link to='/menu' className={linkContainerStyle}>
+          <button>{seeMoreText}</button>
+        </Link>
+      </div>
     </>
   )
 }

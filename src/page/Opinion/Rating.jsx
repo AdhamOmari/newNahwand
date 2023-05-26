@@ -1,7 +1,6 @@
 import { AiFillStar } from 'react-icons/ai'
 import styles from './RatingButton.module.css'
 import { useSelector } from 'react-redux'
-import { Helmet } from 'react-helmet'
 
 const RatingButton = () => {
   const rating = 4.6 // Average rating
@@ -31,20 +30,9 @@ const RatingButton = () => {
       )
     }
   }
-  const pageTitle =
-    isArabic === 'arabic'
-      ? ' التقييمات بيت المشاوي - Nahawand'
-      : 'Nahawand - بيت المشاوي'
 
   return (
     <>
-      <Helmet>
-        <title>{pageTitle}</title>
-        <meta
-          name='description'
-          content=' سلطات طازجة بيت المشاوي ،مشويات ، مشاوي ، افضل مطعم ،  ريش غنم اكل مصري ، اكل لبناني ، برياني هندي ، مقبلات لبناني ، باستا ايطالية ، مشاوي شامية ، مشاوي تركية ، مانتو روز ، كارديو كافيه لحوم بلدية دجاج طازج'
-        />
-      </Helmet>{' '}
       <div className={styles.ratingContainer}>
         <div className={styles.ratingStars}>{stars}</div>
         <div className={styles.ratingInfo}>

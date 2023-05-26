@@ -17,27 +17,57 @@ const HomePage = () => {
   const pageTitle =
     language === 'arabic' ? 'بيت المشاوي - Nahawand' : 'Nahawand - بيت المشاوي'
 
+  const siteDescription =
+    'سلطات طازجة بيت المشاوي، مشويات، مشاوي، أفضل مطعم، ريش غنم، اكل مصري، اكل لبناني، برياني هندي، مقبلات لبناني، باستا ايطالية، مشاوي شامية، مشاوي تركية، مانتو روز، كارديو كافيه لحوم بلدية، دجاج طازج'
+
   return (
     <>
       <Helmet>
         <title>{pageTitle}</title>
-        <meta
-          name='description'
-          content=' سلطات طازجة بيت المشاوي ،مشويات ، مشاوي ، افضل مطعم ،  ريش غنم اكل مصري ، اكل لبناني ، برياني هندي ، مقبلات لبناني ، باستا ايطالية ، مشاوي شامية ، مشاوي تركية ، مانتو روز ، كارديو كافيه لحوم بلدية دجاج طازج'
-        />
+        <meta name='description' content={siteDescription} />
       </Helmet>
       <Suspense fallback={<Spinner />}>
         <HeroImage />
-        <div className={styles.home}>
+        <main className={styles.home}>
           <Suspense fallback={<Spinner />}>
             {/* <FoodOrderType /> */}
-            <Offers />
-            <MenusBrowse />
-            <ChefSelection />
-            <StoreLocation />
-            <RatingButton />
+            <section>
+              <h2
+                className={styles.sectionTitle}
+                aria-label='Exclusive Offers'
+              ></h2>
+              <Offers />
+            </section>
+            <section>
+              <h2
+                className={styles.sectionTitle}
+                aria-label='Browse Our Menu'
+              ></h2>
+              <MenusBrowse />
+            </section>
+            <section>
+              <h2
+                className={styles.sectionTitle}
+                aria-label='Chef Selection'
+              ></h2>
+              <ChefSelection />
+            </section>
+            <section>
+              <h2
+                className={styles.sectionTitle}
+                aria-label='Store Location'
+              ></h2>
+              <StoreLocation />
+            </section>
+            <section>
+              <h2
+                className={styles.sectionTitle}
+                aria-label='Rate Our Service'
+              ></h2>
+              <RatingButton />
+            </section>
           </Suspense>
-        </div>
+        </main>
       </Suspense>
     </>
   )

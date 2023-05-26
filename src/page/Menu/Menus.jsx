@@ -1,11 +1,11 @@
 import { useSelector } from 'react-redux'
-import data from '../../../public/DB/Food.json'
-import dataArabic from '../../../public/DB/ArabicFood.json'
-import styles from './style.module.css'
 import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Spinner from '../../Component/Spinner/spinner'
 import { Helmet } from 'react-helmet'
+import data from '../../../public/DB/Food.json'
+import dataArabic from '../../../public/DB/ArabicFood.json'
+import styles from './style.module.css'
 
 const AllMenus = () => {
   const navigate = useNavigate()
@@ -14,6 +14,7 @@ const AllMenus = () => {
   const menuData = isArabic === 'arabic' ? dataArabic.menu : data.menu
 
   useEffect(() => {}, [isArabic])
+
   const move = (cat, item) => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
 
@@ -25,29 +26,27 @@ const AllMenus = () => {
   }
 
   const pageTitle =
-    isArabic === 'arabic'
-      ? '  الطعام  بيت المشاوي  قائمة - Nahawand'
-      : '  الطعام  بيت المشاوي  قائمة - Nahawand'
+    isArabic === 'arabic' ? 'قائمة الطعام   ' : 'Menu - بيت المشاوي - Nahawand'
+
+  const siteDescription =
+    'اختيار الشيف، سلطات طازجة بيت المشاوي، مشويات، مشاوي، أفضل مطعم، ريش غنم، اكل مصري، اكل لبناني، برياني هندي، مقبلات لبناني، باستا ايطالية، مشاوي شامية، مشاوي تركية، مانتو روز، كارديو كافيه لحوم بلدية، دجاج طازج'
 
   return (
     <main className={styles.wrap}>
       <Helmet>
         <title>{pageTitle}</title>
-        <meta
-          name='description'
-          content='  اختيار الشيف, سلطات طازجة بيت المشاوي ،مشويات ، مشاوي ، افضل مطعم ،  ريش غنم اكل مصري ، اكل لبناني ، برياني هندي ، مقبلات لبناني ، باستا ايطالية ، مشاوي شامية ، مشاوي تركية ، مانتو روز ، كارديو كافيه لحوم بلدية دجاج طازج'
-        />
+        <meta name='description' content={siteDescription} />
       </Helmet>
       <h1 className={styles.menuTitle}>{pageTitle}</h1>
       <div className={styles.menuContainer}>
         {Object.entries(menuData).map(([category, { image, item }]) => (
-          <div key={category} className={styles.menuCategory}>
+          <article key={category} className={styles.menuCategory}>
             <button
               onClick={() => move(category, item)}
               className={styles.categoryLink}
+              aria-label={`View ${category} Menu`}
             ></button>
             <div className={styles.cover}></div>
-
             <div className={styles.menuCard}>
               <img src={image} alt={`Category: ${category}`} />
               <h2
@@ -57,7 +56,7 @@ const AllMenus = () => {
                 {category}
               </h2>
             </div>
-          </div>
+          </article>
         ))}
       </div>
     </main>

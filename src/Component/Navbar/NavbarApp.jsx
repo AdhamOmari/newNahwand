@@ -8,18 +8,17 @@ import {
   FaPhoneAlt,
   FaStoreAlt
 } from 'react-icons/fa'
-
-import styles from './style.module.css'
-import { useSelector, useDispatch } from 'react-redux'
 import { AiOutlineWhatsApp } from 'react-icons/ai'
 import { Helmet } from 'react-helmet'
+import { useSelector } from 'react-redux'
+
+import styles from './style.module.css'
 
 const NavbarApp = () => {
   const { isArabic: language } = useSelector(state => state.rootReducer)
   const [selectedOrderType, setSelectedOrderType] = useState('')
 
-  const dispatch = useDispatch()
-  useEffect(() => {}, [language, dispatch])
+  useEffect(() => {}, [language])
 
   const handleOrderTypeChange = type => {
     setSelectedOrderType(type)
@@ -31,35 +30,42 @@ const NavbarApp = () => {
     const encodedText =
       'مرحبًا، أرغب في معرفة المزيد عن عناصر القائمة في المطعم ؟'
 
-    const whatsappLink = `https://api.whatsapp.com/send?phone=966553104477&text=${encodedText}`
+    const whatsappLink = `https://api.whatsapp.com/send?phone=966553104477&text=${encodeURIComponent(
+      encodedText
+    )}`
     window.open(whatsappLink, '_blank')
   }
 
   const pageTitles =
-    language === 'arabic' ? 'بيت المشاوي - Nahawand' : 'Nahawand - بيت المشاوي'
+    language === 'arabic' ? 'بيت المشاوي  نهاوند- Nahawand' : ' نهاوند Nahawand - بيت المشاوي'
 
   const orderTypes = [
     {
       type: 'delivery',
       text: language === 'arabic' ? 'توصيل' : 'Delivery',
-      icon: <FaMotorcycle size={20} color='#FFFF' />
+      icon: <FaMotorcycle size={20} color='#FFFF' />,
+      label: language === 'arabic' ? ' نهاوند توصيل' : 'Delivery'
     },
     {
       type: 'dineIn',
       text: language === 'arabic' ? ' في المطعم' : 'Dine-in',
-      icon: <FaUtensils size={20} color='#FFFF' />
+      icon: <FaUtensils size={20} color='#FFFF' />,
+      label: language === 'arabic' ? ' نهاوند في المطعم' : 'Dine-in'
     },
     {
       type: 'takeout',
       text: language === 'arabic' ? 'اتصل بنا' : 'Call us',
-      icon: <FaPhoneAlt size={20} color='#FFFF' />
+      icon: <FaPhoneAlt size={20} color='#FFFF' />,
+      label: language === 'arabic' ? ' نهاوند اتصل بنا' : 'Call us'
     },
     {
       type: 'pickup',
       text: language === 'arabic' ? '  الاستلام' : 'Pickup from the restaurant',
-      icon: <FaStoreAlt size={20} color='#FFFF' />
+      icon: <FaStoreAlt size={20} color='#FFFF' />,
+      label: language === 'arabic' ? ' نهاوند الاستلام' : 'Pickup from the restaurant'
     }
   ]
+
   useEffect(() => {
     const timeout = setTimeout(() => {
       setSelectedOrderType('')
@@ -74,7 +80,7 @@ const NavbarApp = () => {
         <title>{pageTitles}</title>
         <meta
           name='description'
-          content=' سلطات طازجة بيت المشاوي ،مشويات ، مشاوي ، افضل مطعم ،  ريش غنم اكل مصري ، اكل لبناني ، برياني هندي ، مقبلات لبناني ، باستا ايطالية ، مشاوي شامية ، مشاوي تركية ، مانتو روز ، كارديو كافيه لحوم بلدية دجاج طازج'
+          content='سلطات طازجة بيت المشاوي،مشويات، مشاوي، افضل مطعم، ريش غنم اكل مصري، اكل لبناني، برياني هندي، مقبلات لبناني، باستا ايطالية، مشاوي شامية، مشاوي تركية، مانتو روز، كارديو كافيه لحوم بلدية دجاج طازج'
         />
       </Helmet>
       <Navbar
@@ -83,6 +89,7 @@ const NavbarApp = () => {
         sticky='top'
         className={styles.navbar}
         dir={navbarDirection}
+        aria-label={language === 'arabic' ? 'القائمة العلوية' : 'Top Menu'}
       >
         <Navbar.Brand
           as={Link}
@@ -103,6 +110,7 @@ const NavbarApp = () => {
                 selectedOrderType === order.type ? styles.activeItem : ''
               }`}
               onClick={() => handleOrderTypeChange(order.type)}
+              aria-label={order.label}
             >
               {order.icon}
               <span className={styles.foodOrderTypeText}>{order.text}</span>
@@ -116,10 +124,22 @@ const NavbarApp = () => {
           bg-light
         >
           <Nav className={`${styles.navLinks} ${styles.centeredLinks}`}>
-            <Nav.Link as={Link} to='/' className={styles.navLink} smooth>
+            <Nav.Link
+              as={Link}
+              to='/'
+              className={styles.navLink}
+              smooth
+              aria-label={language === 'arabic' ? 'الرئيسية' : 'Home'}
+            >
               {language === 'arabic' ? 'الرئيسية' : 'Home'}
             </Nav.Link>
-            <Nav.Link as={Link} to='/menu' className={styles.navLink} smooth>
+            <Nav.Link
+              as={Link}
+              to='/menu'
+              className={styles.navLink}
+              smooth
+              aria-label={language === 'arabic' ? 'القائمة' : 'Menu'}
+            >
               {language === 'arabic' ? 'القائمة' : 'Menu'}
             </Nav.Link>
             <Nav.Link
@@ -127,6 +147,9 @@ const NavbarApp = () => {
               to='/ChefSelection'
               className={styles.navLink}
               smooth
+              aria-label={
+                language === 'arabic' ? 'اختيار الشيف' : `Chef's Selection`
+              }
             >
               {language === 'arabic' ? 'اختيار الشيف' : `Chef's Selection`}
             </Nav.Link>
@@ -135,11 +158,18 @@ const NavbarApp = () => {
               to='/Delivery'
               className={styles.navLink}
               smooth
+              aria-label={language === 'arabic' ? 'توصيل' : 'Delivery'}
             >
               {language === 'arabic' ? 'توصيل' : 'Delivery'}
             </Nav.Link>
 
-            <Nav.Link as={Link} to='/RateUs' className={styles.navLink} smooth>
+            <Nav.Link
+              as={Link}
+              to='/RateUs'
+              className={styles.navLink}
+              smooth
+              aria-label={language === 'arabic' ? 'قيِّمنا' : 'Rate US'}
+            >
               {language === 'arabic' ? 'قيِّمنا' : 'Rate US'}
             </Nav.Link>
           </Nav>
@@ -153,7 +183,7 @@ const NavbarApp = () => {
                 </h4>
                 <ul className={styles.cardList}>
                   <li>
-                    <a href='/'>
+                    <a href='/' aria-label='App 1'>
                       <img
                         src='/HungerStation-01-3.svg'
                         alt='App 1'
@@ -162,7 +192,7 @@ const NavbarApp = () => {
                     </a>
                   </li>
                   <li>
-                    <a href='/'>
+                    <a href='/' aria-label='App 2'>
                       <img
                         src='/Mrsool-01.svg'
                         alt='App 2'
@@ -171,7 +201,7 @@ const NavbarApp = () => {
                     </a>
                   </li>
                   <li>
-                    <a href='/'>
+                    <a href='/' aria-label='App 3'>
                       <img
                         src='/jahez.svg'
                         alt='App 3'
@@ -193,8 +223,9 @@ const NavbarApp = () => {
                   language === 'arabic' ? styles.ar : ''
                 }`}
                 onClick={openWhatsApp}
+                aria-label={language === 'arabic' ? 'واتساب' : 'WhatsApp'}
               >
-                <AiOutlineWhatsApp size={35} color='white' />
+                <AiOutlineWhatsApp size={45} color='white' />
               </button>
             )
           }

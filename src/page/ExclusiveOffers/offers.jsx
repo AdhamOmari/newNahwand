@@ -18,22 +18,26 @@ const Offers = () => {
 
   const textAlignmentClass = language === 'arabic' ? styles.rtl : styles.ltr
   const pageTitle =
-    language === 'arabic' ? 'بيت المشاوي - Nahawand العروض' : ' العروض Nahawand - بيت المشاوي'
+    language === 'arabic'
+      ? 'بيت المشاوي - Nahawand العروض'
+      : 'العروض Nahawand - بيت المشاوي'
+
+  const description =
+    'اختيار الشيف, سلطات طازجة بيت المشاوي، مشويات، مشاوي، افضل مطعم، ريش غنم اكل مصري، اكل لبناني، برياني هندي، مقبلات لبناني، باستا ايطالية، مشاوي شامية، مشاوي تركية، مانتو روز، كارديو كافيه لحوم بلدية دجاج طازج'
 
   return (
     <>
       <Helmet>
         <title>{pageTitle}</title>
-        <meta
-          name='description'
-          content='  اختيار الشيف, سلطات طازجة بيت المشاوي ،مشويات ، مشاوي ، افضل مطعم ،  ريش غنم اكل مصري ، اكل لبناني ، برياني هندي ، مقبلات لبناني ، باستا ايطالية ، مشاوي شامية ، مشاوي تركية ، مانتو روز ، كارديو كافيه لحوم بلدية دجاج طازج'
-        />
+        <meta name='description' content={description} />
       </Helmet>
-      <div>
-        <h2 className={`${textAlignmentClass} ${styles.headingClass}`}>
+      <section>
+        <h2
+          className={`${textAlignmentClass} ${styles.headingClass}`}
+          aria-label='Offers'
+        >
           العروض
         </h2>
-        {/* Add the heading with the class name */}
         <div className={`${styles.itemContainer} ${textAlignmentClass}`}>
           <div className={styles.itemImageContainer}>
             <img
@@ -42,14 +46,14 @@ const Offers = () => {
               className={styles.itemImage}
               loading='lazy' // Add this attribute for lazy-loading
             />
-            <div className={styles.offerDescription}>
+            <div className={styles.offerDescription} aria-label='Offer Details'>
               {offerItems.map((item, index) => (
                 <div key={index}>{item}</div>
               ))}
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   )
 }

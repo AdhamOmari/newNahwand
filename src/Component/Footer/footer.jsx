@@ -28,7 +28,7 @@ const Footer = () => {
         />
       </Helmet>
       <footer className={styles.footer}>
-        <div className={styles['social-media-links']}>
+        <nav className={styles['social-media-links']}>
           <a
             href={`https://api.whatsapp.com/send?phone=966553104477&text=${encodeURIComponent(
               whatsappText
@@ -76,9 +76,9 @@ const Footer = () => {
               size={25}
             />
           </a>
-        </div>
+        </nav>
 
-        <div className={styles['footer-info']}>
+        <section className={styles['footer-info']}>
           <div className={styles['work-hours']}>
             <h4 className={styles['work-hours-title']}>ساعات العمل</h4>
             <div className={styles['work-hours-days']}>
@@ -88,7 +88,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className={styles['contact-info']}>
+          <address className={styles['contact-info']}>
             <div className={styles['contact-info-item']}>
               <AiOutlinePhone
                 className={styles['contact-info-icon']}
@@ -105,7 +105,7 @@ const Footer = () => {
               />
               <p>Info@nahawand.sa.com</p>
             </div>
-          </div>
+          </address>
           <section className={styles['location-section']}>
             <div className={styles['location-icon-container']}>
               <FaMapMarkerAlt
@@ -123,7 +123,7 @@ const Footer = () => {
               ? 'جميع الحقوق محفوظة   مطعم نهاوند. © 2023'
               : 'Nahawand Restaurant. All rights reserved © 2023'}
           </p>
-        </div>
+        </section>
       </footer>
     </div>
   )

@@ -11,11 +11,13 @@ const MenusBrowse = () => {
   const { isArabic } = useSelector(state => state.rootReducer)
   const menuData = isArabic === 'arabic' ? dataArabic.menu : data.menu
   const navigate = useNavigate()
-  if (!menuData) return <Spinner />
+
+  if (!menuData) {
+    return <Spinner />
+  }
 
   const browseMenuText =
     isArabic === 'arabic' ? 'تصفح قائمتنا' : 'BROWSE OUR MENU'
-
   const seeMoreText = isArabic === 'arabic' ? 'شاهد المزيد' : 'See More'
   const linkContainerStyle =
     isArabic === 'arabic'
@@ -24,12 +26,13 @@ const MenusBrowse = () => {
 
   const move = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
-
-    navigate(`/menu/`)
+    navigate('/menu/')
   }
-  const pageTitle =
-  isArabic === 'arabic' ? 'بيت المشاوي - Nahawand  تصفح  قائمتنا  ' : ' تصفح  قائمتنا Nahawand - بيت المشاوي' 
 
+  const pageTitle =
+    isArabic === 'arabic'
+      ? 'بيت المشاوي - Nahawand  تصفح  قائمتنا'
+      : 'تصفح  قائمتنا Nahawand - بيت المشاوي'
 
   return (
     <>
@@ -37,14 +40,18 @@ const MenusBrowse = () => {
         <title>{pageTitle}</title>
         <meta
           name='description'
-          content='  اختيار الشيف, سلطات طازجة بيت المشاوي ،مشويات ، مشاوي ، افضل مطعم ،  ريش غنم اكل مصري ، اكل لبناني ، برياني هندي ، مقبلات لبناني ، باستا ايطالية ، مشاوي شامية ، مشاوي تركية ، مانتو روز ، كارديو كافيه لحوم بلدية دجاج طازج'
+          content='اختيار الشيف، سلطات طازجة بيت المشاوي، مشويات، مشاوي، افضل مطعم، ريش غنم اكل مصري، اكل لبناني، برياني هندي، مقبلات لبناني، باستا ايطالية، مشاوي شامية، مشاوي تركية، مانتو روز، كارديو كافيه لحوم بلدية دجاج طازج'
         />
       </Helmet>
-      <div className={styles.menuSection}>
-        <h4>{browseMenuText}</h4>
-      </div>
+      <section className={styles.menuSection}>
+        <h2>{browseMenuText}</h2>
+      </section>
       <MenuCard category={menuData} />
-      <button className={linkContainerStyle} onClick={() => move(menuData)}>
+      <button
+        className={linkContainerStyle}
+        onClick={move}
+        aria-label={seeMoreText} // Add ARIA label for accessibility
+      >
         {seeMoreText}
       </button>
     </>
