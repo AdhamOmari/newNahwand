@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /Delivery
+Allow: /RateUs
+Allow: /ChefSelection
+Allow: /Location
+
