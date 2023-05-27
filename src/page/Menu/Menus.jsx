@@ -53,7 +53,7 @@ const AllMenus = () => {
         <meta httpEquiv='Content-Type' content='text/html; charset=utf-8' />
         <link rel='canonical' href='https://www.nahawandbbq.com/' />
       </Helmet>
-      <h1 className={styles.menuTitle}>{pageTitle}</h1>
+      <h2 className={styles.menuTitle}>{pageTitle}</h2>
       <div className={styles.menuContainer}>
         {Object.entries(menuData).map(([category, { image, item }]) => (
           <article key={category} className={styles.menuCategory}>

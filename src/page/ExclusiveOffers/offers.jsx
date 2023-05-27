@@ -38,7 +38,7 @@ const Offers = () => {
           name='address'
           content='الخبر السعودية، شارع حي العليا - شارع فراس بن النضر'
         />
-                <meta name='keywords' content={description} />
+        <meta name='keywords' content={description} />
 
         <meta name='keywords' content='مطعم، طعام، قائمة طعام، شيف، توصيل' />
         <meta name='author' content='نهاوند بيت المشاوي ' />
@@ -48,12 +48,12 @@ const Offers = () => {
         <link rel='canonical' href='https://www.nahawandbbq.com/' />
       </Helmet>
       <section>
-        <h1
+        <h2
           className={`${textAlignmentClass} ${styles.headingClass}`}
           aria-label='Offers'
         >
           العروض
-        </h1>
+        </h2>
         <div className={`${styles.itemContainer} ${textAlignmentClass}`}>
           <div className={styles.itemImageContainer}>
             <img

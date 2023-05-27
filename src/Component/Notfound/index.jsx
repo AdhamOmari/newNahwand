@@ -22,9 +22,9 @@ export default function NotFound () {
       </Helmet>{' '}
       <div className={styles.notfound}>
         <img src={Logo} alt='Logo' className={styles.logo} />
-        <h1 className={styles.title}>
+        <h2 className={styles.title}>
           {isArabic ? 'صفحة غير موجودة' : 'Page Not Found'}
-        </h1>
+        </h2>
         <IoIosArrowBack className={styles.arrow} onClick={handleGoBack} />
         <p>{isArabic ? 'العودة إلى الصفحة الرئيسية' : 'Go back to homepage'}</p>
       </div>

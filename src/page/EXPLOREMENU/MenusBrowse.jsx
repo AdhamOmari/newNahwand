@@ -60,7 +60,7 @@ const MenusBrowse = () => {
         <link rel='canonical' href='https://www.nahawandbbq.com/' />
       </Helmet>
       <section className={styles.menuSection}>
-        <h1>{browseMenuText}</h1>
+        <h2>{browseMenuText}</h2>
       </section>
       <MenuCard category={menuData} />
       <button
