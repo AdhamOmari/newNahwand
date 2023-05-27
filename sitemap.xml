@@ -4,4 +4,13 @@
     <loc>https://www.nahawandbbq.com/</loc>
     <changefreq>daily</changefreq>
   </url>
+  <url>
+    <loc>https://www.nahawandbbq.com/Herero</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.nahawandbbq.com/Location</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <!-- Add more URLs here -->
 </urlset>
