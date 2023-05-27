@@ -4,13 +4,27 @@
     <loc>https://www.nahawandbbq.com/</loc>
     <changefreq>daily</changefreq>
   </url>
-  <url>
-    <loc>https://www.nahawandbbq.com/Herero</loc>
-    <changefreq>weekly</changefreq>
-  </url>
+
   <url>
     <loc>https://www.nahawandbbq.com/Location</loc>
     <changefreq>weekly</changefreq>
   </url>
-  <!-- Add more URLs here -->
+  <url>
+    <loc>https://www.nahawandbbq.com/menu</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://www.nahawandbbq.com/RateUs</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.nahawandbbq.com/Delivery</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.nahawandbbq.com/ChefSelection</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+
 </urlset>
