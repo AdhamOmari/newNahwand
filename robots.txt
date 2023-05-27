@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /index.html
-Sitemap: https://www.nahawandbbq.com/sitemap.xml
+Disallow: /private/
+Sitemap: https://www.nahawandbbq.com/
