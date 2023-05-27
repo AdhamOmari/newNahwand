@@ -76,7 +76,7 @@ const App = () => {
               element={<ChefSelection />}
               aria-label='Chef Selection'
             />
-            <Route path='*' element={<NotFound />} aria-label='Not Found' />
+            {/* <Route path='*' element={<NotFound />} aria-label='Not Found' /> */}
           </Routes>
         </Suspense>
 
