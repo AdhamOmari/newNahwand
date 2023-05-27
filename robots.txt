@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: 
-Disallow: /cgi-bin/
+Allow: /index.html
+Disallow: /
 Sitemap: https://www.nahawandbbq.com/sitemap.xml
