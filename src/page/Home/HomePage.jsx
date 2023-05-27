@@ -3,7 +3,6 @@ import { Helmet } from 'react-helmet'
 import styles from './style.module.css'
 import Spinner from '../../Component/Spinner/spinner'
 import HeroImage from '../Brief/Heero'
-import { useSelector } from 'react-redux'
 
 const StoreLocation = lazy(() => import('../Location/StoreLocation'))
 const MenusBrowse = lazy(() => import('../EXPLOREMENU/MenusBrowse'))
@@ -12,17 +11,14 @@ const RatingButton = lazy(() => import('../Opinion/Rating'))
 const ChefSelection = lazy(() => import('../ChefSelection/ChefSelection'))
 
 const HomePage = () => {
-  const language = useSelector(state => state.rootReducer.isArabic)
-
-  const pageTitle =
-    language === 'arabic' ? 'بيت المشاوي - Nahawand' : 'Nahawand - بيت المشاوي'
+  const pageTitle = ' مطعم نهاوند بيت المشاوي    '
 
   const siteDescription =
     'سلطات طازجة بيت المشاوي، مشويات، مشاوي، أفضل مطعم، ريش غنم، اكل مصري، اكل لبناني، برياني هندي، مقبلات لبناني، باستا ايطالية، مشاوي شامية، مشاوي تركية، مانتو روز، كارديو كافيه لحوم بلدية، دجاج طازج'
 
   return (
     <>
-         <Helmet>
+      <Helmet>
         <title>{pageTitle}</title>
         <meta name='description' content={siteDescription} />
         <meta
@@ -33,7 +29,7 @@ const HomePage = () => {
           name='address'
           content='الخبر السعودية، شارع حي العليا - شارع فراس بن النضر'
         />
-                <meta name='keywords' content={siteDescription} />
+        <meta name='keywords' content={siteDescription} />
 
         <meta name='keywords' content='مطعم، طعام، قائمة طعام، شيف، توصيل' />
         <meta name='author' content='نهاوند بيت المشاوي ' />

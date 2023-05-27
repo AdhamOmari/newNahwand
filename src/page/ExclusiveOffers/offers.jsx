@@ -17,10 +17,7 @@ const Offers = () => {
   const offerItems = offersDescription.split(' - ')
 
   const textAlignmentClass = language === 'arabic' ? styles.rtl : styles.ltr
-  const pageTitle =
-    language === 'arabic'
-      ? 'بيت المشاوي - نهاوند العروض'
-      : 'العروض Nahawand - بيت المشاوي'
+  const pageTitle = 'العروض'
 
   const description =
     'اختيار الشيف, سلطات طازجة بيت المشاوي، مشويات، مشاوي، افضل مطعم، ريش غنم اكل مصري، اكل لبناني، برياني هندي، مقبلات لبناني، باستا ايطالية، مشاوي شامية، مشاوي تركية، مانتو روز، كارديو كافيه لحوم بلدية دجاج طازج'

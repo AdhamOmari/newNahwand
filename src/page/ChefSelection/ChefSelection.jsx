@@ -27,16 +27,14 @@ const ChefSelection = () => {
     isArabic === 'arabic'
       ? styles.seeMoreLink
       : `${styles.seeMoreLink} ${styles.alignRight}`
-  const pageTitle =
-    isArabic === 'arabic' ? 'بيت المشاوي - Nahawand' : 'Nahawand - بيت المشاوي'
 
   const description =
     'اختيار الشيف, سلطات طازجة بيت المشاوي، مشويات، مشاوي، افضل مطعم، ريش غنم اكل مصري، اكل لبناني، برياني هندي، مقبلات لبناني، باستا ايطالية، مشاوي شامية، مشاوي تركية، مانتو روز، كارديو كافيه لحوم بلدية دجاج طازج'
 
   return (
     <>
-       <Helmet>
-        <title>{pageTitle}</title>
+      <Helmet>
+        <title>{browseMenuText}</title>
         <meta name='description' content={description} />
         <meta
           name='keywords'
@@ -46,7 +44,7 @@ const ChefSelection = () => {
           name='address'
           content='الخبر السعودية، شارع حي العليا - شارع فراس بن النضر'
         />
-                <meta name='keywords' content={description} />
+        <meta name='keywords' content={description} />
 
         <meta name='keywords' content='مطعم، طعام، قائمة طعام، شيف، توصيل' />
         <meta name='author' content='نهاوند بيت المشاوي ' />

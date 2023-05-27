@@ -11,10 +11,7 @@ const HeroImage = () => {
     return <Spinner />
   }
 
-  const pageTitle =
-    language === 'arabic'
-      ? 'بيت المشاوي  نهاوند- Nahawand'
-      : 'Nahawand - بيت المشاوي'
+  const pageTitle = '  مطعم نهاوند بيت المشاوي'
 
   const textAlignmentClass = language === 'arabic' ? styles.rtl : styles.ltr
 
