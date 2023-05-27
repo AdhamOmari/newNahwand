@@ -29,7 +29,7 @@ const MenuCard = ({ category }) => {
         dots: 2,
 
         settings: {
-          slidesToShow: 4
+          slidesToShow: 3
         }
       },
       {
@@ -54,7 +54,7 @@ const MenuCard = ({ category }) => {
     // nextArrow: <CustomNextArrow />
   })
 
-  const itemMargin = 10 // Adjust the value as per your preference
+  const itemMargin = 20 // Adjust the value as per your preference
 
   return (
     <div className={styles.container}>

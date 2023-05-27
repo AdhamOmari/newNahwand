@@ -20,11 +20,13 @@ const OfferSlider = ({ category }) => {
     slidesToScroll: 2,
     autoplay: true,
     dots: true,
+    arrows: false, // Hide the arrows
+
     responsive: [
       {
         breakpoint: 960,
         settings: {
-          slidesToShow: 4
+          slidesToShow: 3
         }
       },
       {

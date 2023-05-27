@@ -65,6 +65,20 @@
 }
 
 
+@media (min-width: 769px) {
+    .navbar {
+        gap: 20%;
+        /* Adjust the percentage value as needed */
+    }
+}
+
+@media (min-width: 1440px) {
+    .navbar {
+        gap: 30%;
+        /* Adjust the percentage value as needed */
+    }
+}
+
 .centeredLinks {
     justify-content: center;
     align-items: center;
@@ -324,7 +338,7 @@ button {
 
 @media (max-width: 330px) {
     .foodOrderType {
-        width: 171px;
+        width: 151px;
 
     }
 

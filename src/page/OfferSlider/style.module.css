@@ -148,29 +148,26 @@
     position: relative;
     left: 20px;
     top: 20px;
-    background-color: #425559;
     width: 150px;
     height: 48px;
-    border-radius: 10px;
+    border-radius: 6px;
+    background-color: #425559;
+    border: transparent;
 }
 
 @media (max-width: 768px) {
-    .seeMoreLink {
-        left: 10px;
-        top: 10px;
+    .seeMoreLink>button {
         width: 102px;
-
-        width: 100%;
         max-width: 397px;
         position: relative;
-        bottom: 26px;
+        border: none;
+        background: transparent;
+
         font-size: 16px;
         white-space: nowrap;
-        position: absolute;
-        width: 55px;
         height: 28px;
         left: 43px;
-        top: 132px;
+        top: -7px;
         font-family: 'Cairo';
         font-style: normal;
         font-weight: 600;

@@ -165,22 +165,17 @@
 
 .seeMoreLink>button {
     display: inline-block;
-    /* padding: 8px 12px; */
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    /* border-radius: 4px; */
-    /* background-color: #728384; */
     position: relative;
     left: 20px;
     top: 20px;
-    /* transition: background-color 0.3s ease; */
-
-
-    background-color: #425559;
     width: 150px;
     height: 48px;
-    border-radius: 10px;
+    border-radius: 6px;
+    background-color: #425559;
+    border: transparent;
 }
 
 .seeMoreLink button:hover {
@@ -189,11 +184,28 @@
 }
 
 @media (max-width: 768px) {
-    .seeMoreLink {
-        left: 10px;
-        top: 10px;
-        width: 102px;
+    @media (max-width: 768px) {
+        .seeMoreLink>button {
+            width: 102px;
+            max-width: 397px;
+            position: relative;
+            border: none;
+            background: transparent;
 
+            font-size: 16px;
+            white-space: nowrap;
+            height: 28px;
+            left: 43px;
+            top: -7px;
+            font-family: 'Cairo';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 28px;
+            text-transform: uppercase;
+            z-index: 10000000;
+            color: #FFFFFF;
+        }
     }
 }
 

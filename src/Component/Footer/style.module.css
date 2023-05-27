@@ -167,3 +167,76 @@
 .contact-info p {
     margin: 0;
 }
+
+
+
+@media (min-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+        align-self: center;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+
+
+    }
+
+    .social-media-links {
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 5px;
+        margin-right: 28px;
+        gap: 10px;
+    }
+
+    .footer-info {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    .location-section,
+    .work-hours,
+    .contact-info {
+        flex: 1 1 auto;
+        margin-right: 20px;
+        margin-bottom: 0;
+        justify-content: space-evenly;
+        justify-content: center;
+    }
+
+    .location-section {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .location-icon-container {
+        flex-direction: column;
+    }
+
+    .location-icon {
+        font-size: 20px;
+        margin-right: 5px;
+    }
+
+    .location-address {
+        margin: 0;
+    }
+
+    .contact-info-item {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-info-icon {
+        font-size: 20px;
+        margin-right: 5px;
+    }
+
+    .contact-info p {
+        margin: 0;
+    }
+}
