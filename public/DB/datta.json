@@ -1,0 +1,67 @@
+   'عصيرات طازجه': [
+    {
+        "id": 38,
+        "name": "طاجن البامية بلحم الموزة",
+        "description": "على الطريقة المصرية مع ارز بسمتي بالشعيرية",
+        "price": 49,
+        "calories": 0,
+        "image": "/ImageFood/mozat.jpeg"
+    },
+    {
+        "id": 39,
+        "name": "طاجن ورق العنب بالكوارع",
+        "description": "ورق عنب محشي ارز باللحم البلدي  مع كوارع العجل البلدي",
+        "price": 45,
+        "calories": 0,
+        "image": "/ImageFood/enab-fix.jpeg"
+    },
+    {
+        "id": 40,
+        "name": "ملوخية بالدجاج",
+        "description": "مع طشة الثوم والكزبرة تقدم مع ارز بالشعيرية",
+        "price": 43,
+        "calories": 0,
+        "image": "/ImageFood/fixmlokhya.jpeg"
+    },
+    {
+        "id": 41,
+        "name": "كبة لبنية",
+        "description": " كبة بيتي باللحم البلدي وصوص الزبادي الرايب وطشة الكزبرة والثوم مع الارز الابيض",
+        "price": 45,
+        "calories": 1861,
+        "image": "/ImageFood/lappanya-fix.jpeg"
+    },
+    {
+        "id": 42,
+        "name": "برياني الدجاج",
+        "description": " مطهي على الطريقة الهندية الاصلية مخبوز بالفرن ",
+        "price": 45,
+        "calories": 1327,
+        "image": "/ImageFood/bryany-fix.jpeg"
+    },
+    {
+        "id": 43,
+        "name": "كفتة بالجبن",
+        "description": "لحم بلدي مفروم محشو بخليط من الجبن المشوي الذائب  بالفرن، يُقدم مع البطاطس والخضراوات المشوية",
+        "price": 49,
+        "calories": 0,
+        "image": "/ImageFood/koopehjpn.jpg"
+    },
+    {
+        "id": 44,
+        "name": " ريش مع ورق العنب ",
+        "description": "ورق عنب محشي ارز باللحم البلدي  مع ريش الغنم",
+        "price": 80,
+        "calories": 0,
+        "image": "/ImageFood/ripsenap.jpeg"
+    },
+    {
+        "id": 45,
+        "name": "برياني موزة نعيمي",
+        "description": "موزة غنم نعيمي مطهوة على طرية نهاوند الخاصة مع الارز وصوص البرياني المميز",
+        "price": 80,
+        "calories": 0,
+        "image": "/ImageFood/mozat.jpeg"
+    }
+]
+}
