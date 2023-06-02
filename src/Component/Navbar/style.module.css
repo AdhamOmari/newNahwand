@@ -67,7 +67,7 @@
 
 @media (min-width: 769px) {
     .navbar {
-        gap: 20%;
+        gap: 27%;
         /* Adjust the percentage value as needed */
     }
 }
@@ -87,10 +87,6 @@
 .searchForm {
     display: flex;
     align-items: center;
-}
-
-.searchIcon {
-    /* Adjust the spacing as needed */
 }
 
 

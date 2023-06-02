@@ -52,7 +52,7 @@
 
 .menuCard h2 {
     position: absolute;
-    top: 89%;
+    top: 91%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -73,6 +73,12 @@
     color: #FFFFFF;
 }
 
+.menuContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
 
 .menuTitle {
     display: flex;
@@ -88,7 +94,6 @@
     font-family: 'Cairo';
     font-style: normal;
     font-weight: 900;
-    font-size: 15px;
     line-height: 25px;
     text-transform: uppercase;
     color: #333333;
@@ -194,9 +199,10 @@
     }
 
     .cover {
-        top: 41rem;
+
+        top: 57rem;
         height: 100px;
-        width: 100%;
+        width: 97%;
         margin-left: 0;
     }
 

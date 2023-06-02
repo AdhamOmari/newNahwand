@@ -53,27 +53,25 @@ const AllMenus = () => {
         <link rel='canonical' href='https://www.nahawandbbq.com/' />
       </Helmet>
       <h2 className={styles.menuTitle}>{pageTitle}</h2>
-      <div className={styles.menuContainer}>
-        {Object.entries(menuData).map(([category, { image, item }]) => (
-          <article key={category} className={styles.menuCategory}>
-            <button
+      {Object.entries(menuData).map(([category, { image, item }]) => (
+        <article key={category} className={styles.menuCategory}>
+          <button
+            onClick={() => move(category, item)}
+            className={styles.categoryLink}
+            aria-label={`View ${category} Menu`}
+          ></button>
+          <div className={styles.cover}></div>
+          <div className={styles.menuCard}>
+            <img src={image} alt={`Category: ${category}`} />
+            <h2
+              className={styles.categoryTitle}
               onClick={() => move(category, item)}
-              className={styles.categoryLink}
-              aria-label={`View ${category} Menu`}
-            ></button>
-            <div className={styles.cover}></div>
-            <div className={styles.menuCard}>
-              <img src={image} alt={`Category: ${category}`} />
-              <h2
-                className={styles.categoryTitle}
-                onClick={() => move(category, item)}
-              >
-                {category}
-              </h2>
-            </div>
-          </article>
-        ))}
-      </div>
+            >
+              {category}
+            </h2>
+          </div>
+        </article>
+      ))}
     </main>
   )
 }
