@@ -7,6 +7,8 @@
     padding: 20px;
     position: relative;
     top: 4rem;
+    border-radius: 6px;
+
 }
 
 .itemImageContainer {
@@ -20,7 +22,7 @@
     max-width: 700px;
     height: auto;
     transition: opacity 0.3s;
-    border-radius: 10px;
+    border-radius: 6px;
     /* Add transition for smooth effect */
 }
 
@@ -183,6 +185,8 @@
 
 .itemImageContainer:hover .offerDescription {
     opacity: 1;
+    border-radius: 6px;
+
 }
 
 /* Image Hover Effect */
@@ -199,6 +203,8 @@
 
 .itemImage:hover {
     transform: scale(1.2);
+    border-radius: 6px;
+
 }
 
 /* ... */
