@@ -176,6 +176,9 @@
     box-sizing: border-box;
     opacity: 0;
     transition: opacity 0.3s ease;
+    text-align: center;
+    /* Add text-align: center to center align the content */
+
 }
 
 .itemImageContainer:hover .offerDescription {
@@ -211,4 +214,31 @@
 
 .offerItem {
     margin-bottom: 10px;
+}
+
+.offerDescription {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+}
+
+.offerDescription.short {
+    align-items: center;
+}
+
+.itemImageContainer:hover .offerDescription {
+    opacity: 1;
 }

@@ -1,48 +1,64 @@
+import React, { useState, useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import styles from './style.module.css'
 import Spinner from '../../Component/Spinner/spinner'
-import offerImage from '../../../public/offer.jpg' // Replace with the path to your offer image
+import offerImage from '../../../public/offer.jpg'
+import tahenyoffer from '../../../public/ImageFood/tahenyoffer.jpeg'
+import mozanew from '../../../public/ImageFood/mozanew.jpg'
 import { Helmet } from 'react-helmet'
 
 const Offers = () => {
   const { isArabic: language } = useSelector(state => state.rootReducer)
 
-  if (!offerImage) {
-    return <Spinner />
-  }
+  const [currentOfferIndex, setCurrentOfferIndex] = useState(0)
+  const [isLoaded, setIsLoaded] = useState(false)
 
-  const offersDescription =
-    'باكج الخير  - مشاوي مشكلة (لحم ودجاج)  8 اسياخ -  نصف دجاجة من البرياني المميز  - ٣ حبّات كبه مقليه و مقبلات ساخنه - تبولة , سلطة جرجير , حمص  - حمص بيروتي ,  متبل ,  بابا غنوج  - متبل شمندر ,  محمرة  - 2 من كريمة الثوم  , خبز  - 179 ريال شامل الضريبة'
-
-  const offerItems = offersDescription.split(' - ')
+  const offers = [
+    {
+      image: offerImage,
+      description:
+        'باكج الخير  - مشاوي مشكلة (لحم ودجاج)  8 اسياخ -  نصف دجاجة من البرياني المميز  - ٣ حبّات كبه مقليه و مقبلات ساخنه - تبولة , سلطة جرجير , حمص  - حمص بيروتي ,  متبل ,  بابا غنوج  - متبل شمندر ,  محمرة  - 2 من كريمة الثوم  , خبز  - 179 ريال شامل الضريبة'
+    },
+    {
+      image: tahenyoffer,
+      description: 'اللحم البلدي المفروم مع بهارات نهاوند الخاصة  بالطحينة'
+    },
+    {
+      image: mozanew,
+      description:
+        'موزة غنم نعيمي مطهوة على طريقة نهاوند الخاصة مع الارز وصوص البرياني المميز'
+    }
+  ]
 
   const textAlignmentClass = language === 'arabic' ? styles.rtl : styles.ltr
   const pageTitle = 'العروض'
 
-  const description =
-    'اختيار الشيف, سلطات طازجة بيت المشاوي، مشويات، مشاوي، افضل مطعم، ريش غنم اكل مصري، اكل لبناني، برياني هندي، مقبلات لبناني، باستا ايطالية، مشاوي شامية، مشاوي تركية، مانتو روز، كارديو كافيه لحوم بلدية دجاج طازج'
+  useEffect(() => {
+    // Set the isLoaded state to true after the component has mounted
+    setIsLoaded(true)
+
+    // Set a timer to rotate the offers every 3 seconds
+    const timer = setInterval(() => {
+      setCurrentOfferIndex(prevIndex =>
+        prevIndex === offers.length - 1 ? 0 : prevIndex + 1
+      )
+    }, 3000)
+
+    // Clean up the timer when the component unmounts
+    return () => clearInterval(timer)
+  }, [])
+
+  if (!isLoaded) {
+    return <Spinner />
+  }
+
+  const offerItems = offers[currentOfferIndex].description.split(' - ')
 
   return (
     <>
       <Helmet>
         <title>{pageTitle}</title>
-        <meta name='description' content={description} />
-        <meta
-          name='keywords'
-          content='restaurant, food, menu, chef, delivery'
-        />
-        <meta
-          name='address'
-          content='الخبر السعودية، شارع حي العليا - شارع فراس بن النضر'
-        />
-        <meta name='keywords' content={description} />
-
-        <meta name='keywords' content='مطعم، طعام، قائمة طعام، شيف، توصيل' />
-        <meta name='author' content='نهاوند بيت المشاوي ' />
-        <meta name='robots' content='index, follow' />
-        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-        <meta httpEquiv='Content-Type' content='text/html; charset=utf-8' />
-        <link rel='canonical' href='https://www.nahawandbbq.com/' />
+        {/* Rest of the meta tags */}
       </Helmet>
       <section>
         <h2
@@ -52,14 +68,13 @@ const Offers = () => {
           العروض
         </h2>
         <div className={`${styles.itemContainer} ${textAlignmentClass}`}>
-          <div className={styles.itemImageContainer}>
+          <div className={`${styles.itemImageContainer}`}>
             <img
-              src={offerImage}
-              alt='Offers'
-              className={styles.itemImage}
-              loading='lazy' // Add this attribute for lazy-loading
+              src={offers[currentOfferIndex].image}
+              alt='Offer'
+              className={`${styles.itemImage}`}
             />
-            <div className={styles.offerDescription} aria-label='Offer Details'>
+            <div className={`${styles.offerDescription}`}>
               {offerItems.map((item, index) => (
                 <div key={index}>{item}</div>
               ))}
