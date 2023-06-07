@@ -14,15 +14,15 @@ const Offers = () => {
   const [isLoaded, setIsLoaded] = useState(false)
 
   const offers = [
-    {
-      image: mozanew,
-      description:
-        'موزة غنم نعيمي مطهوة على طريقة نهاوند الخاصة مع الارز وصوص البرياني المميز'
-    },
-    {
-      image: tahenyoffer,
-      description: 'اللحم البلدي المفروم مع بهارات نهاوند الخاصة  بالطحينة'
-    },
+    // {
+    //   image: mozanew,
+    //   description:
+    //     'موزة غنم نعيمي مطهوة على طريقة نهاوند الخاصة مع الارز وصوص البرياني المميز'
+    // },
+    // {
+    //   image: tahenyoffer,
+    //   description: 'اللحم البلدي المفروم مع بهارات نهاوند الخاصة  بالطحينة'
+    // },
     {
       image: offerImage,
       description:
