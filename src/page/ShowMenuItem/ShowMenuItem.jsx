@@ -36,7 +36,7 @@ const ShowMenuItem = () => {
 
   return (
     <>
-       <Helmet>
+      <Helmet>
         <title>{pageTitle}</title>
         <meta name='description' content={siteDescription} />
         <meta
@@ -44,10 +44,11 @@ const ShowMenuItem = () => {
           content='restaurant, food, menu, chef, delivery'
         />
         <meta
-          name='address'
-          content='الخبر السعودية، شارع حي العليا - شارع فراس بن النضر'
+          name='keywords'
+          content='مطعم، طعام، قائمة طعام، شيف، توصيل أفضل مطعم مشاوي في الخبر ،أفضل مطعم لبناني ,افضل مشويات,مطعم نهاوند بيت المشاوي '
         />
-                <meta name='keywords' content={siteDescription} />
+
+        <meta name='keywords' content={siteDescription} />
 
         <meta name='keywords' content='مطعم، طعام، قائمة طعام، شيف، توصيل' />
         <meta name='author' content='نهاوند بيت المشاوي ' />

@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import styles from './style.module.css'
 import Spinner from '../../Component/Spinner/spinner'
 import offerImage from '../../../public/offer.jpg'
-import tahenyoffer from '../../../public/ImageFood/tahenyoffer.jpeg'
-import mozanew from '../../../public/ImageFood/mozanew.jpg'
+// import tahenyoffer from '../../../public/ImageFood/tahenyoffer.jpeg'
+// import mozanew from '../../../public/ImageFood/mozanew.jpg'
 import { Helmet } from 'react-helmet'
 
 const Offers = () => {
@@ -58,7 +58,10 @@ const Offers = () => {
     <>
       <Helmet>
         <title>{pageTitle}</title>
-        {/* Rest of the meta tags */}
+        <meta
+          name='keywords'
+          content='مطعم، طعام، قائمة طعام، شيف، توصيل أفضل مطعم مشاوي في الخبر ،أفضل مطعم لبناني ,افضل مشويات,مطعم نهاوند بيت المشاوي '
+        />
       </Helmet>
       <section>
         <h2

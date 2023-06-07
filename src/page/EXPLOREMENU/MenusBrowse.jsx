@@ -29,11 +29,10 @@ const MenusBrowse = () => {
     navigate('/menu/')
   }
 
-  const pageTitle =
-       '     قائمة طعام مطعم نهاوند  '
+  const pageTitle = '     قائمة طعام مطعم نهاوند  '
 
   const siteDescription =
-    'اختيار الشيف، سلطات طازجة بيت المشاوي، مشويات، مشاوي، أفضل مطعم، ريش غنم، اكل مصري، اكل لبناني، برياني هندي، مقبلات لبناني، باستا ايطالية، مشاوي شامية، مشاوي تركية، مانتو روز، كارديو كافيه لحوم بلدية، دجاج طازج'
+    'اختيار الشيف، سلطات طازجة بيت المشاوي،أفضل مطعم مشاوي في الخبر ،أفضل مطعم لبناني ,افضل مشويات, مشويات، مشاوي، أفضل مطعم، ريش غنم، اكل مصري، اكل لبناني، برياني هندي، مقبلات لبناني، باستا ايطالية، مشاوي شامية، مشاوي تركية، مانتو روز، كارديو كافيه لحوم بلدية، دجاج طازج'
 
   return (
     <>
@@ -44,13 +43,14 @@ const MenusBrowse = () => {
           name='keywords'
           content='restaurant, food, menu, chef, delivery'
         />
+          <meta name='keywords' content='مطعم، طعام، قائمة طعام، شيف، توصيل أفضل مطعم مشاوي في الخبر ،أفضل مطعم لبناني ,افضل مشويات,مطعم نهاوند بيت المشاوي ' />
+
         <meta
           name='address'
           content='الخبر السعودية، شارع حي العليا - شارع فراس بن النضر'
         />
         <meta name='keywords' content={siteDescription} />
 
-        <meta name='keywords' content='مطعم، طعام، قائمة طعام، شيف، توصيل' />
         <meta name='author' content='نهاوند بيت المشاوي ' />
         <meta name='robots' content='index, follow' />
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
