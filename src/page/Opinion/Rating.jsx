@@ -3,7 +3,7 @@ import styles from './RatingButton.module.css'
 import { useSelector } from 'react-redux'
 
 const RatingButton = () => {
-  const rating = 4.6 // Average rating
+  const rating = 4.7 // Average rating
 
   const { isArabic } = useSelector(state => state.rootReducer)
 
