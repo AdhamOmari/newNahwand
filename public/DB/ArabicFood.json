@@ -25,7 +25,7 @@
                     "description": "ملوخية محضرة بالطريقة المصرية",
                     "price": 19,
                     "calories": 164,
-                    "image": "/ImageFood/Molokhia.jpg"
+                    "image": "/ImageFood/mlo5eah.jpeg"
                 }
             ]
         },
@@ -46,7 +46,7 @@
                     "description": "بقدونس وطماطم وبصل وبرغل وليمون مع زيت الزيتون",
                     "price": 21,
                     "calories": 215,
-                    "image": "/ImageFood/Tabboleeh.jpg"
+                    "image": "/ImageFood/Tabboleeh.jpeg"
                 },
                 {
                     "id": 6,
@@ -216,7 +216,7 @@
                     "description": "تحتوي على كبة مقلية - بورك الجبن - فطائر السبانخ - صفائح لحم",
                     "price": 43,
                     "calories": 0,
-                    "image": "/image-003.svg"
+                    "image": "/ImageFood/hotapptizar.jpeg"
                 },
                 {
                     "id": 26,
@@ -370,7 +370,7 @@
                     "description": "لحم بلدي مفروم محشو بخليط من الجبن المشوي الذائب  بالفرن، يُقدم مع البطاطس والخضراوات المشوية",
                     "price": 49,
                     "calories": 0,
-                    "image": "/ImageFood/koopehjpn.jpg"
+                    "image": "/ImageFood/koopehjpn.jpeg"
                 },
                 {
                     "id": 44,
@@ -395,14 +395,30 @@
             "item": [
                 {
                     "id": 45,
+                    "name": "فروج مسحب نهاوند",
+                    "description": "وزن ٥٥٠ جرام متبل على طريقة نهاوند المميزة مشوي على الفحم",
+                    "price": 38,
+                    "calories": 0,
+                    "image": "/ImageFood/farooj.jpeg"
+                },
+                {
+                    "id": 46,
+                    "name": "فروج مسحب ساندويش نهاوند",
+                    "description": "ساندويش شيش طاووق مشوي على الفحم مع الاضافات المميزة",
+                    "price": 16,
+                    "calories": 0,
+                    "image": "/ImageFood/faroj-sandwesh.jpeg"
+                },
+                {
+                    "id": 47,
                     "name": "ريش غنم",
                     "description": "قطع ريش الغنم متبلة بالبهارات الخاصة بنا, مشوية على الفحم",
                     "price": 75,
                     "calories": 1375,
-                    "image": "/ImageFood/reash.jpg"
+                    "image": "/ImageFood/reash.jpeg"
                 },
                 {
-                    "id": 46,
+                    "id": 48,
                     "name": "أوصال اللحم",
                     "description": " لحم تندر لاين متبل , مشوي على الفحم يقدم مع الخضراوات  المشوية ",
                     "price": 52,
@@ -410,7 +426,7 @@
                     "image": "/ImageFood/awsalfix.jpg"
                 },
                 {
-                    "id": 47,
+                    "id": 49,
                     "name": "كباب لحم",
                     "description": "   لحم بلدي مفروم متبل بالبهارات الخاصة , مشوي على الفحم , يقدم مع الخضراوات المشوية ",
                     "price": 44,
@@ -418,15 +434,15 @@
                     "image": "/image-003.svg"
                 },
                 {
-                    "id": 48,
+                    "id": 50,
                     "name": "شيش طاووق",
                     "description": " صدور الدجاج المتبلة بالبهارات الخاصة بنا , مشوية على الفحم, تقدم مع الخضراوات المشوية",
                     "price": 43,
                     "calories": 1881,
-                    "image": "/ImageFood/shessh.jpg"
+                    "image": "/ImageFood/shessh.jpeg"
                 },
                 {
-                    "id": 49,
+                    "id": 51,
                     "name": "كباب دجاج",
                     "description": " دجاج مفروم متبل بالبهارات المميزة, يشوى على الفحم ويقدم مع الخضراوات المشوية  ",
                     "price": 40,
@@ -434,7 +450,7 @@
                     "image": "/image-003.svg"
                 },
                 {
-                    "id": 50,
+                    "id": 52,
                     "name": "مشوي مشكل",
                     "description": "شيش طاووق - أوصال لحم - كباب اللحم - كباب الدجاج",
                     "price": 56,
@@ -442,7 +458,7 @@
                     "image": "/ImageFood/BBQ.jpg"
                 },
                 {
-                    "id": 51,
+                    "id": 53,
                     "name": "كفتة بالطحينة",
                     "description": "اللحم البلدي المفروم مع بهارات نهاوند الخاصة  بالطحينة",
                     "price": 47,
@@ -455,7 +471,7 @@
             "image": "/ImageFood/drinks.jpg",
             "item": [
                 {
-                    "id": 51,
+                    "id": 54,
                     "name": " عصير برتقال",
                     "description": "",
                     "price": 16,
@@ -463,7 +479,7 @@
                     "image": "/ImageFood/drinks.jpg"
                 },
                 {
-                    "id": 52,
+                    "id": 55,
                     "name": " عصير رمان",
                     "description": "",
                     "price": 16,
@@ -471,7 +487,7 @@
                     "image": "/ImageFood/drinks.jpg"
                 },
                 {
-                    "id": 53,
+                    "id": 56,
                     "name": " عصير ليمون بالنعنان ",
                     "description": "",
                     "price": 16,
@@ -479,7 +495,7 @@
                     "image": "/ImageFood/drinks.jpg"
                 },
                 {
-                    "id": 54,
+                    "id": 57,
                     "name": " عصير المانجو ",
                     "description": "",
                     "price": 16,
@@ -487,7 +503,7 @@
                     "image": "/ImageFood/drinks.jpg"
                 },
                 {
-                    "id": 55,
+                    "id": 58,
                     "name": " عصير الفراولة ",
                     "description": "",
                     "price": 16,
@@ -495,7 +511,7 @@
                     "image": "/ImageFood/drinks.jpg"
                 },
                 {
-                    "id": 56,
+                    "id": 59,
                     "name": "موهيتو الفراولة ",
                     "description": "",
                     "price": 16,
@@ -503,7 +519,7 @@
                     "image": "/ImageFood/drinks.jpg"
                 },
                 {
-                    "id": 57,
+                    "id": 60,
                     "name": " موهيتو توت ازرق ",
                     "description": "",
                     "price": 16,
@@ -511,7 +527,7 @@
                     "image": "/ImageFood/drinks.jpg"
                 },
                 {
-                    "id": 58,
+                    "id": 61,
                     "name": " كوكتيل ",
                     "description": "",
                     "price": 16,
@@ -519,7 +535,7 @@
                     "image": "/ImageFood/drinks.jpg"
                 },
                 {
-                    "id": 59,
+                    "id": 62,
                     "name": "مشروبات غازية",
                     "description": "",
                     "price": 5,
@@ -527,7 +543,7 @@
                     "image": "/image-003.svg"
                 },
                 {
-                    "id": 60,
+                    "id": 63,
                     "name": "ماء صغير",
                     "description": "",
                     "price": 2,
@@ -535,7 +551,7 @@
                     "image": "/image-003.svg"
                 },
                 {
-                    "id": 61,
+                    "id": 64,
                     "name": "ماء كبير",
                     "description": "",
                     "price": 4,
@@ -548,7 +564,7 @@
             "image": "/ImageFood/sweet.jpg",
             "item": [
                 {
-                    "id": 55,
+                    "id": 65,
                     "name": "كريم بروليه",
                     "description": "مع سكر الكراميل والفراولة",
                     "price": 17,
@@ -556,12 +572,12 @@
                     "image": "/ImageFood/sweet.jpg"
                 },
                 {
-                    "id": 56,
+                    "id": 66,
                     "name": "سحر الشرق",
                     "description": " مع صوص الفانيليا والموز والفستق الحلبي",
                     "price": 15,
                     "calories": 0,
-                    "image": "/ImageFood/sweet.jpg"
+                    "image": "/ImageFood/east-magic.jpeg"
                 }
             ]
         }
